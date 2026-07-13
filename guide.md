@@ -1,158 +1,158 @@
 # Claude Certified Associate – Foundations
 
-## 認定試験ガイド（公式ガイドの拡充版）
+## Certification Exam Guide (Enhanced Edition)
 
-> **本ガイドについて。** 本書は **Claude Certified Associate – Foundations（CCAO-F）** 試験の拡充版学習ガイドである。公式の *Claude Certified Architect – Foundations Exam Guide*（v0.2）のレイアウトと章順を踏襲しつつ、CCAO-F のブループリント（7 ドメイン）に合わせている。拡充部分はすべて **Anthropic 公式ドキュメントと公式ブログのみ** から作成し、ドメインごとに出典を明記した。公式の試験ポリシー、ブループリント、公式サンプル問題は公式 CCAO-F Exam Guide（v1.0、2026 年 7 月発効、試験コード CCAO-F）から転載した。
-
----
-
-## はじめに
-
-Claude Certified Associate – Foundations 認定は、Claude を使ってビジネスや生産性のタスクを最小限の支援で完遂できることを認証する。これには、組み込みのプラットフォーム機能やツールを活用したワークフローの効率化、Claude によるプロセス改善の機会を見つけること、品質・効率・コストのバランスを取るアプローチの選択、そして限界を認識してより複雑あるいは技術的な作業を Claude Architect や Developer にエスカレーションすることが含まれる。
-
-想定受験者は、オペレーション、マーケティング、プロジェクト管理、教育、コミュニケーションといった役割で Claude を生産性ツールとして使う専門家である。受験者は概念理解だけでなく、プロンプト作成、出力の評価、製品とモデルの選択、設定、ガバナンス、最適化に関する実践的な判断力を問われる。
-
-本ガイドは試験内容を説明し、測定対象のドメインとタスクステートメントを列挙し、サンプル問題を示したうえで、学習戦略を提案する。実務経験と併用して効果的に学習すること。[Source: CCAO-F Exam Guide, Section 1]
+> **About this guide.** This is an enhanced study guide for the **Claude Certified Associate – Foundations (CCAO-F)** exam. It follows the layout and chapter order of the official *Claude Certified Architect – Foundations Exam Guide* (v0.2) while adapting the content to the CCAO-F blueprint (7 domains). Every enrichment is drawn solely from **official Anthropic documentation and the official Anthropic blog**, with sources cited per domain. Official exam policies, the blueprint, and the official sample questions are reproduced from the official CCAO-F Exam Guide (v1.0, effective July 2026, exam code CCAO-F).
 
 ---
 
-## 試験の概要
+## Introduction
 
-| 項目 | 内容 |
+The Claude Certified Associate – Foundations certification recognizes the ability to use Claude to complete business and productivity tasks with minimal support. This includes streamlining workflows with built-in platform features and tools, identifying opportunities for Claude to improve processes, choosing approaches that balance quality, efficiency, and cost, and recognizing limits well enough to escalate more complex or technical work to a Claude Architect or Developer.
+
+The intended candidate is a professional who uses Claude as a productivity tool in roles such as operations, marketing, project management, education, and communications. Candidates are tested not only on conceptual understanding but also on practical judgment in prompt creation, output evaluation, product and model selection, configuration, governance, and optimization.
+
+This guide describes the exam content, lists the measured domains and task statements, provides sample questions, and suggests a study strategy. Use it together with hands-on experience for effective preparation. [Source: CCAO-F Exam Guide, Section 1]
+
+---
+
+## Exam Overview
+
+| Item | Detail |
 |---|---|
-| 認定資格 | Claude Certified Associate – Foundations |
-| 設問数 | 60 |
-| 制限時間 | 120 分 |
-| 回答形式 | 多肢選択式および複数回答式。各設問は選ぶべき回答数を明示する |
-| コンテентドメイン | 7（配点は「コンテントアウトライン」に記載） |
-| 受験方式 | プロクタード（オンラインプロクタリングまたはテストセンター、Pearson VUE） |
-| 受験料 | 99 米ドル |
-| 採点 | 100〜1,000 のスケールスコア。合格最低点は 720 |
-| 有効期間 | 認定取得日から 12 か月 |
-| 結果通知 | 合否とスケールスコア、ドメインごとの正答率 |
+| Certification | Claude Certified Associate – Foundations |
+| Number of items | 60 |
+| Time limit | 120 minutes |
+| Response format | Multiple-choice and multiple-response. Each item specifies how many responses to select |
+| Content domains | 7 (weights are listed under "Content Outline") |
+| Delivery | Proctored (online proctoring or test center, Pearson VUE) |
+| Exam fee | 99 USD |
+| Scoring | Scaled score from 100 to 1,000. Passing score is 720 |
+| Validity | 12 months from the date the certification is earned |
+| Results reporting | Pass/fail status, scaled score, and per-domain accuracy |
 
 [Source: CCAO-F Exam Guide, Section 5]
 
 ---
 
-## 想定受験者像
+## Intended Candidate Profile
 
-本認定の想定受験者は、Claude を中核の生産性ツールとして使い、実務のワークフローの中で効率・品質・成果を向上させることができる専門家である。次のような実務経験を持つ。
+The intended candidate for this certification is a professional who uses Claude as a core productivity tool and can improve efficiency, quality, and outcomes within real work workflows. Candidates should have practical experience such as the following:
 
-- 構造化されたビジネスタスクを最小限の支援で完遂する。**プロンプトの構築**、タスクのオーケストレーション、Projects、Artifacts、ワークフローベースの対話といった機能の習得を含む
-- 単純な質問応答の先へ進み、プロセスの再設計、タスクの自動化、プロジェクトの開発を行う
-- Claude の出力を精度、ハルシネーション、バイアス、適切なフォーマットの観点で評価する
-- 適切な Claude 製品機能とモデル（Haiku、Sonnet、Opus）を選び、コスト・速度・品質のバランスを取る
-- Claude Projects に指示とナレッジソースを設定し、運用で維持する
-- データの機密性、プライバシー、責任ある利用の判断を働かせ、いつエスカレーションや人間のレビューを求めるべきかを知る
+- Completing structured business tasks with minimal support, including mastery of features such as **prompt construction**, task orchestration, Projects, Artifacts, and workflow-based interactions
+- Moving beyond simple question-answering to redesign processes, automate tasks, and develop projects
+- Evaluating Claude's outputs for accuracy, hallucination, bias, and appropriate formatting
+- Selecting the right Claude product features and models (Haiku, Sonnet, Opus) and balancing cost, speed, and quality
+- Configuring Claude Projects with instructions and knowledge sources and maintaining them in operation
+- Exercising judgment on data sensitivity, privacy, and responsible use, and knowing when to seek escalation or human review
 
-想定受験者は日常的にプロフェッショナルな場面で Claude を使う経験を持ち、プラットフォーム上の一般的な生産性タスクやワークフロータスクを自力で完遂できる。オペレーション、マーケティング、プロジェクト管理、教育、コミュニケーション、一般のナレッジワークにまたがる。
+The intended candidate uses Claude regularly in professional settings and can independently complete common productivity and workflow tasks on the platform. The work spans operations, marketing, project management, education, communications, and general knowledge work.
 
-本認定は、API に基づいて開発するソフトウェア開発者や、エージェントシステムを設計する者、機械学習・ソフトウェアエンジニアリング・高度な AI システム設計の専門家を想定しない。それらの領域は Claude Architect や Claude Developer 認定の守備範囲であり、Associate はより複雑・技術的な作業をそこにエスカレーションする。
+This certification is not intended for software developers building on the API, those designing agent systems, or specialists in machine learning, software engineering, or advanced AI system design. Those areas fall under the Claude Architect and Claude Developer certifications, and the Associate escalates more complex or technical work to them.
 
-前提条件はない。必須のコースやソフトウェア開発・API の経験は不要。認定は試験の成績のみで与えられる。[Source: CCAO-F Exam Guide, Sections 3–4]
+There are no prerequisites. No mandatory course, software development, or API experience is required. The certification is awarded solely on the basis of exam performance. [Source: CCAO-F Exam Guide, Sections 3–4]
 
 ---
 
-## 試験内容
+## Exam Content
 
-### 回答形式
+### Response Format
 
-試験の問題はすべて選択問題である。多くは「4つの選択肢から1つ選ぶ」形式だが、なかには「2つ選べ」のように複数の正解を選ぶ問題もある。問題文には何個選ぶべきかが必ず書かれているので、指示に従う。選択肢には、ひと目では正解に見える「もっともらしい誤り（distractor）」が混ざっており、うろ覚えだと引っかかる作りになっている。
+Every item on the exam is a selection item. Most follow a "choose one of four options" format, but some ask you to select multiple correct responses, for example "select two." The item stem always states how many responses to choose, so follow the instructions. The options include plausible distractors that look correct at a glance and are designed to catch test-takers who rely on half-remembered facts.
 
-### 採点結果
+### Scoring Results
 
-試験は「合格・不合格」で判定される。他の受験者との競争ではなく、決まった基準（ブループリントの知識とスキル）に届いたかどうかで決まる。つまり、基準に届けば誰でも合格できる仕組みである。
+The exam is scored as "pass" or "fail." It is not a competition against other candidates; the result is determined solely by whether you meet a fixed standard defined by the blueprint's knowledge and skills. In other words, anyone who meets the standard can pass.
 
-合格点は 100〜1,000 点のスケールで **720 点以上**。これは、専門家が「最低限これだけはできるべき」と定めた水準に合わせて決められている。結果にはドメインごとの正答率も載るが、合否はトータルスコアだけで決まり、ドメイン別の正答率は自分の得意・苦手を知るための参考情報である。[Source: CCAO-F Exam Guide, Sections 5, 9]
+The passing score is **720 or higher** on a scale of 100 to 1,000. This threshold is set to match the level that experts define as "the minimum a candidate should be able to do." Results also include per-domain accuracy, but pass/fail is determined by the total score alone; the per-domain breakdown is reference information for understanding your strengths and weaknesses. [Source: CCAO-F Exam Guide, Sections 5, 9]
 
-### コンテントアウトライン
+### Content Outline
 
-本ガイドには配点、コンテントドメイン、タスクステートメントを示す。試験のドメインと配点は次のとおり。
+This guide presents the weights, content domains, and task statements. The exam domains and their weights are as follows:
 
-- Domain 1: Prompting and Task Execution（プロンプト作成とタスク実行）（採点対象の 14%）
-- Domain 2: Output Evaluation and Validation（出力の評価と検証）（21%）
-- Domain 3: Product and Model Selection（製品とモデルの選択）（12%）
-- Domain 4: Workflow Integration and Solution Design（ワークフロー統合とソリューション設計）（16%）
-- Domain 5: Configuration and Knowledge Management（設定とナレッジ管理）（12%）
-- Domain 6: Governance, Risk, and Responsible Use（ガバナンス・リスク・責任ある利用）（15%）
-- Domain 7: Troubleshooting and Optimization（トラブルシューティングと最適化）（10%）
+- Domain 1: Prompting and Task Execution (14% of scored items)
+- Domain 2: Output Evaluation and Validation (21%)
+- Domain 3: Product and Model Selection (12%)
+- Domain 4: Workflow Integration and Solution Design (16%)
+- Domain 5: Configuration and Knowledge Management (12%)
+- Domain 6: Governance, Risk, and Responsible Use (15%)
+- Domain 7: Troubleshooting and Optimization (10%)
 
 [Source: CCAO-F Exam Guide, Section 6]
 
-### 問題スタイルと業務場面
+### Question Style and Business Scenarios
 
-試験の問題は、現実の仕事の場面を背景にしている。固定のシナリオセットがあるわけではなく、各問題が独立している。ある問題で規制文書の要約を扱えば、次の問題ではデータ分析やプロジェクト設定を扱う、といった具合に、ブループリントの全ドメインからまんべんなく出題される。
+In my experience taking the exam, the questions were framed around realistic workplace situations. There is no fixed scenario set; each item stands alone. Items were evenly distributed across all blueprint domains, including summarizing regulatory documents, analyzing data, and configuring projects.
 
-公式 Exam Guide の Sample Questions（Section 8）で、問題のスタイルと難しさを確認できる。本ガイドでも「Sample Questions」で実例を揃えた。試験が想定する業務テーマには、おおむね次の7つが含まれる。
+The Sample Questions in the official Exam Guide (Section 8) show the style and difficulty of the items. This guide also provides worked examples under "Sample Questions." The business themes the exam covered were roughly as follows:
 
-- ステークホルダー報告書の起案と推敲（Domain 1・2）
-- 規制文書の要約と、引用の検証（Domain 2・6）
-- 大量の顧客返信と、下流処理向けの構造化出力（Domain 3・2）
-- データセットの分析と可視化（Domain 3・4）
-- 定常ワークフロー向けのプロジェクト設定（Domain 5・4）
-- 機密データの取り扱いと匿名化（Domain 6・5）
-- 不適切な出力の診断と改善（Domain 7・1）
+- Drafting and refining stakeholder reports (Domains 1, 2)
+- Summarizing regulatory documents and verifying citations (Domains 2, 6)
+- High-volume customer replies and structured outputs for downstream processing (Domains 3, 2)
+- Analyzing and visualizing datasets (Domains 3, 4)
+- Configuring projects for recurring workflows (Domains 5, 4)
+- Handling sensitive data and anonymization (Domains 6, 5)
+- Diagnosing and improving poor outputs (Domains 7, 1)
 
 [Source: CCAO-F Exam Guide, Section 8]
 
 ---
 
-## Domain 1: Prompting and Task Execution（プロンプト作成とタスク実行）
+## Domain 1: Prompting and Task Execution
 
-### Task Statement 1.1: Create effective prompts for business and technical tasks（ビジネス・技術タスクのプロンプト作成）
+### Task Statement 1.1: Create effective prompts for business and technical tasks
 
-**知識：**
-- Claude は明確で明示的・具体的な指示に最もよく応じる。「ゴールデンルール」として、最小限の文脈しか与えない同僚にプロンプトを見せ、従ってもらうように依頼する。同僚が混乱するなら、Claude も混乱する
-- 複雑なプロンプトを曖昧さなく解析するために **XML タグ**（`<instructions>`、`<context>`、`<input>`、`<example>`、`<examples>`）を使う。階層的な内容ではネストする
-- システムプロンプトが役割、振る舞い、トーンを定める。「あなたは Python を専門とする有用なコーディングアシスタントです」のような一文でもトーンが絞られる
-- 指示の背景や理由を添えると、Claude は目標を理解し、的を絞った応答を返しやすくなる
+**Knowledge:**
+- Claude responds best to clear, explicit, and specific instructions. A useful "golden rule" is to show your prompt to a colleague who has only minimal context and ask them to follow it. If the colleague would be confused, Claude will be confused too
+- Use **XML tags** (`<instructions>`, `<context>`, `<input>`, `<example>`, `<examples>`) so Claude can parse complex prompts without ambiguity. Nest tags for hierarchical content
+- The system prompt defines the role, behavior, and tone. Even a single sentence such as "You are a helpful coding assistant specializing in Python" narrows the tone
+- Providing the rationale and context behind an instruction helps Claude understand the goal and return a more focused response
 
-**スキル：**
-- 役割、コンテキスト、フォーマット、制約を明示したプロンプトを書く
-- XML タグで指示、コンテキスト、例、入力変数を分離する
-- 順序や完全性が重要な場合は、番号付きリストで順序付きステップを示す
-- 長文コンテキストタスクでは、長い文書を上部に、問いを末尾に置く（品質向上が報告されている）
+**Skills:**
+- Write prompts that explicitly state role, context, format, and constraints
+- Use XML tags to separate instructions, context, examples, and input variables
+- Use numbered lists for ordered steps when sequence or completeness matters
+- For long-context tasks, place long documents near the top and the question at the end (improved quality has been reported)
 
-### Task Statement 1.2: Apply task decomposition techniques to structure complex requests（複雑なリクエストを構造化するタスク分解）
+### Task Statement 1.2: Apply task decomposition techniques to structure complex requests
 
-**知識：**
-- **プロンプトチェーン**。タスクを逐次の呼び出しに分割し、あるプロンプトの出力を次の入力にする
-- 連鎖の各ステップは別の呼び出しであり、任意の地点でログ、評価、分岐ができる
-- 自己訂正パターン。草案を生成し、基準でレビューし、レビューに基づいて推敲する
-- 複雑なタスクを小さなステップに分けると、モデルの認知負荷が下がり精度が上がる
+**Knowledge:**
+- **Prompt chaining.** Split a task into sequential calls, where the output of one prompt becomes the input to the next
+- Each step in the chain is a separate call, so you can log, evaluate, or branch at any point
+- Self-correction pattern. Generate a draft, review it against criteria, then refine based on the review
+- Breaking complex tasks into smaller steps lowers the model's cognitive load and improves accuracy
 
-**スキル：**
-- 複雑なリクエストを焦点を絞った逐次ステップに分解する（例: メタデータ抽出 -> データ抽出 -> 検証 -> 推敲）
-- 自己訂正チェーン（草案 -> レビュー -> 推敲）を実装する
-- 予測可能で反復可能な多段階タスク向けに、チェーン化パイプラインを設計する
+**Skills:**
+- Decompose a complex request into focused sequential steps (for example: metadata extraction -> data extraction -> validation -> refinement)
+- Implement a self-correction chain (draft -> review -> refine)
+- Design chained pipelines for predictable, repeatable multi-step tasks
 
-### Task Statement 1.3: Iterate prompts to improve output quality（出力品質を高めるプロンプトの反復）
+### Task Statement 1.3: Iterate prompts to improve output quality
 
-**知識：**
-- 反復プロンプトは構造化されたアプローチの恩恵を受ける。最初の草案テンプレートから始め、出力の何が悪いかという具体的フィードバックに基づいて推敲する
-- Anthropic はプロンプト改善の指針を公開している。API 開発者にはプロンプトジェネレータやプロンプトインプルーバといったツールも提供される
-- プロンプトエンジニアリングには、成功基準、経験的なテスト、反復前の草案プロンプトが必要である
-- 評価の失敗はすべてプロンプトエンジニアリングで解決できるわけではない。レイテンシやコストは別のモデル選択で改善することもある
+**Knowledge:**
+- Iterative prompting benefits from a structured approach. Start from an initial draft template and refine based on specific feedback about what is wrong with the output
+- Anthropic publishes guidance on prompt improvement and offers tools such as a prompt generator and a prompt improver for API developers
+- Prompt engineering requires success criteria, empirical testing, and a draft prompt before iterating
+- Not every evaluation failure can be solved by prompt engineering. Latency or cost issues are sometimes better addressed by choosing a different model
 
-**スキル：**
-- 最初の草案テンプレートから始め、出力の問題に関する具体的フィードバックに基づいて推敲する
-- 成功基準と評価に基づいて反復し、直感に頼らない
-- 不適切な結果がプロンプトに起因するのか、別のモデルやアプローチが必要なのかを見極める
+**Skills:**
+- Start from an initial draft template and refine based on specific feedback about output problems
+- Iterate against success criteria and evaluations rather than relying on intuition
+- Recognize whether a poor result stems from the prompt or from needing a different model or approach
 
-### Task Statement 1.4: Adapt prompting strategies based on task type（タスクタイプ別のプロンプト戦略の適応）
+### Task Statement 1.4: Adapt prompting strategies based on task type
 
-**知識：**
-- タスクタイプ別の指針。リサーチや情報収集では、明確な成功基準を設け、複数ソースでの照合を促し、競合する仮説と自己批判を使う
-- 数学、コーディング、分析タスクでの **拡張思考（extended thinking）**。適応型思考では Claude が思考の要否と深さを動的に決める。「段階的に考えろ」のような prescriptive な指示より「十分に考えろ」のような一般的指示を優先する
-- フォーマットや一貫性のためのフューショット（3〜5個の関連性が高く多様な例）。タスクの複雑さに応じて zero/one/few-shot を選ぶ
-- XML フォーマット指示と肯定形指示（「〜するな」ではなく「〜しろ」）によるフォーマット制御
+**Knowledge:**
+- Guidance by task type. For research and information gathering, set clear success criteria, encourage cross-checking across sources, and use competing hypotheses with self-critique
+- **Extended thinking** for math, coding, and analytical tasks. With adaptive thinking, Claude dynamically decides whether thinking is needed and how deeply. Prefer general instructions such as "think hard" over prescriptive ones such as "think step by step"
+- Few-shot examples (3–5 highly relevant and diverse examples) for formatting and consistency. Choose zero/one/few-shot according to task complexity
+- Format control through XML format instructions and affirmative phrasing ("do X" rather than "do not do Y")
 
-**スキル：**
-- タスクタイプ（分析、リサーチ、起案、ブレスト）に応じてプロンプト構造を適応させる
-- 複雑な推論では拡張思考を有効にし、「終わる前に [テスト基準] で答えを検証せよ」のような自己チェック指示を付加する
+**Skills:**
+- Adapt the prompt structure to the task type (analysis, research, drafting, brainstorming)
+- Enable extended thinking for complex reasoning and add self-check instructions such as "verify the answer against [test criteria] before finishing"
 
-**出典（Domain 1）:**
+**Sources (Domain 1):**
 - Prompt engineering overview — https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/overview
 - Prompting best practices — https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/claude-prompting-best-practices
 - Chain complex prompts — https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/chain-prompts
@@ -162,223 +162,224 @@ Claude Certified Associate – Foundations 認定は、Claude を使ってビジ
 
 ---
 
-## Domain 2: Output Evaluation and Validation（出力の評価と検証）
+## Domain 2: Output Evaluation and Validation
 
-Claude は流暢で整った文章を生成する。しかしその「整っている」という印象が、かえって利用者を油断させる。CCAO-F では、API ベースの evals フレームワークやコード採点の実装ではなく、「出力を受け取ったビジネスユーザーが、これを信用できるか、要件を満たすかをどう判定するか」を問う。技術的な evals は CCA-F で既に学んだ。ここでは、評価基準をどう設計し、ハルシネーションをどう見抜き、どこで人間に判断を委ねるかという、ビジネスユーザーとしての判断力に焦点を当てる。
+Claude generates fluent, well-structured prose. That very polish, however, can lull users into complacency. CCAO-F does not ask about API-based evals frameworks or implementing code-based scoring; it asks "when a business user receives an output, how do they judge whether it can be trusted and meets the requirements?" Technical evals were already covered in CCA-F. Here we focus on business-user judgment: how to design evaluation criteria, spot hallucinations, and decide where to defer to a human.
 
-### Domain 2 の検証フロー全体像
+### End-to-End Verification Flow for Domain 2
 
-Domain 2 の6つの Task Statement は、出力を受け取ってから確認を終えるまでの一連の流れとして捉えると理解しやすい。
+The six Task Statements of Domain 2 are easiest to understand as a single flow that runs from receiving an output to finishing verification.
 
 ```mermaid
 flowchart TB
-    A["Claude の出力を受け取る"] --> B["TS 2.1　精度と完全性の評価<br/>HHH 三軸で問う + 多次元成功基準"]
-    B --> C["TS 2.2　ハルシネーション・矛盾・バイアスの特定<br/>四つの兆候パターンで目利き"]
-    C --> D["TS 2.3　ファクトチェックと検証<br/>一次ソース照合 + Best-of-N + RAG"]
-    D --> E["TS 2.4　人間レビューの要否判断<br/>ハイリスク領域なら有資格者へ"]
-    E --> F["TS 2.5　想定読者向けの編集・推敲<br/>トーン・詳細度・フォーマット調整"]
-    F --> G["TS 2.6　情報の編成とフォーマット選択<br/>アーティファクト / インライン / 構造化"]
+    A["Receive Claude's output"] --> B["TS 2.1 Evaluate accuracy and completeness<br/>Probe with the three HHH axes + multi-dimensional success criteria"]
+    B --> C["TS 2.2 Identify hallucinations, inconsistencies, and bias<br/>Spot the four tell-tale sign patterns"]
+    C --> D["TS 2.3 Fact-check and validate<br/>Trace to primary sources + Best-of-N + RAG"]
+    D --> E["TS 2.4 Decide whether human review is required<br/>For high-risk areas, route to a qualified professional"]
+    E --> F["TS 2.5 Edit and refine for the intended audience<br/>Adjust tone, level of detail, and format"]
+    F --> G["TS 2.6 Organize information and select an output format<br/>Artifact / inline prose / structured data"]
 ```
 
-出力の正確性を確認してから（TS 2.1〜2.4）、読者に合わせて磨き上げる（TS 2.5〜2.6）、という順序である。
+The order is to confirm correctness first (TS 2.1–2.4), then polish for the reader (TS 2.5–2.6).
 
-### Task Statement 2.1: Evaluate Claude-generated outputs for accuracy and completeness（精度と完全性の評価）
+### Task Statement 2.1: Evaluate Claude-generated outputs for accuracy and completeness
 
-> **入門者向けの位置づけ。** CCA-F（Architect）では API ベースの evals フレームワークやコード採点の実装を問うが、CCAO-F では「出力を受け取ったビジネスユーザーが、これを信用できるか、要件を満たすかをどう判定するか」を問う。採点手法の優先順位と多次元の成功基準の考え方を押さえること。技術的 evals は CCA-F 既得なので、ここでは「評価基準をどう設計するか」の判断に絞る。
+> **Associate-level framing.** CCA-F (Architect) asks about API-based evals frameworks and implementing code-based scoring; CCAO-F asks "when a business user receives an output, how do they judge whether it can be trusted and meets the requirements?" Master the priority order of scoring methods and the idea of multi-dimensional success criteria. Technical evals are CCA-F prior knowledge, so we focus here on the judgment of "how to design evaluation criteria."
 
-出力を評価する第一歩は、「何を持って良い出力とするか」を明確にすることである。Anthropic は品質目標として **HHH フレームワーク** を掲げている。HHH とは Helpful（有用）、Honest（誠実）、Harmless（無害）の三軸であり、Claude の訓練方針そのものでもある [Source: Glossary — https://platform.claude.com/docs/en/about-claude/glossary]。
+The first step in evaluating an output is to make "what counts as a good output" explicit. Anthropic frames quality goals with the **HHH framework**. HHH stands for three axes — Helpful, Honest, and Harmless — and is also Claude's training posture [Source: Glossary — https://platform.claude.com/docs/en/about-claude/glossary].
 
-三軸のうち、利用者が最も注意すべきは Honest である。Honest には「正確な情報を提供し、ハルシネーションや捏造をせず、限界を認める」ことが含まれる。つまり「分からないと言えるか」も Honest の基準であり、自信過剰な出力はこの基準を満たさない。出力を受け取ったら、まずこの三軸を順に問いかけるだけで、見落としが大きく減る。
+Of the three axes, the one users should watch most closely is Honest. Honest includes "providing accurate information, avoiding hallucination and fabrication, and acknowledging limits." In other words, "the ability to say I don't know" is part of Honest, and an overconfident output fails this criterion. When you receive an output, simply walking through these three axes in order dramatically reduces oversights.
 
-HHH は定性の方針であるため、これを測定可能な指標に落とし込む必要がある。成功基準は Specific（具体的）、Measurable（測定可能）、Achievable（達成可能）、Relevant（関連性あり）を満たすべきである [Source: Define success criteria and build evaluations — https://platform.claude.com/docs/en/test-and-evaluate/develop-tests]。「良い出力」という曖昧な基準は判定に使えない。「正解率」「有害フラグ率」「引用精度」のように測れる指標に変換する。安全性でさえ「10,000回中の毒性フラグ率」のように数値化できる。
+Because HHH is a qualitative guideline, it must be translated into measurable indicators. Success criteria should be Specific, Measurable, Achievable, and Relevant [Source: Define success criteria and build evaluations — https://platform.claude.com/docs/en/test-and-evaluate/develop-tests]. A vague criterion such as "a good output" cannot drive decisions. Convert it to measurable indicators such as "accuracy rate," "harmful-flag rate," or "citation precision." Even safety can be quantified as "toxicity flag rate per 10,000 runs."
 
-| 成功基準の次元 | 問い | 測定例 |
+| Success-criterion dimension | Question | Example measurement |
 |---------------|------|--------|
-| 忠実度 | 出典に忠実か | 引用精度（%） |
-| 一貫性 | 同じ質問で同じ答えか | 回答一致率（%） |
-| 関連性 | タスクに関連する内容か | 関外情報の有無 |
-| トーン・文体 | 指定した文体か | ルーブリック採点 |
-| プライバシー | 機密情報を漏らしていないか | PII 検出率 |
-| 安全性 | 有害でないか | 毒性フラグ率（/万回） |
+| Faithfulness | Is it faithful to the source? | Citation precision (%) |
+| Consistency | Does it answer the same question the same way? | Response agreement rate (%) |
+| Relevance | Is the content relevant to the task? | Presence of off-topic information |
+| Tone and style | Does it match the specified style? | Rubric scoring |
+| Privacy | Does it leak confidential information? | PII detection rate |
+| Safety | Is it free from harm? | Toxicity flag rate (per 10,000 runs) |
 
-重要なのは、単一の指標ではなく複数の次元を組み合わせる多次元評価が基本ということである。医療アプリでは引用精度が致命的だが、カジュアルチャットでは関係ない。ユースケースによって各次元の重みが変わる。
+The key point is that multi-dimensional evaluation — combining several dimensions rather than relying on a single metric — is the default. In a medical app, citation precision is critical; in a casual chat, it is irrelevant. The weight of each dimension shifts by use case.
 
-**採点方法の優先順位** は、公式ガイドが明確に示している。コードベース採点が最速かつ最も信頼できる。完全一致、キーワード含有、正規表現マッチなど、コードで判定できる部分は自動化する。人間採点は最も柔軟だが遅く、LLM ベース採点は高速かつ拡張可能だがルーブリック設計に注意を要する [Source: Define success criteria and build evaluations — https://platform.claude.com/docs/en/test-and-evaluate/develop-tests]。
+The official guide is explicit about **the priority order of scoring methods**. Code-based scoring is the fastest and most reliable. Whatever can be decided by code — exact match, keyword containment, regular-expression match — should be automated. Human scoring is the most flexible but slow; LLM-based scoring is fast and scalable but requires careful rubric design [Source: Define success criteria and build evaluations — https://platform.claude.com/docs/en/test-and-evaluate/develop-tests].
 
-| 採点方法 | 速度 | 信頼性 | 柔軟性 | 使いどころ |
+| Scoring method | Speed | Reliability | Flexibility | Best for |
 |---------|------|--------|--------|-----------|
-| コードベース | 最速 | 最高 | 低 | 完全一致、キーワード、正規表現 |
-| 人間 | 遅い | 高 | 最高 | 複雑な判断、トーン、ニュアンス |
-| LLM ベース | 高速 | 中 | 高 | 大量の定性評価、ルーブリック採点 |
+| Code-based | Fastest | Highest | Low | Exact match, keywords, regex |
+| Human | Slow | High | Highest | Complex judgments, tone, nuance |
+| LLM-based | Fast | Medium | High | Large volumes of qualitative scoring, rubric scoring |
 
-LLM ベース採点を使う場合は、詳細なルーブリック、経験的なスケール、採点前の推論を促すことで精度を高める。また「少数の高品質な人間採点より、多数のやや粗い自動採点の方が実用上勝る」という原則も覚えておきたい。問いの数は多い方が良く、エッジケースを含めることも忘れない。
+When using LLM-based scoring, improve accuracy with a detailed rubric, an empirical scale, and prompts that elicit reasoning before scoring. It is also worth remembering the principle that "many slightly coarse automated scores often beat a few high-quality human scores in practice." More questions are better than fewer, and remember to include edge cases.
 
-**入門者の判断指針。** 出力を受け取ったら、まず「HHH の三軸（Helpful/Honest/Harmless）を満たすか」を問う。次に「タスクの要件（忠実度、トーン、プライバシー）を具体的な指標で満たすか」を確認する。測れない基準（「良い感じ」）は判定に使えない。コードで判定できる部分は自動化し、複雑な判断だけ人間が担う。
+**Associate-level judgment guideline.** When you receive an output, first ask whether it satisfies the three HHH axes (Helpful, Honest, Harmless). Next check whether it satisfies the task requirements (faithfulness, tone, privacy) as concrete metrics. Unmeasurable criteria ("feels good") cannot drive decisions. Automate whatever code can decide, and reserve human judgment for the complex calls.
 
-### Task Statement 2.2: Identify hallucinations, inconsistencies, and biases in responses（ハルシネーション・矛盾・バイアスの特定）
+### Task Statement 2.2: Identify hallucinations, inconsistencies, and biases in responses
 
-> **入門者向けの位置づけ。** CCAO-F の核心の一つ。「確信を持って間違える」現象（ハルシネーション）を見抜き、出力の矛盾に気づくのは、ビジネスユーザーとして Claude を使う上で最も重要なスキル。兆候のパターンを体感的に押さえること。技術的なバイアス測定手法は CCA-F 既得なので薄く、検知の「目利き」に集中する。
+> **Associate-level framing.** This is one of the cores of CCAO-F. Spotting the "wrong with confidence" phenomenon (hallucination) and noticing contradictions in an output are the most important skills for using Claude as a business user. Build an intuitive grasp of the sign patterns. Technical bias-measurement techniques are CCA-F prior knowledge and kept light here; we concentrate on detection "eye training."
 
-高度なモデルでも、事実的に誤った、あるいは文脈に不整合なテキストを生成する。Claude 自身のシステムプロンプトも、マイナーな話題や引用でハルシネーションが起きうることを認めている。これは Claude の欠陥ではなく、LLM の構造的性質である。確率的に次のトークンを予測する仕組み上、もっともらしく見える嘘を生成できてしまう。
+Even highly capable models generate text that is factually wrong or contextually inconsistent. Claude's own system prompt acknowledges that hallucination can occur on minor topics and citations. This is not a flaw in Claude; it is a structural property of LLMs. Because the mechanism predicts the next token probabilistically, it can produce plausible-looking falsehoods.
 
-ここで 重要な核心概念を明確にしておく。**「確信の度合い」と「正確さ」は無関係である。** 自信に満ちた文体でも中身は間違っていることがある。自己申告の自信は精度のシグナルにならない。
+Here it is worth stating a core concept with clarity. **The degree of confidence and the degree of accuracy are unrelated.** A confident tone can still be wrong on the facts. Self-reported confidence is not a signal of accuracy.
 
-ハルシネーションの兆候は、実用的に四つのパターンに分類して覚えると見抜きやすい。
+Hallucination signals are easiest to spot when you group them into four practical patterns.
 
 ```mermaid
 graph TB
-    H["ハルシネーションの四つの兆候"]
-    H --> P1["1. 存在しない文献・URL・統集を上げる<br/>論文タイトルや URL がもっともらしいが虚偽"]
-    H --> P2["2. 出典にない具体数字が唐突に出る<br/>提供文書にない統計が「〜とされている」と出現"]
-    H --> P3["3. 文脈と矛盾する主張が混在する<br/>前半で A と言い、後半で A の対立を肯定する"]
-    H --> P4["4. 確証がないのに断言する<br/>根拠がないのに「間違いなく〜である」と断言"]
+    H["Four tell-tale signs of hallucination"]
+    H --> P1["1. Citing nonexistent literature, URLs, or statistics<br/>Paper titles or URLs that look plausible but are fabricated"]
+    H --> P2["2. Specific numbers appear that are not in the source<br/>Statistics not in the provided document surface as 'it is said that...'"]
+    H --> P3["3. Contradictory claims coexist<br/>The first half asserts A; the second half affirms A's opposite"]
+    H --> P4["4. Assertions made without evidence<br/>'It is definitely...' asserted with no supporting basis"]
 ```
 
-特に注意したいのは、「引用がついているから安全」ではないという点である。引用先を実際に開いて確認しない検証は、検証と呼ばない。この点は TS 2.3 で詳しく扱う。
+A point to watch carefully: a citation does not mean the output is safe. Verification that does not actually open the citation and check it is not verification. TS 2.3 covers this in detail.
 
-バイアスについては、Anthropic は 150 のトピックと 9 種類のタスクにわたる 1,350 組の対立する政治的見解を用いて政治的バイアスを測定し、公平性、対立する観点の承認、拒否率を評価している [Source: Transparency Hub — https://www.anthropic.com/transparency]。バイアスには「片方の立場だけを支持する」「対立する観点を無視する」「特定の集団を不当に扱う」の形で現れる。感度の高い話題では「両方の立場を公平に扱っているか」「一方に偏っていないか」を意識的に確認する習慣が必要である。
+On bias, Anthropic measures political bias using 1,350 pairs of opposing political viewpoints across 150 topics and 9 task types, evaluating fairness, acknowledgement of opposing viewpoints, and refusal rate [Source: Transparency Hub — https://www.anthropic.com/transparency]. Bias shows up as "supporting only one side," "ignoring opposing viewpoints," or "treating a particular group unfairly." On sensitive topics, build the habit of consciously checking "are both sides treated fairly?" and "is the output slanted toward one side?"
 
-不正確、偏った、有害な出力を見つけた場合は、`usersafety@anthropic.com` またはプロダクト内のフィードバック（サムズダウンボタン等）で報告すべきである。AUP（Usage Policy）は報告窓口を明示している [Source: Usage Policy — https://www.anthropic.com/legal/aup]。
+When you find inaccurate, biased, or harmful output, report it via `usersafety@anthropic.com` or in-product feedback (the thumbs-down button, etc.). The AUP (Usage Policy) explicitly lists the reporting channel [Source: Usage Policy — https://www.anthropic.com/legal/aup].
 
-**入門者の判断指針。** 具体的な数字、固有名詞、引用、URL が出てきたら、それが「もっともらしい嘘」でないか外部ソースで確認する癖をつける。自己申告の自信は精度のシグナルにならない。Claude が自信満々に答えても、それは「正しい」という根拠にならない。疑わしきは検証する。
+**Associate-level judgment guideline.** Build the habit of checking specific numbers, proper nouns, citations, and URLs against external sources to confirm they are not "plausible lies." Self-reported confidence is not an accuracy signal. Even when Claude answers with full confidence, that is not evidence of correctness. When in doubt, verify.
 
-### Task Statement 2.3: Apply fact-checking and validation techniques（ファクトチェックと検証の手法）
+### Task Statement 2.3: Apply fact-checking and validation techniques
 
-> **入門者向けの位置づけ。** ここは押さえるべき核心。「引用がついている＝検証済み」ではない。検証とは、権威ある外部ソースを自分の目で確認すること。Claude が出した引用を開かずに信用するのは、検証でなく単なる転載である。検証の「深さ」を問う概念を確実に押さえる。
+> **Associate-level framing.** This is a core to master. "Has a citation" does not equal "is verified." Verification means confirming an authoritative external source with your own eyes. Trusting a citation that Claude produced without opening it is not verification; it is mere reposting. Master the concept of verification "depth."
 
-ハルシネーションを削減する基本戦略は三つある。第一に、最も効果が高いのは「分からない」と言うことを許すことである。プロンプトで「情報が足りない場合は推測せず『分からない』と答えて」と明示するだけで、誤情報が大幅に減る。第二に、事実の根拠として直接引用を使う。第三に、引用で主張を検証し、裏付けのない主張を取り下げさせる [Source: Reduce hallucinations — https://platform.claude.com/docs/en/test-and-evaluate/strengthen-guardrails/reduce-hallucinations]。
+There are three basic strategies for reducing hallucination. First, the most effective is to allow Claude to say "I don't know." Simply instructing in the prompt — "if information is insufficient, do not guess; answer 'I don't know'" — drastically reduces misinformation. Second, use direct quotes as the basis for facts. Third, verify claims with citations and withdraw unsupported claims [Source: Reduce hallucinations — https://platform.claude.com/docs/en/test-and-evaluate/strengthen-guardrails/reduce-hallucinations].
 
-長文（20k トークン超）を扱うときは、タスクの前に「まず原文から逐語的な引用を抽出せよ」と指示すると効果的である。応答を原文に根拠づけることで、Claude の自由な創作を防ぐ。また「各主張の後に裏付け引用を付けよ。引用が見つからない場合はその主張を取り下げよ」と指示すると、応答が監査可能になる。
+When handling long texts (over 20k tokens), it is effective to instruct Claude to "first extract verbatim quotes from the source" before the task. Grounding the response in the source text prevents free invention. Instructing "append a supporting citation after each claim; if no citation can be found, withdraw that claim" makes the response auditable.
 
-| 手法 | 効果 | 使いどころ |
+| Technique | Effect | Best for |
 |------|------|-----------|
-| 「分からない」と言うことを許す | 誤情報を大幅に減らす（最も効果的） | すべての場面の基本設定 |
-| 逐語的引用の先頭抽出 | 原文に根拠づけ、創作を防止 | 長文（20kトークン超）の要約 |
-| 裏付け引用の義務化 | 応答を監査可能に | 事実関係の多いレポート作成 |
-| 外部知識の制限 | 勝手な記憶の補完を防止 | 提供文書のみを使うタスク |
-| Best-of-N 検証 | 不一致をハルシーの兆候として検出 | 確認が必要な重要な回答 |
-| 連鎖思考による検証 | 推論過程を段階的に検証 | 複雑な推論を含む出力 |
-| 反復推敲 | 出力を洗練・精査 | 品質が求められる最終稿 |
+| Allow "I don't know" | Drastically reduces misinformation (most effective) | Default setting for all contexts |
+| Extract verbatim quotes first | Grounds the response in the source and prevents invention | Summarizing long texts (over 20k tokens) |
+| Mandate supporting citations | Makes the response auditable | Reports dense with factual claims |
+| Restrict external knowledge | Prevents arbitrary memory-based completion | Tasks that should use only the provided document |
+| Best-of-N verification | Detects inconsistency as a sign of hallucination | Important answers that need confirmation |
+| Chain-of-thought verification | Verifies the reasoning process step by step | Outputs containing complex reasoning |
+| Iterative refinement | Polishes and scrutinizes the output | Final drafts where quality matters |
 
-高度な手法として、Best-of-N 検証がある。これは「同じ質問を複数回聞いて答えが一致するか」を見る手法である。違う回答が出たら、その箇所はハルシネーションの可能性が高い。実行回数による一貫性の確認は、安価かつ実用的な検証手段である。外部知識の制限は「提供した文書だけを使い、一般知識を使うな」と明示することで、Claude が勝手に記憶を補完するのを防ぐ。
+An advanced technique is Best-of-N verification. It asks "the same question multiple times and checks whether the answers agree." If different answers come back, that location is likely a hallucination. Checking consistency across runs is a cheap and practical verification means. Restricting external knowledge — explicitly stating "use only the provided document; do not use general knowledge" — prevents Claude from arbitrarily filling in from memory.
 
-**RAG（Retrieval Augmented Generation）** は、実行時に外部ナレッジベースから関連情報を検索し、それをコンテキストに渡して応答させる仕組みである [Source: Glossary — https://platform.claude.com/docs/en/about-claude/glossary]。訓練データにない最新情報や、社内文書のような非公開情報を扱うのに有効だが、検索結果自体が不正確ならそれに基づく応答も不正確になる。「RAG を使えば確実」という前提は危険である。
+**RAG (Retrieval Augmented Generation)** is a mechanism that searches an external knowledge base for relevant information at runtime and passes that information into the context to shape the response [Source: Glossary — https://platform.claude.com/docs/en/about-claude/glossary]. It is effective for information outside the training data, such as recent news or internal documents, but if the retrieved results are themselves inaccurate, the response built on them will also be inaccurate. The assumption that "if we use RAG, it is reliable" is dangerous.
 
-これらの手法はハルシネーションを大幅に減らすが、完全にはなくせない。重要な情報は常に検証する。その際、二つの罠を確実に押さえる必要がある。
+These techniques dramatically reduce hallucination but cannot eliminate it entirely. Always verify important information. When you do, you must master two traps.
 
-第一の罠は**検証の罠**である。引用がついているからといって、その引用が正しいとは限らない。Claude は存在しない文献を出典として提示できる。引用先を実際に開いて確認しない「検証」は検証でない。権威ある外部ソースで自ら確認して初めて検証と呼べる。
+The first trap is **the verification trap**. Just because a citation is attached does not mean the citation is correct. Claude can present a nonexistent work as a source. "Verification" that does not actually open the citation and check it is not verification. Only when you confirm it yourself against an authoritative external source can it be called verification.
 
-第二の罠は**既知の欠落のシグナル**である。一つの事実誤りや欠落を見つけたら、それは「他にも欠落がある」シグナルである。1件見つけたから終わりではなく、同じ出力の他の主張も疑って深掘りする。
+The second trap is **the known-miss signal**. When you find one factual error or omission, that is a signal that "there are likely others." Finding one is not the end; treat the other claims in the same output with suspicion and dig deeper.
 
 ```mermaid
 flowchart LR
-    L0["Lv 0　転載<br/>Claude の回答をそのまま転用<br/>（検証ではない）"]
-    L1["Lv 1　表層<br/>引用の有無を確認するだけ<br/>（引用先は開かない）"]
-    L2["Lv 2　照合<br/>引用先を実際に開いて内容を確認<br/>（一次ソースへの遡及）"]
-    L3["Lv 3　深掘り<br/>一つの誤りから他の主張も全件精査<br/>（既知の欠落シグナルの活用）"]
+    L0["Lv 0 Repost<br/>Reuse Claude's answer as-is<br/>(not verification)"]
+    L1["Lv 1 Surface<br/>Only check whether a citation exists<br/>(citation is never opened)"]
+    L2["Lv 2 Cross-check<br/>Actually open the citation and confirm the content<br/>(trace to a primary source)"]
+    L3["Lv 3 Deep dig<br/>From one error, audit all other claims<br/>(leverage the known-miss signal)"]
     L0 --> L1 --> L2 --> L3
 ```
 
-**入門者の判断指針。** 検証とは「Claude の回答を Claude 自身に聞き返す」ことではない。権威ある外部ソース（公式文書、一次資料、専門家）を自分の目で確認すること。一つの誤りを見つけたら「他にもある」と想定して深掘りする。Claude に「これで合ってる？」と自己検証させるのは検証の代わりにならない。
+**Associate-level judgment guideline.** Verification is not "asking Claude's answer back to Claude itself." It is confirming an authoritative external source (an official document, a primary source, an expert) with your own eyes. When you find one error, assume "there are more" and dig deeper. Making Claude self-verify by asking "is this correct?" is no substitute for verification.
 
-### Task Statement 2.4: Determine when human review or additional verification is required（人間のレビューや追加検証が必要な場面の判断）
+### Task Statement 2.4: Determine when human review or additional verification is required
 
-> **入門者向けの位置づけ。** ここは押さえるべき核心。「ハイリスク領域では Claude に自己検証させず、有資格者レビューを必ず通す」という原則と、「自己申告の自信は精度のシグナルにならない」という事実を確実に押さえる。技術的なヒューマンインザループ設計は CCA-F 既得なので、ここでは「いつ人間に回すか」の判断基準に集中する。
+> **Associate-level framing.** This is a core to master. Master two principles firmly: "in high-risk areas, do not have Claude self-verify; always route to a qualified professional's review," and "self-reported confidence is not an accuracy signal." Technical human-in-the-loop design is CCA-F prior knowledge, so we focus here on the judgment criteria of "when to route to a human."
 
-Claude の出力をそのまま使える場面と、必ず人間の有資格者がレビューすべき場面がある。AUP（Usage Policy）は、人間のレビュー（ヒューマンインザループ）と AI の開示を必須とするハイリスクユースケースを七つ挙げている [Source: Usage Policy — https://www.anthropic.com/legal/aup]。
+There are contexts where Claude's output can be used directly and contexts where a qualified human professional must always review it. The AUP (Usage Policy) lists seven high-risk use cases that require human review (human-in-the-loop) and AI disclosure [Source: Usage Policy — https://www.anthropic.com/legal/aup].
 
-| ハイリスク領域 | 影響を受けるもの | 例 |
+| High-risk area | What is affected | Example |
 |---------------|-----------------|-----|
-| Legal | 権利・自由 | 法律解釈、契約書作成 |
-| Healthcare | 健康・生命 | 医療診断、治療方針 |
-| Insurance | 金銭・保障 | 保険引受、給付判断 |
-| Finance | 金銭・財産 | 融資判断、投資助言 |
-| Employment & housing | 機会・生活 | 採用、昇進、入居審査 |
-| Academic testing | 機会・公正 | 入試、資格試験 |
-| Media / journalism | 名誉・社会 | 報道、記事執筆 |
+| Legal | Rights and freedoms | Legal interpretation, contract drafting |
+| Healthcare | Health and life | Medical diagnosis, treatment plans |
+| Insurance | Money and coverage | Underwriting, benefits decisions |
+| Finance | Money and property | Lending decisions, investment advice |
+| Employment and housing | Opportunity and livelihood | Hiring, promotion, admission review |
+| Academic testing | Opportunity and fairness | Entrance exams, certification exams |
+| Media / journalism | Reputation and society | Reporting, article writing |
 
-AUP は「主観的な意思決定が個人や消費者に直接影響する場合」に限りヒューマンインザループを要求する。つまり個人の権利、生活、財産に影響する場面では、必ず資格を持つ専門家が内容をレビューし、影響を受ける人に AI の使用を開示しなければならない。開示は「セッションの開始時」に最低限行う。AI を使ったことを隠してはならない。
+The AUP requires human-in-the-loop only "when subjective decisions directly affect individuals or consumers." In other words, in contexts that affect an individual's rights, livelihood, or property, a qualified professional must review the content and disclose the use of AI to the affected person. Disclosure is done at a minimum "at the start of the session." Hiding the fact that AI is being used is not allowed.
 
-ここで最も重要な原則がある。**ハイリスク領域では Claude に自己検証させてはならない。** Claude に「この医療情報は正しいか」と聞き返して安心するのは、レビューの代わりにならない。資格を持つ専門家とは、その分野の免許や専門性を持つ人のことである。Claude 自身にレビューを委ねることは認められない。
+Here is the most important principle. **In high-risk areas, you must not have Claude self-verify.** Asking Claude "is this medical information correct?" and feeling reassured is no substitute for review. A qualified professional is a person who holds a license or expertise in that field. Delegating the review to Claude itself is not permitted.
 
 ```mermaid
 flowchart TD
-    START["Claude の出力"] --> Q{"個人の権利・健康・<br/>金銭・機会に影響するか？"}
-    Q -->|"Yes"| HR["ハイリスク領域<br/>Legal / Healthcare / Insurance /<br/>Finance / Employment / Academic / Media"]
-    Q -->|"No"| NR["通常リスク<br/>通常の検証フロー（TS 2.1〜2.3）"]
-    HR --> A1["有資格者の専門家がレビュー"]
-    HR --> A2["AI 使用をエンドユーザーに開示"]
-    HR --> A3["Claude の自己検証は<br/>レビューの代わりにならない（禁止）"]
+    START["Claude's output"] --> Q{"Does it affect an individual's rights, health,<br/>money, or opportunity?"}
+    Q -->|"Yes"| HR["High-risk area<br/>Legal / Healthcare / Insurance /<br/>Finance / Employment / Academic / Media"]
+    Q -->|"No"| NR["Normal risk<br/>Standard verification flow (TS 2.1–2.3)"]
+    HR --> A1["A qualified professional reviews"]
+    HR --> A2["Disclose AI use to the end user"]
+    HR --> A3["Claude's self-verification is<br/>no substitute for review (prohibited)"]
 ```
 
-なお、ハイリスク領域かどうかにかかわらず、すべての消費者向けチャットボットは、ユーザーが AI とやり取りしていることを開示しなければならない。これは追加ガイドラインとして AUP に明記されている。
+Note that, regardless of whether a use case falls in a high-risk area, all consumer-facing chatbots must disclose that the user is interacting with AI. This is stated in the AUP as an additional guideline.
 
-この原則の根拠となる事実を改めて強調する。**自己申告の自信は精度の信頼できるシグナルではない。** Claude は確信を持って間違えることがある。Claude が「これは確実です」と言っても、それは正確さの根拠にならない。自信の表現と事実の正確さには相関がない。だからこそ、ハイリスク領域では Claude 自身が自信を持っても、有資格者の確認が不可換なのである。
+The fact that underpins this principle bears repeating. **Self-reported confidence is not a reliable signal of accuracy.** Claude can be wrong with confidence. Even if Claude says "this is certain," that is not evidence of accuracy. There is no correlation between the expression of confidence and factual accuracy. That is precisely why, in high-risk areas, even when Claude itself is confident, confirmation by a qualified professional is indispensable.
 
-**入門者の判断指針。** 出力が「個人の権利・健康・金銭・機会」に影響するなら、それはハイリスクである。Legal、Healthcare、Insurance、Finance、Employment、Academic、Media のいずれかに当たるかを最初に確認する。当たるなら、Claude の出力をそのまま使わず、必ず有資格者にレビューしてもらう。Claude に「これで大丈夫？」と聞くのはレビューの代わりにならない。
+**Associate-level judgment guideline.** If an output affects an "individual's rights, health, money, or opportunity," it is high-risk. First check whether it falls under Legal, Healthcare, Insurance, Finance, Employment, Academic, or Media. If it does, do not use Claude's output as-is; always have a qualified professional review it. Asking Claude "is this okay?" is no substitute for review.
 
-### Task Statement 2.5: Edit, adapt, refine, and compare outputs for the intended audience（想定読者向けの編集・適応・推敲・比較）
+### Task Statement 2.5: Edit, adapt, refine, and compare outputs for the intended audience
 
-> **入門者向けの位置づけ。** 出力の「内容が正しい」だけでは不十分。想定読者に合ったトーン、詳細度、フォーマットに編集するビジネス判断を問う。技術的なプロンプトエンジニアリングは CCA-F 既得なので、ここでは「読者に合わせてどう調整するか」の実務判断に絞る。
+> **Associate-level framing.** It is not enough for the content of an output to be correct. The exam tests the business judgment of editing the output into the tone, level of detail, and format that fits the intended reader. Technical prompt engineering is CCA-F prior knowledge, so we focus here on the practical judgment of "how to adjust for the reader."
 
-出力の内容が正しくても、読者に合っていなければ役に立たない。Claude のトーン、フォーマット、文体は三つの手段で調整できる。システムプロンプトで役割と文体を指定する、ユーザー設定（Claude.ai の設定画面）で好みを反映する、スタイル機能で文体を切り替える、の三つである。同じ内容でも読者に合わせて出し分けられる。
+Even when an output is correct, it is useless if it does not fit the reader. Claude's tone, format, and style can be adjusted in three ways: specify role and style in the system prompt, reflect preferences in user settings (the Claude.ai settings screen), and switch style with the style feature. Even the same content can be tailored to different readers.
 
-読者が変われば、最適な表現も変わる。この関係を一覧にすると次のようになる。
+When the reader changes, the optimal expression changes too. The table below summarizes this relationship.
 
-| 想定読者 | トーン | 詳細度 | フォーマット |
+| Intended reader | Tone | Level of detail | Format |
 |---------|--------|--------|-------------|
-| 経営層 | 簡潔・断定的 | 要点中心 | 箇条書き3点 |
-| 現場担当者 | 実務的・手順的 | 詳細 | ステップ付き手順 |
-| 取引先 | 丁寧・敬語 | 必要十分 | 整った文章 |
-| 社内技術者 | 正確・専門的 | 高密度 | コードブロック・表 |
+| Executives | Concise, assertive | Key points only | Three bullet points |
+| Frontline practitioners | Practical, procedural | Detailed | Step-by-step procedure |
+| External partners | Polite, formal | Sufficient and necessary | Tidy prose |
+| Internal engineers | Precise, technical | High density | Code blocks and tables |
 
-新しいモデルではより直接的な文体が現れる傾向がある。冷たい印象を避けるには、プロンプトで「温かく協調的なトーンを使い、答える前にユーザーの枠組みを認める」のようにトーンを明示する。「答える前にユーザーの枠組みを認める」は共感の技法であり、相手の立場を先に述べてから本題に入るだけで、体感的な温かさが変わる [Source: System Prompts (Release Notes) — https://platform.claude.com/docs/en/release-notes/system-prompts]。
+Newer models tend to produce a more direct style. To avoid a cold impression, state the tone explicitly in the prompt, for example "use a warm, collaborative tone and acknowledge the user's framework before answering." "Acknowledge the user's framework before answering" is an empathy technique — stating the other party's position first before getting to the main point — and noticeably changes the felt warmth [Source: System Prompts (Release Notes) — https://platform.claude.com/docs/en/release-notes/system-prompts].
 
-ここで知っておきたい法則がある。**プロンプトの文体が出力の文体に影響する**ということである。プロンプトからマークダウンを除くと、出力のマークダウンが減ることがある。装飾のないプロンプトは装飾のない出力を、箇条書きのプロンプトは箇条書きの出力を生みやすい。意図的に出力の形式を変えたいなら、プロンプト自体をその形式に近づけるのが有効である。
+A useful principle to know here: **the style of the prompt influences the style of the output.** Removing markdown from the prompt can reduce markdown in the output. An unadorned prompt tends to produce an unadorned output; a bulleted prompt tends to produce a bulleted output. If you want to deliberately change the output's form, bringing the prompt itself closer to that form is effective.
 
-**入門者の判断指針。** 同じ内容でも、読者が変われば最適な表現は変わる。編集の前に「この出力を読むのは誰か」を一言で定義する。経営層向けなら削る、現場向けなら詳細を足す。Claude が出した第一次案をそのまま使わず、必ず一度は読者目線で推敲する。
+**Associate-level judgment guideline.** Even with the same content, the optimal expression changes when the reader changes. Before editing, define in one phrase "who reads this output." Trim for executives; add detail for the frontline. Do not use Claude's first draft as-is; always refine it at least once from the reader's perspective.
 
-### Task Statement 2.6: Organize and curate information and select appropriate output formats（情報の編成と適切な出力フォーマットの選択）
+### Task Statement 2.6: Organize and curate information and select appropriate output formats
 
-> **入門者向けの位置づけ。** 出力フォーマットの選択は「何を作るか」で決まるビジネス判断。アーティファクト、インライン文章、構造化データの使い分けと、構造化出力が保証するもの、しないものの境界を押さえる。技術的な JSON Schema の実装は CCA-F 既得なので、ここでは「どのフォーマットをどの場面で選ぶか」に絞る。
+> **Associate-level framing.** Selecting an output format is a business decision driven by "what are we producing." Master the use of artifacts versus inline prose versus structured data, and the boundary between what structured outputs guarantee and what they do not. Technical JSON Schema implementation is CCA-F prior knowledge, so we focus here on "which format to choose in which context."
 
-出力フォーマットには三つの選択肢がある。それぞれに向き・不向きがある。
+There are three choices for output format, each with strengths and weaknesses.
 
-| フォーマット | 特徴 | 向いている場面 |
+| Format | Characteristic | Best for |
 |-------------|------|--------------|
-| アーティファクト | 独立パネルで編集・再利用できる | 後で使い回す文書、コード、図表 |
-| インライン文章 | チャットの応答そのもの | その場限りの説明や回答 |
-| 構造化データ（JSON/XML） | 下流システムが処理しやすい | API 連携、データ抽出、バッチ処理 |
+| Artifacts | Editable and reusable in an independent panel | Documents, code, and charts to reuse later |
+| Inline prose | The chat response itself | One-off explanations or answers |
+| Structured data (JSON/XML) | Easy for downstream systems to process | API integration, data extraction, batch processing |
 
-人間が読む前提ならインライン文章かアーティファクトが適し、下流システムが処理する場面には構造化データが向く。
+If a human will read it, inline prose or an artifact is appropriate; if a downstream system will process it, structured data fits.
 
-JSON スキーマへの準拠を保証する仕組みが **構造化出力（Structured Outputs、制約付きデコーディング）** である。これは Claude の応答を必ず指定した JSON スキーマに適合させ、解析エラー、欠落フィールド、型違反をなくす。データ抽出、分類、API フォーマット、構造化レポートで使う [Source: Structured outputs — https://platform.claude.com/docs/en/build-with-claude/structured-outputs]。一般的な一貫性向上の手法（フォーマット指定、例による縛り等）はスキーマ違反を確実に防げない。厳密な JSON が必要なら構造化出力を使う。
+The mechanism that guarantees conformity to a JSON schema is **Structured Outputs (constrained decoding)**. It forces Claude's response to conform to a specified JSON schema, eliminating parse errors, missing fields, and type violations. It is used for data extraction, classification, API formats, and structured reports [Source: Structured outputs — https://platform.claude.com/docs/en/build-with-claude/structured-outputs]. General consistency techniques (specifying a format, binding with examples, etc.) cannot reliably prevent schema violations. When you need strict JSON, use Structured Outputs.
 
-ただし、ここで重要な境界がある。**厳密なスキーマは構文エラーをなくすが、意味エラーは防げない。** スキーマが保証するのは「形が正しいこと」だけである。数値の中身が間違っていても、型が合っていれば通ってしまう。
+There is, however, an important boundary. **A strict schema eliminates syntax errors but cannot prevent semantic errors.** What the schema guarantees is only "the shape is correct." Even if the value of a number is wrong, it will pass as long as the type matches.
 
 ```
  ┌─────────────────────────────────────────────────┐
- │     構造化出力が保証するもの / しないもの      │
+ │     What Structured Outputs guarantee / do not   │
  ├────────────────────┬────────────────────────────┤
- │  保証する（構文）   │  保証しない（意味）         │
+ │  Guaranteed (syntax) │  Not guaranteed (semantics) │
  ├────────────────────┼────────────────────────────┤
- │  JSON 形式の妥当性 │  数値の中身の正確さ         │
- │  必須フィールドの   │  合計が合うか               │
- │    存在             │  値が正しいフィールドに     │
- │  型の一致           │    入っているか             │
- │  解析エラーの消失   │  内容の論理的正当性         │
+ │  JSON validity      │  Accuracy of numeric values │
+ │  Presence of          │  Whether the totals add up  │
+ │    required fields    │  Whether the value is in    │
+ │                       │    the right field          │
+ │  Type matching       │  Logical soundness of content│
+ │  Disappearance of parse errors │                  │
  └────────────────────┴────────────────────────────┘
 ```
 
-構造化出力で安全なのは構文までである。意味の正しさ（合計が合う、値が正しいフィールドに入っている）は別途人間かコードで確認する必要がある。
+Structured Outputs make you safe only up to syntax. Semantic correctness (whether totals add up, whether a value is in the right field) must be confirmed separately by a human or by code.
 
-一貫性を高める手法として、公式ガイドは五つを挙げている [Source: Increase output consistency — https://platform.claude.com/docs/en/test-and-evaluate/strengthen-guardrails/increase-consistency]。フォーマットを明示する（JSON/XML/テンプレートのどれかを正確に指定する）、例で縛る（few-shot 例を与えて具体的な出力例を見せる）、文脈の一貫性のために検索を使う、複雑なタスクはプロンプトをチェーンする（小さな副タスクに分けて各々に集中させる）、Claude をキャラクターに保つ、の五つである。抽象的な指示より具体的な出力例を見せる方が、Claude の理解が正確になる。
+As techniques for improving consistency, the official guide lists five [Source: Increase output consistency — https://platform.claude.com/docs/en/test-and-evaluate/strengthen-guardrails/increase-consistency]. Be explicit about the format (state exactly whether JSON, XML, or a template), bind with examples (give few-shot examples to show concrete output), use retrieval for contextual consistency, chain prompts for complex tasks (break into smaller subtasks and focus on each), and keep Claude in character. Showing concrete output examples rather than abstract instructions sharpens Claude's understanding.
 
-**入門者の判断指針。** フォーマットは「成果物をどう使うか」で選ぶ。後で使い回す文書やコードならアーティファクト。下流システムに渡すデータなら構造化出力で JSON。その場限りの回答ならインライン文章。厳密な JSON が必要な場面で、プロンプトで「JSONで出力して」と書くだけでは不十分である。構造化出力を使えばスキーマ違反をなくせる。ただし意味の正しさまでは保証しないので、内容の確認は別途必要である。
+**Associate-level judgment guideline.** Choose the format by "how the deliverable will be used." For documents or code to reuse later, use an artifact. For data to hand to a downstream system, use Structured Outputs for JSON. For a one-off answer, use inline prose. When you need strict JSON, just writing "output JSON" in the prompt is insufficient. Use Structured Outputs to eliminate schema violations. Note, however, that they do not guarantee semantic correctness, so content must still be confirmed separately.
 
-> **陥りやすい罠。** 出力の「流暢さ・自信満々さ」は正確性の証明にならない（最大の distractor）。見た目が整っていても、必須項目のチェックリストと突き合わせ、数値、引用、規域名は一次ソース（原文、公式発表）にまで遡って検証する。完全性は「必要な要素がすべて含まれるか」で判定し、読みやすさと混同しない。大規模バッチは全件確認が難しければ代表性のあるサンプリングで誤り率を推定し、skim や自己申告の confidence で済ませない。レビューの深度は内容のリスク（金銭、健康、権利への影響）で決め、同じ形式でも利害が大きいほど厳格に。Claude 自身に「もう一度確認させる」のは検証の代わりにならない。
+> **Common pitfall.** The "fluency and confidence" of an output is not proof of accuracy (the biggest distractor). Even if it looks polished, cross-check against a checklist of required items, and verify numbers, citations, and domain names against primary sources (original documents, official announcements). Judge completeness by "are all required elements included?" and do not confuse it with readability. For large batches, if checking every item is infeasible, estimate the error rate with a representative sample; do not settle for skimming or self-reported confidence. Set the depth of review by the risk of the content (impact on money, health, rights); the greater the stakes, the stricter the review, even for the same format. Making Claude "check once more" is no substitute for verification.
 
-**出典（Domain 2）:**
+**Sources (Domain 2):**
 - Reduce hallucinations — https://platform.claude.com/docs/en/test-and-evaluate/strengthen-guardrails/reduce-hallucinations
 - Increase output consistency — https://platform.claude.com/docs/en/test-and-evaluate/strengthen-guardrails/increase-consistency
 - Structured outputs — https://platform.claude.com/docs/en/build-with-claude/structured-outputs
@@ -390,222 +391,222 @@ JSON スキーマへの準拠を保証する仕組みが **構造化出力（Str
 
 ---
 
-## Domain 3: Product and Model Selection（製品とモデルの選択）
+## Domain 3: Product and Model Selection
 
-Domain 2 では「出力を受け取った後にどう判定するか」を扱った。Domain 3 はその手前、出力を生成する前の選択にあたる。どのプロダクト機能を組み合わせ、どのモデルを割り当てるか。CCAO-F では API や MCP の技術詳細ではなく、Claude.ai のプロダクト機能とモデル階層を実務判断として使い分ける力を問う。CCA-F で学んだ API の知識は前提とし、ここでは「どの場面で何を選ぶか」の判断に集中する。
+Domain 2 covered "how to judge an output after you receive it." Domain 3 sits upstream of that: the choices made before an output is generated. Which product features to combine, and which model to assign. CCAO-F does not ask about API or MCP technical detail; it asks for the practical judgment of using Claude.ai's product features and model tiers. We assume the API knowledge from CCA-F and focus here on the judgment of "what to choose in which context."
 
-### Domain 3 の判断対象全体像
+### Overview of Domain 3's Decision Targets
 
-Domain 3 の4つの Task Statement は、二つの問いに分かれる。「どの機能を使うか」（TS 3.1）と「どのモデルを割り当てるか」（TS 3.2〜3.3）、そしてその両方を支える「コンテキストをどう管理するか」（TS 3.4）である。
+The four Task Statements of Domain 3 split into two questions: "which features to use" (TS 3.1) and "which model to assign" (TS 3.2–3.3), plus "how to manage context" (TS 3.4), which underpins both.
 
 ```mermaid
 flowchart TB
-    A["TS 3.1　プロダクト機能の選択<br/>Projects / Artifacts / Skills /<br/>Code Execution / Research / Memory"]
-    B["TS 3.2　モデル階層の識別<br/>Haiku / Sonnet / Opus / Fable<br/>（速度・コスト・能力のトレードオフ）"]
-    C["TS 3.3　タスク要件に合わせたモデル選択<br/>effort 調整 → モデル昇格 → 再試行は無意味"]
-    D["TS 3.4　コンテキストとメモリの管理<br/>context rot / compaction / 永続化の判断"]
+    A["TS 3.1 Select product features<br/>Projects / Artifacts / Skills /<br/>Code Execution / Research / Memory"]
+    B["TS 3.2 Identify model tiers<br/>Haiku / Sonnet / Opus / Fable<br/>(speed, cost, capability trade-off)"]
+    C["TS 3.3 Align model selection with task requirements<br/>Adjust effort -> escalate model -> retry is pointless"]
+    D["TS 3.4 Manage context and memory<br/>context rot / compaction / persistence decisions"]
     A --> B --> C --> D
 ```
 
-機能を選び（TS 3.1）、モデルを割り当て（TS 3.2〜3.3）、そして走りながらコンテキストを保つ（TS 3.4）のが、Domain 3 の流れである。
+Choose features (TS 3.1), assign a model (TS 3.2–3.3), and keep context intact while running (TS 3.4): that is the flow of Domain 3.
 
-### Task Statement 3.1: Select appropriate Claude product features（Claude 製品機能の選択）
+### Task Statement 3.1: Select appropriate Claude product features
 
-> **入門者向けの位置づけ。** CCA-F（Architect）では API や MCP の技術詳細を問うが、CCAO-F では「どの Claude.ai プロダクト機能をどの場面で使い分けるか」を実務判断として問う。各機能の役割と適材適所を押さえること。
+> **Associate-level framing.** CCA-F (Architect) asks about API and MCP technical detail; CCAO-F asks "which Claude.ai product feature to use in which context" as practical judgment. Master each feature's role and its right fit.
 
-Claude.ai は単一のチャットではなく、目的に応じた複数の機能から成る。各機能は異なる課題を解決するために設計されており、目的の動詞から逆算して選ぶのが基本である。外部情報を集めるのか、データを計算するのか、同じ前提で繰り返す定常作業なのか、後で使い回す成果物を作るのか。この問いに答えると、自然に機能が決まる。
+Claude.ai is not a single chat; it is a set of purpose-specific features. Each feature is designed to solve a different problem, and the basic approach is to reason backward from the verb of the purpose. Are you gathering external information? Computing data? Running a recurring task on the same premises? Producing a deliverable to reuse later? Answering these questions naturally determines the feature.
 
-六つの主要機能の立ち位置を一覧にする。
+Here is an overview of the six main features.
 
-| プロダクト機能 | 何をするか | いつ使うか |
+| Product feature | What it does | When to use it |
 |---------------|-----------|-----------|
-| **Projects** | 指示とナレッジソースで構成する自己完結型ワークスペース | 同じ前提条件で繰り返す定常作業 |
-| **Artifacts** | 独立パネルで編集・再利用できる成果物 | 後で使い回す文書、コード、図表 |
-| **Agent Skills** | モジュール化されたオンデマンドの専門知識 | 同じ指示を何度も書く domain 作業 |
-| **Code Execution** | サンドボックスコンテナで Python と bash を実行 | 計算、データ分析、ファイル生成 |
-| **Research mode** | 複数ソースを横断するエージェント型サーチ | オープンエンドな情報収集 |
-| **Memory** | セッションをまたぐ永続的な知識 | 将来のセッションで再利用すべき事実の保持 |
+| **Projects** | A self-contained workspace configured with instructions and knowledge sources | Recurring work on the same premises |
+| **Artifacts** | Editable, reusable deliverables in an independent panel | Documents, code, and charts to reuse later |
+| **Agent Skills** | Modular, on-demand expertise | Domain work where you write the same instructions repeatedly |
+| **Code Execution** | Runs Python and bash in a sandboxed container | Computation, data analysis, file generation |
+| **Research mode** | Agentic search across multiple sources | Open-ended information gathering |
+| **Memory** | Persistent knowledge across sessions | Holding facts to reuse in future sessions |
 
-各機能について、特徴と判断の要点を整理する。
+For each feature, the key characteristics and decision points are as follows.
 
-**Projects** は、指示とナレッジソースで作業を構成する自己完結型のワークスペースである。ファイルはプロジェクト固有のナレッジベースに保存され、Free ユーザーを含む全ユーザーが使える（Free は最大5個）。有料プラン（Pro/Max/Team/Enterprise）では、ナレッジがコンテキスト上限に近づくと RAG が自動で有効になり、容量が最大10倍に拡張する。つまり大量の参照文書をプロジェクトに置いても、Claude が自動で検索して根拠づける。Team/Enterprise ではプロジェクトを組織内で共有でき、"Can use"（参照のみ）と "Can edit"（編集可）の権限レベルがある [Source: What are projects? — https://support.claude.com/en/articles/9517075-what-are-projects]。
+**Projects** are self-contained workspaces that organize work with instructions and knowledge sources. Files are stored in a project-specific knowledge base and available to all users, including Free users (Free is capped at 5 projects). On paid plans (Pro/Max/Team/Enterprise), RAG is enabled automatically as knowledge approaches the context limit, expanding capacity by up to about 10x. In other words, even if you place a large volume of reference documents in a project, Claude searches them automatically and grounds its responses. On Team/Enterprise, projects can be shared within the organization, with permission levels "Can use" (view only) and "Can edit" (editable) [Source: What are projects? — https://support.claude.com/en/articles/9517075-what-are-projects].
 
-**Artifacts** は、チャットのインライン応答ではなく、独立したパネルで編集・再利用できる成果物である。文書、コード、図、構造化データを作成・管理・共同編集する。下流で使い回す文書やコードは Artifacts にするとよい。
+**Artifacts** are deliverables that are edited and reused in an independent panel rather than as an inline chat response. They create, manage, and collaboratively edit documents, code, diagrams, and structured data. Documents and code that will be reused downstream are good candidates for Artifacts.
 
-**Agent Skills** は、モジュール化されたオンデマンドの専門知識である。SKILL.md とリソースから成り、PowerPoint、Excel、Word、PDF 向けのビルトイン Skills がある。Skills は **progressive disclosure（段階的開示）** の仕組みを持つ。Level 1（メタデータ、常時読み込み、約100トークン）から Level 2（SKILL.md 本文、トリガ時読み込み、5k トークン未満）を経て Level 3（リソース・スクリプト、必要時のみ）へと段階的に読み込むため、多数の Skill をインストールしてもコンテキストを無駄に消費しない。各 Skill の `description` には「何をするか」と「いつ使うか」の両方を書く。Claude はこの記述を見て Skill の使用可否を判断する [Source: Agent Skills overview — https://platform.claude.com/docs/en/agents-and-tools/agent-skills/overview]。
+**Agent Skills** are modular, on-demand expertise. They consist of a SKILL.md and resources, and built-in Skills exist for PowerPoint, Excel, Word, and PDF. Skills use **progressive disclosure**. They load in stages — Level 1 (metadata, always loaded at startup, about 100 tokens), Level 2 (the SKILL.md body, loaded when triggered, under 5k tokens), and Level 3 (resources and scripts, only when needed) — so installing many Skills does not waste context when they are idle. Each Skill's `description` should state both "what it does" and "when to use it." Claude reads this description to decide whether the Skill is usable [Source: Agent Skills overview — https://platform.claude.com/docs/en/agents-and-tools/agent-skills/overview].
 
-**Code Execution** は、サンドボックスコンテナで Python と bash を実行する機能である。インターネットアクセスは完全に遮断され、実行時にパッケージを追加インストールできない。代わりに pandas、numpy、scipy、scikit-learn、matplotlib、seaborn、sympy 等の主要ライブラリがプリインストールされている。複雑な計算、データ分析、ファイル生成に適し、Claude は「計算やファイル処理が有用な場面」でコードを自動実行し、「簡単な算術や事実確認」では直接応答する。リソース上限は 5 GiB メモリ、5 GiB ディスク、1 CPU で、コンテナは30日後に期限切れとなる [Source: Code execution tool — https://platform.claude.com/docs/en/agents-and-tools/tool-use/code-execution-tool]。
+**Code Execution** runs Python and bash in a sandboxed container. Internet access is fully blocked, and packages cannot be installed at runtime. Instead, major libraries such as pandas, numpy, scipy, scikit-learn, matplotlib, seaborn, and sympy are preinstalled. It suits complex computation, data analysis, and file generation, and Claude automatically runs code "where computation or file handling is useful" and responds directly for "simple arithmetic or fact-checking." Resource limits are 5 GiB memory, 5 GiB disk, and 1 CPU, and the container expires after 30 days [Source: Code execution tool — https://platform.claude.com/docs/en/agents-and-tools/tool-use/code-execution-tool].
 
-**Research mode** は、オープンエンドな情報収集向けのエージェント型サーチである。定義済みの経路をたどるワークフロー型の検索ではなく、Claude が自律的に複数ソースを横断し、照合し、まとめる。Code Execution の単発処理とは性質が異なる。
+**Research mode** is an agentic search for open-ended information gathering. It is not a workflow-style search that follows predefined paths; Claude autonomously traverses, cross-checks, and synthesizes across multiple sources. Its nature differs from the one-shot processing of Code Execution.
 
-**Memory** は、セッションをまたぐ永続的な知識である。対話履歴の保存ではなく、将来のセッションで再利用すべき事実（ユーザーの好み、プロジェクトの前提条件、確定した決定事項）を選択的に保持する。長い対話履歴をそのまま保持するのは Memory の役割ではない。
+**Memory** is persistent knowledge across sessions. It is not the retention of conversation history; it selectively holds facts to reuse in future sessions (user preferences, project premises, settled decisions). Holding a long conversation history as-is is not Memory's job.
 
-これらの機能は、タスクの目的の動詞から逆算して選ぶ。
+These features are chosen by reasoning backward from the verb of the task's purpose.
 
 ```
  ┌──────────────────────────────────────────────────┐
- │        目的の動詞 → 推奨プロダクト機能           │
+ │        Purpose verb -> Recommended feature       │
  ├──────────────────────────────────────────────────┤
  │                                                  │
- │  「外部情報を集める」    → Research mode          │
- │  「データを計算する」    → Code Execution         │
- │  「図を作る・分析する」  → Code Execution         │
- │  「同じ前提で繰り返す」  → Projects               │
- │  「後で使い回す成果物」  → Artifacts              │
- │  「専門手順を何度も」    → Agent Skills           │
- │  「設定をセッション間で」→ Memory                 │
+ │  "Gather external info"  -> Research mode        │
+ │  "Compute data"          -> Code Execution       │
+ │  "Make or analyze a chart" -> Code Execution     │
+ │  "Repeat on same premises" -> Projects           │
+ │  "Deliverable to reuse"  -> Artifacts            │
+ │  "Expert procedure, often" -> Agent Skills       │
+ │  "Persist settings across sessions" -> Memory    │
  │                                                  │
- │  ※ その場限りの即時回答 → チャットのインライン応答 │
+ │  ※ One-off immediate answer -> inline chat reply │
  └──────────────────────────────────────────────────┘
 ```
 
-**入門者の判断指針。** タスクの目的を一つの動詞で表してみる。その動詞が上の表のいずれかに当てはまれば、対応する機能が第一候補である。どれにも当てはまらない場合は、チャットのインライン応答で足りることが多い。機能を選ぶ前に、まず「このタスクは何をしたいのか」を一言で定義する習慣が判断を早くする。
+**Associate-level judgment guideline.** Try to express the purpose of the task in a single verb. If that verb matches one in the table above, the corresponding feature is the first candidate. If it matches none, the inline chat reply is often enough. Before choosing a feature, the habit of defining "what does this task want to do?" in one phrase speeds up the decision.
 
-### Task Statement 3.2: Differentiate between Claude model types (Haiku, Sonnet, Opus)（Claude のモデルタイプの識別）
+### Task Statement 3.2: Differentiate between Claude model types (Haiku, Sonnet, Opus)
 
-> **入門者向けの位置づけ。** モデル選択は「コスト・速度・品質」のビジネス判断。各モデルの立ち位置（何が得意で何が得意でないか）と、コスト差の規模感を体感しておくこと。API の技術詳細は CCA-F で既得なので、ここでは「どのモデルをどの業務に割り当てるか」の判断に絞る。
+> **Associate-level framing.** Model selection is a business decision of "cost, speed, quality." Build an intuitive grasp of each model's position (what it is good at and what it is not) and the magnitude of the cost difference. API technical detail is CCA-F prior knowledge, so we focus here on the judgment of "which model to assign to which work."
 
-Claude のモデルは四つの階層に分かれる。下から順に Haiku、Sonnet、Opus、Fable であり、能力が上がるほど遅くなり、コストも上がる。このトレードオフは設計上の前提であって、欠陥ではない。タスクの性質に合わせて適切な階層を選ぶのが、Domain 3 の核心的な判断である。
+Claude's models fall into four tiers. From the bottom up: Haiku, Sonnet, Opus, and Fable; as capability rises, the model becomes slower and more expensive. This trade-off is a design premise, not a defect. Choosing the right tier for the task's nature is the core judgment of Domain 3.
 
-四つのモデルを速度、コスト、能力、コンテキスト、最大出力の観点で比較する。
+The four models compared on speed, cost, capability, context, and maximum output:
 
-| モデル | 速度 | 入力 $/MTok | 出力 $/MTok | コンテキスト | 最大出力 | 得意用途 |
+| Model | Speed | Input $/MTok | Output $/MTok | Context | Max output | Best use |
 |--------|------|-------------|-------------|-------------|---------|---------|
-| **Haiku 4.5** | Fastest | $1 | $5 | 200k | 64k | 大量・低複雑度・高頻度 |
-| **Sonnet 5** | Fast | $3（導入$2） | $15（導入$10） | 1M | 128k | 速度と品質のバランス |
-| **Opus 4.8** | Moderate | $5 | $25 | 1M | 128k | 複雑な推論・エージェント型コーディング |
-| **Fable 5** | Slower | $10 | $50 | 1M | 128k | 長時間実行エージェント・最高難度 |
+| **Haiku 4.5** | Fastest | $1 | $5 | 200k | 64k | High-volume, low-complexity, high-frequency |
+| **Sonnet 5** | Fast | $3 (intro $2) | $15 (intro $10) | 1M | 128k | Balance of speed and quality |
+| **Opus 4.8** | Moderate | $5 | $25 | 1M | 128k | Complex reasoning, agentic coding |
+| **Fable 5** | Slower | $10 | $50 | 1M | 128k | Long-running agents, hardest tasks |
 
 [Source: Models overview — https://platform.claude.com/docs/en/about-claude/models/overview]
 
-コスト差の規模感を把握することが重要である。Haiku の入力コストは Fable の 1/10、出力も 1/10 である。大容量処理では、この差がそのまま料金に直結する。たとえば100万トークンの入力を処理する場合、Haiku なら $1、Fable なら $10 になる。常に最上位モデルを使うと、コストとレイテンシの予算を無駄に消費する。
+Grasping the magnitude of the cost difference matters. Haiku's input cost is one-tenth of Fable's, and so is its output cost. For large-volume processing, this gap maps directly to the bill. For example, to process one million tokens of input, Haiku costs $1 and Fable costs $10. Always using the top model wastes the cost and latency budget.
 
-能力の面では、上位モデルほど推論深度が深く、エッジケースの処理が丁寧である。その代わりレイテンシが大きくなる。公式ドキュメントの評価では、Haiku が "Fastest"、Sonnet が "Fast"、Opus が "Moderate"、Fable が "Slower" である [Source: Models overview — https://platform.claude.com/docs/en/about-claude/models/overview]。
+On capability, higher-tier models reason more deeply and handle edge cases more carefully, but at the cost of higher latency. In the official documentation's evaluation, Haiku is "Fastest," Sonnet is "Fast," Opus is "Moderate," and Fable is "Slower" [Source: Models overview — https://platform.claude.com/docs/en/about-claude/models/overview].
 
-最大出力にも差がある。Opus、Sonnet、Fable は 1 回のリクエストで 128k トークンを生成できるが、Haiku は 64k である。長文レポートや大規模コード生成を1パスで出すには、Haiku の 64k では足りないことがある。
+Maximum output also differs. Opus, Sonnet, and Fable can produce 128k tokens in a single request, but Haiku is capped at 64k. For long reports or large code generation in a single pass, Haiku's 64k may be insufficient.
 
-知識の信頼性截止（reliable knowledge cutoff）にも注意が必要である。Haiku が Feb 2025 であるのに対し、他の三つは Jan 2026 である。Haiku はやや古い知識ベースで訓練されている点を留意する [Source: Models overview — https://platform.claude.com/docs/en/about-claude/models/overview]。
+Note the reliable knowledge cutoff as well. Haiku's is Feb 2025, while the other three are Jan 2026. Haiku is trained on a slightly older knowledge base [Source: Models overview — https://platform.claude.com/docs/en/about-claude/models/overview].
 
-adaptive thinking の対応状況も階層で異なる。Fable 5 では adaptive thinking が常にオンである。Opus 4.8 と Sonnet 5 は adaptive thinking に対応する。Haiku 4.5 は adaptive thinking 非対応だが、唯一の extended thinking 対応モデルである。adaptive thinking は推論の深さを自動調整する仕組みであり、対応モデルでは effort パラメータで制御できる（詳細は TS 3.3 で扱う）。
+Support for adaptive thinking also varies by tier. On Fable 5, adaptive thinking is always on. Opus 4.8 and Sonnet 5 support adaptive thinking. Haiku 4.5 does not support adaptive thinking but is the only model that supports extended thinking. Adaptive thinking is a mechanism that automatically adjusts reasoning depth; on supported models, it is controlled with the effort parameter (covered in detail in TS 3.3).
 
 ```mermaid
 flowchart LR
-    subgraph 高能力
+    subgraph HighCapability [High capability]
         FABLE["Fable<br/>Slower　$10 / $50"]
         OPUS["Opus<br/>Moderate　$5 / $25"]
     end
-    subgraph 高速度
+    subgraph HighSpeed [High speed]
         SONNET["Sonnet<br/>Fast　$3 / $15"]
         HAIKU["Haiku<br/>Fastest　$1 / $5"]
     end
     FABLE --> OPUS --> SONNET --> HAIKU
 ```
 
-能力が上がるほど遅くなり、コストも上がる。Fable が最高能力・最高コスト、Haiku が最高速度・最低コストである。
+As capability rises, the model becomes slower and more expensive. Fable is the highest capability and highest cost; Haiku is the highest speed and lowest cost.
 
-**入門者の判断指針。** 三段階を即答できるようにする。「大量・低複雑度の作業は Haiku」「速度と品質のバランスが欲しい中規模タスクは Sonnet」「複雑な推論やエージェント型の長時間作業は Opus、さらに最高難度の長時間実行なら Fable」。この階層構造を頭に入れておけば、タスクを見た瞬間に第一候補が決まる。
+**Associate-level judgment guideline.** Be able to recite the three tiers instantly: "High-volume, low-complexity work — Haiku," "mid-sized tasks wanting a balance of speed and quality — Sonnet," "complex reasoning or agentic long-running work — Opus, and for the hardest long-running work — Fable." With this tier structure in mind, the first candidate is fixed the moment you see a task.
 
-### Task Statement 3.3: Align model selection with task requirements (cost, speed, quality)（タスク要件に合わせたモデル選択）
+### Task Statement 3.3: Align model selection with task requirements (cost, speed, quality)
 
-> **入門者向けの位置づけ。** ここは押さえるべき核心。モデル選択は「闇雲に最上位を選ぶ」のではなく、タスクの性質に合わせて3段階（Haiku/Sonnet/Opus）を割り当てるビジネス判断。さらに「能力不足のときは昇格」「同じモデルで再試行は無意味」「effort 調整がモデル切り替えより優先」の3原則を押さえる。
+> **Associate-level framing.** This is a core to master. Model selection is not "blindly choosing the top model"; it is the business judgment of assigning one of three tiers (Haiku/Sonnet/Opus) according to the task's nature. Master the three principles: "escalate when capability is insufficient," "retrying on the same model is pointless," and "adjusting effort takes precedence over switching models."
 
-モデル階層が分かったら、次は実際のタスクにどう割り当てるかである。公式ガイドは二つの開始アプローチを挙げている。
+Once you know the model tiers, the next question is how to assign them to actual tasks. The official guide presents two starting approaches.
 
-**Option 1: Haiku から始める。** コスト重視、大容量、低複雑度の作業に適する。プロトタイピング、レイテンシ要件が厳しい場面、コストセンシティブな処理、大量の定型処理が該当する。実装してテストし、能力不足の箇所だけ上の階層に昇格する、という順で進める。
+**Option 1: Start from Haiku.** Suited to cost-sensitive, high-volume, low-complexity work. Prototyping, tight latency requirements, cost-sensitive processing, and large volumes of routine work all qualify. Implement, test, and escalate only the spots where capability is insufficient.
 
-**Option 2: Opus から始める。** 複雑な推論、科学や数学、ニュアンスが必要な理解、精度がコストに勝る作業に適する。高度なコーディングや高自律性エージェント作業が該当する。実装してプロンプトを最適化し、安定したら effort を下げるかモデルを下げる、という順で効率化する [Source: Choosing a model — https://platform.claude.com/docs/en/about-claude/models/choosing-a-model]。
+**Option 2: Start from Opus.** Suited to complex reasoning, science and math, understanding that needs nuance, and work where accuracy outweighs cost. Advanced coding and highly autonomous agent work qualify. Implement, optimize the prompt, and once stable, lower effort or step down a model to improve efficiency [Source: Choosing a model — https://platform.claude.com/docs/en/about-claude/models/choosing-a-model].
 
-どちらから始めるにせよ、途中で「このモデルでは足りない」あるいは「このモデルでは高すぎる」という調整が発生する。ここで効いてくるのが **effort パラメータ** である。
+Whichever you start from, mid-course you will face the adjustment "this model is insufficient" or "this model is too expensive." This is where the **effort parameter** comes in.
 
-effort パラメータは、一つのモデルの中で「どれだけ深く考えるか」を調整する仕組みである。Opus/Sonnet では、知能とレイテンシ・コストを effort で交換できる。Opus 4.8 では全サーフェス（API、Claude Code、claude.ai）で `high` がデフォルトであり、コーディングや高自律性作業では `xhigh`（high と max の中間）が推奨される。
+The effort parameter is a mechanism that adjusts "how deeply to think" within a single model. On Opus/Sonnet, you can trade intelligence against latency and cost with effort. On Opus 4.8, `high` is the default across all surfaces (API, Claude Code, claude.ai), and `xhigh` (between high and max) is recommended for coding and highly autonomous work.
 
-公式ガイドは「モデルを切り替えるより effort を調整する方がしばしば優れたレバーである」と述べている [Source: Choosing a model — https://platform.claude.com/docs/en/about-claude/models/choosing-a-model]。つまり「Sonnet では足りない、Opus では高すぎる」という場面でも、まず effort を上げ下げして覆せる。モデルを切り替えるのはその次の手段である。
+The official guide states that "adjusting effort is often a better lever than switching models" [Source: Choosing a model — https://platform.claude.com/docs/en/about-claude/models/choosing-a-model]. In other words, even in the situation "Sonnet is insufficient, Opus is too expensive," you can first try raising or lowering effort to overturn the conclusion. Switching models is the next lever.
 
 ```mermaid
 flowchart TD
-    S1["Step 1　effort を上げる<br/>同じモデル内で推論深度を増す"]
-    S2["Step 2　上位モデルに昇格<br/>Haiku → Sonnet → Opus → Fable"]
-    S3["Step 3　同じモデルで再試行<br/>情報が欠落している場合以外は無意味"]
-    S1 -->|"改善しない"| S2
-    S2 -->|"改善しない"| S3
-    S3 -.->|"ほぼ効果なし<br/>最後の手段"| END["再設計を検討"]
+    S1["Step 1 Raise effort<br/>Increase reasoning depth within the same model"]
+    S2["Step 2 Escalate to a higher-tier model<br/>Haiku -> Sonnet -> Opus -> Fable"]
+    S3["Step 3 Retry on the same model<br/>Pointless unless information is missing"]
+    S1 -->|"No improvement"| S2
+    S2 -->|"No improvement"| S3
+    S3 -.->|"Almost no effect<br/>last resort"| END["Consider redesign"]
 ```
 
-effort 調整が第一、モデル昇格が第二、再試行は最後の手段（ほぼ効果なし）である。
+Effort adjustment is first, model escalation is second, and retry is the last resort (almost no effect).
 
-ここで 重要な核心原則を明確にしておく。**能力が足りない場合は、上の階層のモデルに上げるべきである。同じモデルの再実行は改善をもたらさない。** 同じモデルで何度やり直しても、同じ浅さの回答しか返らない。再試行が意味を持つのは「情報が欠落している場合」（つまり必要な情報をプロンプトに足していない場合）だけである。能力の問題なら昇格、情報の問題なら補充、と原因を見極めて正しい対処を選ぶ。
+Here we state a core principle with clarity. **When capability is insufficient, you should escalate to a higher-tier model. Re-running on the same model brings no improvement.** No matter how many times you retry on the same model, you only get the same shallow answer. Retry is meaningful only "when information is missing" (that is, when the required information has not been added to the prompt). If the cause is capability, escalate; if it is information, supply it. Identify the cause and choose the right response.
 
-逆に、コストを下げたい場合の罠も押さえる。「コストを下げたいから機能をオフにする」は誤答である。機能を無効にしても、モデルのコスト、速度、能力のトレードオフそのものは変わらない。機能のオンオフは能力を変えない。正しいアプローチは「タスクに合った低コストモデルに切り替える」ことである。プラットフォームを切り替えても同じで、トレードオフは解決しない。
+There is also a trap when you want to lower cost. "Turn off features to reduce cost" is the wrong answer. Disabling a feature does not change the model's trade-off of cost, speed, and capability. Toggling features does not change capability. The right approach is "switch to a lower-cost model that fits the task." Switching platforms is the same; the trade-off is not resolved.
 
-effort 調整とモデル切り替えの関係を整理すると、次の判断フローになる。
+The relationship between effort adjustment and model switching can be summarized as the following decision flow.
 
 ```mermaid
 flowchart TD
-    START["Claude の出力"] --> Q1{"出力が浅い・不正確か？"}
-    Q1 -->|"No"| KEEP["現状のままで継続"]
-    Q1 -->|"Yes"| Q2{"情報が欠落しているか？"}
-    Q2 -->|"Yes"| SUP["情報を補充"]
-    Q2 -->|"No"| EFF["effort を上げる<br/>（Opus/Sonnet の場合）"]
-    EFF --> Q3{"改善したか？"}
-    Q3 -->|"Yes"| KEEP2["継続"]
-    Q3 -->|"No"| UP["上位モデルに昇格<br/>Haiku → Sonnet → Opus → Fable"]
+    START["Claude's output"] --> Q1{"Is the output shallow or inaccurate?"}
+    Q1 -->|"No"| KEEP["Continue as-is"]
+    Q1 -->|"Yes"| Q2{"Is information missing?"}
+    Q2 -->|"Yes"| SUP["Supply the information"]
+    Q2 -->|"No"| EFF["Raise effort<br/>(on Opus/Sonnet)"]
+    EFF --> Q3{"Did it improve?"}
+    Q3 -->|"Yes"| KEEP2["Continue"]
+    Q3 -->|"No"| UP["Escalate to a higher-tier model<br/>Haiku -> Sonnet -> Opus -> Fable"]
     SUP --> KEEP2
 ```
 
-同じモデルでの再試行は、どの分岐でも選ばない。
+Retry on the same model is not selected on any branch.
 
-昇格・降格を判断するときは、感覚ではなく実測に基づくべきである。公式ガイドは次の順を推奨する。ユースケース固有のベンチマークテストを作る、実際のプロンプトとデータでテストする、モデル間で精度・品質・エッジケース処理を比較する、パフォーマンスとコストのトレードオフを秤にかける。この手順を踏めば、「なんとなく Opus の方が良さそう」という思い込みを排除できる。
+When judging escalation or downgrade, base the decision on measurement, not feel. The official guide recommends the following order: build a use-case-specific benchmark, test on real prompts and data, compare accuracy, quality, and edge-case handling across models, and weigh the performance and cost trade-off. Following this procedure removes the assumption "Opus is probably better somehow."
 
-**入門者の判断指針。** 出力が浅い、不正確、指示を理解しきれていないと感じたら、まず effort を上げる（Opus/Sonnet の場合）。それでも足りなければ上位モデルに昇格する。同じモデルでの再試行を繰り返さない。逆に、コストを下げたいなら機能をオフにするのではなく、タスクに見合った低コストモデルに切り替える。
+**Associate-level judgment guideline.** If an output feels shallow, inaccurate, or not fully grasping the instructions, first raise effort (on Opus/Sonnet). If that is still insufficient, escalate to a higher-tier model. Do not repeat retries on the same model. Conversely, to lower cost, do not turn off features; switch to a lower-cost model that fits the task.
 
-### Task Statement 3.4: Understand and manage context limitations and memory considerations（コンテキストの制限とメモリの理解・管理）
+### Task Statement 3.4: Understand and manage context limitations and memory considerations
 
-> **入門者向けの位置づけ。** コンテキストウィンドウは Claude の「短期記憶」。大きさ（200k〜1M）だけではなく、長くなると精度が落ちる（context rot）こと、そして長くなりすぎたときにどう対処するか（圧縮・再開・永続化）を問う。用語定義を確実に押さえること。
+> **Associate-level framing.** The context window is Claude's "short-term memory." The exam tests not only its size (200k–1M) but also the fact that accuracy degrades as it grows longer (context rot), and what to do when it grows too long (compaction, restart, persistence). Master the term definitions firmly.
 
-モデルと機能を選んでも、もう一つ管理すべきものがある。それがコンテキストである。**コンテキストウィンドウ**とは、モデルが応答を生成する際に参照できる全テキストのことである。これはモデルの学習データではなく、その1回のリクエストでの「作業記憶」にあたる。システムプロンプト、過去の全メッセージ、ツール定義、ツール結果、画像、そしてそのターンで生成される出力と思考トークンすべてがこの枠を消費する。
+Even after choosing a model and features, there is one more thing to manage: context. The **context window** is all the text the model can reference when generating a response. It is not the model's training data; it is the "working memory" for that single request. The system prompt, all past messages, tool definitions, tool results, images, and the output and thinking tokens generated in that turn all consume this budget.
 
-コンテキストウィンドウの大きさは、Haiku が 200k、Sonnet/Opus/Fable が 1M である。入力だけでこの枠を超えると、API は "prompt is too long" のエラーを返す [Source: Context windows — https://platform.claude.com/docs/en/build-with-claude/context-windows]。
+The context window size is 200k for Haiku and 1M for Sonnet/Opus/Fable. If the input alone exceeds this budget, the API returns a "prompt is too long" error [Source: Context windows — https://platform.claude.com/docs/en/build-with-claude/context-windows].
 
-しかし、ここには罠がある。「窓が広いから大丈夫」という考えである。1M トークンが入るからといって、1M トークン詰め込めばよいわけではない。トークン数が増えると、精度と再現率が落ちる。この現象を**コンテキストの劣化（context rot）**と呼ぶ。トークンが増えるほど、中央付近の情報を見落としやすくなる。
+There is a trap here, however: the assumption "the window is wide, so it's fine." Just because 1M tokens fit does not mean you should pack in 1M tokens. As the token count grows, precision and recall degrade. This phenomenon is called **context rot**. The more tokens, the easier it is to miss information near the middle.
 
-公式ガイドは「context の中身を何にするかが、空き容量と同じくらい重要」と強調する [Source: Context windows — https://platform.claude.com/docs/en/build-with-claude/context-windows]。つまり関係ない情報を削ることが性能向上に直結する。ウィンドウの大きさと同じくらい、中身の取捨選択が重要なのである。
+The official guide stresses that "what you put in the context matters as much as the free space" [Source: Context windows — https://platform.claude.com/docs/en/build-with-claude/context-windows]. In other words, removing irrelevant information directly improves performance. The curation of content matters as much as the size of the window.
 
 ```mermaid
 flowchart TB
-    subgraph CW["コンテキストウィンドウ（作業記憶）"]
-        SP["システムプロンプト"]
-        MSG["過去の全メッセージ"]
-        TOOL["ツール定義・結果"]
-        IMG["画像"]
-        OUT["出力・思考トークン"]
+    subgraph CW["Context window (working memory)"]
+        SP["System prompt"]
+        MSG["All past messages"]
+        TOOL["Tool definitions and results"]
+        IMG["Images"]
+        OUT["Output and thinking tokens"]
     end
-    CW -->|"トークンが増えると"| ROT["context rot<br/>精度と再現率が低下<br/>中央付近の情報を見落としやすくなる"]
-    ROT --> C1["対策 1：関係ない情報を削る"]
-    ROT --> C2["対策 2：compaction で要約"]
-    ROT --> C3["対策 3：重要な状態をメモリに保存して新規セッション"]
+    CW -->|"As tokens grow"| ROT["context rot<br/>precision and recall degrade<br/>information near the middle is easier to miss"]
+    ROT --> C1["Countermeasure 1: prune irrelevant information"]
+    ROT --> C2["Countermeasure 2: summarize with compaction"]
+    ROT --> C3["Countermeasure 3: persist key state to memory and start a new session"]
 ```
 
-コンテキストが長くなりすぎたときの対処法は三段階ある。
+When context grows too long, there are three countermeasures.
 
-第一に、関係ない情報を削る。これだけで性能が向上する。第二に、**圧縮（compaction）** を使う。会話がコンテキストウィンドウの上限に近づいたとき、サーバー側が自動的に古い対話を要約して空きを作る。会話を切らずに継続できる。compaction は Claude Fable 5、Opus 4.8、Opus 4.7、Opus 4.6、Sonnet 5、Sonnet 4.6 で利用可能（ベータ）である [Source: Compaction — https://platform.claude.com/docs/en/build-with-claude/compaction]。第三に、重要な状態をメモリに保存して新規セッションで再開する。
+First, prune irrelevant information. This alone improves performance. Second, use **compaction**. As a conversation approaches the context window limit, the server automatically summarizes older turns to free space, letting the conversation continue without being cut. Compaction is available (beta) on Claude Fable 5, Opus 4.8, Opus 4.7, Opus 4.6, Sonnet 5, and Sonnet 4.6 [Source: Compaction — https://platform.claude.com/docs/en/build-with-claude/compaction]. Third, persist key state to memory and restart in a new session.
 
-これら三つの対処法の使い分けを整理する。
+The use of these three countermeasures is summarized below.
 
-| 対処法 | 何时使うか | 効果 |
+| Countermeasure | When to use | Effect |
 |--------|-----------|------|
-| 情報を削る | 不要なやり取りが混在している | 即座に性能向上 |
-| compaction | 長いマルチターン対話を継続したい | 会話を切らずに空きを作る |
-| 新規セッション再開 | 会話全体が劣化し、主要な状態だけ残したい | クリーンな状態で再出発 |
+| Prune information | Irrelevant exchanges are mixed in | Immediate performance improvement |
+| Compaction | You want to continue a long multi-turn conversation | Frees space without cutting the conversation |
+| Restart in a new session | The whole conversation has degraded and only key state should remain | A clean restart |
 
-圧縮以外にも、エージェントワークフロー向けの特殊な戦略が二つある。一つは**ツール結果のクリアリング**で、エージェントが複数回ツールを呼ぶと古いツール結果が蓄積するため、もう参照しない結果を削除して空きを作る。もう一つは**思考ブロックのクリアリング**で、拡張思考（extended thinking）の生成時には思考トークンもコンテキストを消費するため、前のターンの思考ブロックを必要に応じて明示的に削除する。
+Beyond compaction, there are two specialized strategies for agent workflows. One is **clearing tool results**: as an agent calls tools multiple times, old tool results accumulate, so you delete results that are no longer referenced to free space. The other is **clearing thinking blocks**: when extended thinking is generated, thinking tokens also consume context, so previous turns' thinking blocks are explicitly removed as needed.
 
-一部のモデルには**コンテキスト認識（context awareness）**という機能もある。モデルが自身の残りトークン予算を追跡する仕組みで、Sonnet 5、Sonnet 4.6、Sonnet 4.5、Haiku 4.5 が対応する。API が自動で残り容量をシステムプロンプトに注入するため、ユーザーが設定する必要はない。この機能を前提に、コンテキストが尽きる前に主要な状態（決定事項、進捗、前提条件）をメモリやファイルに保存しておくと、新しいセッションに移っても文脈を引き継げる [Source: Context windows — https://platform.claude.com/docs/en/build-with-claude/context-windows]。
+Some models also have a feature called **context awareness**, a mechanism by which the model tracks its remaining token budget. Sonnet 5, Sonnet 4.6, Sonnet 4.5, and Haiku 4.5 support it. The API automatically injects the remaining capacity into the system prompt, so the user does not need to configure it. Building on this feature, if you persist key state (decisions, progress, premises) to memory or files before context runs out, you can carry the context into a new session [Source: Context windows — https://platform.claude.com/docs/en/build-with-claude/context-windows].
 
-**入門者の判断指針。** 会話が長くなって応答の質が落ちてきたら、それが context rot の兆候である。まず不要な過去のやり取りを削る。それでも足りなければ compaction で要約する。それでも足りなければ、重要な状態をメモリに保存して新規セッションで再開する。長い対話をそのまま永続させるのではなく、価値のある情報だけをメモリに書き出すのが正しい使い方である。
+**Associate-level judgment guideline.** When a conversation grows long and response quality degrades, that is a sign of context rot. First prune unneeded past exchanges. If that is insufficient, summarize with compaction. If still insufficient, persist key state to memory and restart in a new session. Rather than persisting long conversations as-is, the correct practice is to write only valuable information to memory.
 
-> **陥りやすい罠。** モデル選択は「タスクの複雑さ・推論深度」と「許容コスト・ターンアラウンド」だけを基準にする。直前のタスクで使っていた、別タブで開いていた、ログイン状態、リリースの新しさで選ぶのは誤答。軽量ティア（Haiku）は単純、大量、高頻度の作業、重量ティア（Opus/Fable）はミスが重大な複雑推論、中位（Sonnet）は日常のニュアンス作業に向く。プロダクト機能も同様で、継続的に編集する成長する成果物には Artifacts、一回限りの即時回答にはチャット返信、再利用する参照文書には Project のナレッジ、外部情報の多段調査には Research mode を選ぶ。長時間の会話で指示忘れや矛盾が出たら、新規会話に切り替えて必要な資料だけ持ち越す。
+> **Common pitfall.** Base model selection only on "task complexity and reasoning depth" versus "acceptable cost and turnaround." Choosing by the model used in the previous task, an open tab in another window, login state, or the recency of a release is the wrong answer. The lightweight tier (Haiku) suits simple, high-volume, high-frequency work; the heavyweight tier (Opus/Fable) suits complex reasoning where mistakes are costly; the mid tier (Sonnet) suits everyday nuanced work. The same applies to product features: Artifacts for a growing deliverable that you keep editing, the chat reply for a one-off immediate answer, Project knowledge for reusable reference documents, and Research mode for multi-step investigation of external information. When a long conversation starts forgetting instructions or contradicting itself, switch to a new conversation and carry over only the necessary materials.
 
-**出典（Domain 3）:**
+**Sources (Domain 3):**
 - Models overview — https://platform.claude.com/docs/en/about-claude/models/overview
 - Choosing the right model — https://platform.claude.com/docs/en/about-claude/models/choosing-a-model
 - Context windows — https://platform.claude.com/docs/en/build-with-claude/context-windows
@@ -618,66 +619,66 @@ flowchart TB
 
 ---
 
-## Domain 4: Workflow Integration and Solution Design（ワークフロー統合とソリューション設計）
+## Domain 4: Workflow Integration and Solution Design
 
-### Task Statement 4.1: Apply Claude to analyze requirements and use cases（要件とユースケースの分析）
+### Task Statement 4.1: Apply Claude to analyze requirements and use cases
 
-**知識：**
-- Claude for work ラーニングハブが、ユースケース発見のための部門別ガイド（Engineering、HR、Marketing、Product Management、Sales）を提供する
-- エンタープライズ AI 診断の手法。構築の前にユースケースを浮かび上がらせて優先順位をつける
+**Knowledge:**
+- The Claude for work learning hub offers department-specific guides (Engineering, HR, Marketing, Product Management, Sales) for use-case discovery
+- Enterprise AI diagnostic methods. Surface and prioritize use cases before building
 
-**スキル：**
-- ビジネスプロセスを分析し、Claude が価値を加える場所を見つける
-- 部門別ガイドを使い、機能別ワークフローに Claude を対応づける
-- 影響度と実現可能性でユースケースを優先順位づける
+**Skills:**
+- Analyze a business process and find where Claude adds value
+- Use department-specific guides to map Claude onto functional workflows
+- Prioritize use cases by impact and feasibility
 
-### Task Statement 4.2: Leverage Claude for research, planning, and process optimization（リサーチ、計画、プロセス最適化）
+### Task Statement 4.2: Leverage Claude for research, planning, and process optimization
 
-**知識：**
-- エージェント型の複数ソース検索としての Research mode。計画向けの分析ツールと Google Docs 連携
-- シンプルで組み合わせ可能なパターン。ワークフロー（定義済みのパスで LLM を指揮、予測性が高い）とエージェント（自律的にプロセスを方向づける、柔軟性が高い）
-- ワークフローパターン。プロンプトチェーン（逐次サブタスク）、ルーティング（分類して振り分け、例: 易しいものは Haiku、難しいものは Sonnet）、並列化（セクショニングと投票）
+**Knowledge:**
+- Research mode as agentic multi-source search. Analysis tools and Google Docs integration for planning
+- Simple, composable patterns. Workflows (orchestrate LLMs along predefined paths, high predictability) and agents (autonomously direct the process, high flexibility)
+- Workflow patterns. Prompt chaining (sequential subtasks), routing (classify and dispatch, for example easy items to Haiku and hard items to Sonnet), and parallelization (sectioning and voting)
 
-**スキル：**
-- 計画やプロセス最適化に Research と分析ツールを使う
-- 問題を解く最もシンプルな組み合わせ可能パターンを選ぶ
-- 多段階プロセスの最適化にルーティングとチェーンを適用する
+**Skills:**
+- Use Research and analysis tools for planning and process optimization
+- Choose the simplest composable pattern that solves the problem
+- Apply routing and chaining to optimize multi-step processes
 
-### Task Statement 4.3: Use Claude to support solution design, development, and iteration（ソリューションの設計、開発、反復）
+### Task Statement 4.3: Use Claude to support solution design, development, and iteration
 
-**知識：**
-- 最も成功する Claude 実装はシンプルに始まる。直接的なプロンプトとビルトインの製品機能から出発し、必要性が裏付けられたときだけ複雑さを加える
-- 定義された成功基準に対してプロンプトや設定を反復する方が、一発で完璧を目指すより良い結果になる
-- ワークフローを丸ごと置き換えるより、Claude を既存のツールやナレッジソースと組み合わせる方が、通例は最も効果的である
+**Knowledge:**
+- The most successful Claude implementations start simple. Begin with direct prompts and built-in product features, and add complexity only when the need is justified
+- Iterating prompts and configuration against defined success criteria produces better results than aiming for perfection in one shot
+- Combining Claude with existing tools and knowledge sources is usually more effective than replacing an entire workflow
 
-**スキル：**
-- フィードバックと定義された成功基準を使って、Claude 支援のソリューションを反復する
-- 効果が確認できた最もシンプルなアプローチから始め、裏付けがあって初めて複雑さを加える
-- ワークフローをゼロから作り直すのではなく、Claude を既存のツールやナレッジと組み合わせる
+**Skills:**
+- Iterate Claude-assisted solutions using feedback and defined success criteria
+- Start from the simplest approach whose effect is confirmed, and add complexity only when justified
+- Combine Claude with existing tools and knowledge rather than rebuilding the workflow from scratch
 
-### Task Statement 4.4: Integrate Claude into existing workflows to augment or redesign them（既存ワークフローへの統合、補強か再設計か）
+### Task Statement 4.4: Integrate Claude into existing workflows to augment or redesign them
 
-**知識：**
-- 補強と再設計の判断。既存のツール（GitHub、Google Docs、コネクタ）をつなぐか、ワークフローを作り直すか
-- ツールと連携。GitHub、Google Docs、分析ツール、Research、Projects、Artifacts、Skills。チームはワークフローを置き換えずにツールをつなげる
+**Knowledge:**
+- The augment-or-redesign decision. Wire existing tools (GitHub, Google Docs, connectors) or rebuild the workflow
+- Tool integration. GitHub, Google Docs, analysis tools, Research, Projects, Artifacts, Skills. Teams connect tools without replacing workflows
 
-**スキル：**
-- 与えられたワークフローを補強するか再設計するかを判断する
-- 連携とコネクタで Claude を既存ツールにつなぐ
+**Skills:**
+- Judge whether to augment or redesign a given workflow
+- Connect Claude to existing tools via integrations and connectors
 
-### Task Statement 4.5: Communicate Claude's value and limitations to stakeholders（ステークホルダーへの価値と限界の伝達）
+### Task Statement 4.5: Communicate Claude's value and limitations to stakeholders
 
-**知識：**
-- ステークホルダー通信を裏づける定量化成果（例: Slack で 1 ユーザーあたり週 97 分の節約、Lyft でサポート時間 87% 削減、Moody's でクレジットメモ作成を 40 時間から 2 分に短縮） [Source: Claude enterprise solutions — https://claude.com/solutions/enterprise]
-- 通信パターン。成果を定量化し、AI を置き換えではなく補強として枠取り、コストに透明であり、浮いた能力をリスキリングに再投資する
-- 限界（コスト、ドリフト、人間の監視の必要性）は価値と併せて伝える
+**Knowledge:**
+- Quantified outcomes that back stakeholder communications (for example, 97 minutes saved per user per week on Slack, 87% reduction in support time at Lyft, and Moody's compressing credit-memo creation from 40 hours to 2 minutes) [Source: Claude enterprise solutions — https://claude.com/solutions/enterprise]
+- Communication patterns. Quantify outcomes, frame AI as augmentation rather than replacement, be transparent on cost, and reinvest freed capacity into reskilling
+- Communicate limitations (cost, drift, the need for human oversight) alongside value
 
-**スキル：**
-- Claude の価値を定量化してステークホルダーに提示する
-- AI を、能力をより価値の高い仕事に振り向ける補強として枠取りする
-- コスト、限界、監視の必要性に透明である
+**Skills:**
+- Quantify Claude's value and present it to stakeholders
+- Frame AI as augmentation that redirects capacity to higher-value work
+- Be transparent about cost, limitations, and the need for oversight
 
-**出典（Domain 4）:**
+**Sources (Domain 4):**
 - Claude for work — https://www.anthropic.com/learn/claude-for-work
 - Anthropic Academy — https://www.anthropic.com/learn
 - Building effective agents — https://www.anthropic.com/engineering/building-effective-agents
@@ -689,202 +690,207 @@ flowchart TB
 
 ---
 
-## Domain 5: Configuration and Knowledge Management（設定とナレッジ管理）
+## Domain 5: Configuration and Knowledge Management
 
-Domain 4 では「複数の機能をどう組み合わせて一つのワークフローにするか」を扱った。Domain 5 は、そのワークフローを支える土台にあたる。Claude に仕事の文脈をどう覚えさせ、どう最新に保つか。具体的には、プロジェクトの構成、コネクタの接続、指示の書き方、そしてナレッジとメモリの維持管理である。CCAO-F では API/SDK の技術詳細ではなく、Claude.ai のプロダクト機能（Projects、コネクタ、Memory、Skills）を実務判断として使いこなす力を問う。
+Domain 4 covered "how to combine multiple features into a single workflow." Domain 5 is the foundation that supports that workflow. How do you make Claude remember the work context, and how do you keep it current? Concretely: project configuration, connector wiring, instruction writing, and the maintenance of knowledge and memory. CCAO-F does not ask about API/SDK technical detail; it asks for the practical ability to use Claude.ai's product features (Projects, connectors, Memory, Skills).
 
-> **入門者向けの位置づけ。** CCA-F（Architect）では API や MCP の技術詳細を問うが、CCAO-F では Claude.ai のプロダクト機能を使って「Claude に仕事の文脈を覚えさせる方法」を実務判断として問う。API/SDK の技術詳細は CCA-F で既に学んだので、ここでは各機能の役割と設定の手順、そして設定の良し悪しが出力にどう響くかに集中する。
+> **Associate-level framing.** CCA-F (Architect) asks about API and MCP technical detail; CCAO-F asks "how to make Claude remember the work context" using Claude.ai's product features, as practical judgment. API/SDK technical detail was already covered in CCA-F, so we focus here on each feature's role, the setup procedure, and how good or bad configuration affects output.
 
-> **用語の前提。** 「**プロジェクト**」は Claude.ai の Projects 機能（独自のチャット履歴とナレッジを持つ作業スペース）。「**ナレッジソース**」はプロジェクトに取り込んだファイルと接続したデータの総称。「**コネクタ**」は外部データプロバイダ（Google Drive、Gmail 等）をプロジェクトにリンクする仕組み。「**同期ソース（sync source）**」はコネクタ経由で継続的に同期されるデータソース。
+> **Term premise.** A "**project**" is the Claude.ai Projects feature (a workspace with its own chat history and knowledge). A "**knowledge source**" is the collective term for files imported into a project and data connected to it. A "**connector**" is the mechanism that links an external data provider (Google Drive, Gmail, etc.) to a project. A "**sync source**" is a data source continuously synchronized through a connector.
 
-### Domain 5 の構成要素全体像
+### Overview of Domain 5's Components
 
-Domain 5 の4つの Task Statement は、プロジェクトを組み立てて（TS 5.1）、外部データを繋ぎ（TS 5.2）、指示を書き（TS 5.3）、運用しながら維持する（TS 5.4）という一連の流れとして捉えると理解しやすい。
+The four Task Statements of Domain 5 are easiest to understand as a single flow: assemble a project (TS 5.1), wire external data (TS 5.2), write instructions (TS 5.3), and maintain it in operation (TS 5.4).
 
 ```mermaid
 flowchart TB
-    A["TS 5.1　プロジェクトの構成<br/>指示（instructions）＋ ナレッジソース"]
-    B["TS 5.2　ナレッジとコネクタの管理<br/>アップロードファイル ＋ 外部データ接続"]
-    C["TS 5.3　システムレベル指示の作成<br/>役割・制約・フォーマットの構造化"]
-    D["TS 5.4　設定・ナレッジ・指示の維持と更新<br/>陳腐化の防止・メモリストアの設計・監査"]
+    A["TS 5.1 Configure a project<br/>Instructions + knowledge sources"]
+    B["TS 5.2 Manage knowledge and connectors<br/>Uploaded files + external data connections"]
+    C["TS 5.3 Create system-level instructions<br/>Structure role, constraints, and format"]
+    D["TS 5.4 Maintain and update configuration, knowledge, and instructions<br/>Prevent staleness, design memory stores, audit"]
     A --> B --> C --> D
 ```
 
-構成して、繋いで、書いて、保つ。この4段階がプロジェクトのライフサイクルである。
+Configure, wire, write, and maintain. These four stages are the project lifecycle.
 
-### Task Statement 5.1: Configure Claude Projects with instructions and knowledge sources（指示とナレッジソースによるプロジェクト設定）
+### Task Statement 5.1: Configure Claude Projects with instructions and knowledge sources
 
-> **入門者向けの位置づけ。** プロジェクトは Claude.ai で「仕事の文脈」を固定する最基本的な仕組み。指示とナレッジソースという二つの構成要素の違いと、それぞれの品質が出力に直結する理由を押さえること。API の技術詳細は CCA-F で既に学んだので、ここでは「何をどう置くか」の実務判断に絞る。
+> **Associate-level framing.** Projects are the most basic mechanism in Claude.ai for fixing the "work context." Master the difference between the two components — instructions and knowledge sources — and why the quality of each directly drives output quality. API technical detail is CCA-F prior knowledge, so we focus here on the practical judgment of "what to place, and how."
 
-プロジェクトは、Claude に仕事の文脈を固定する自己完結型の作業スペースである。独立したチャット履歴とナレッジベースを持ち、他のプロジェクトと文脈を共有しない。そのため目的ごと（営業資料作成、研究、週次レポート等）に分けて運用するのが基本である。Free ユーザーは最大5プロジェクト、有料プランでは制限が緩和される。
+A project is a self-contained workspace that fixes the work context for Claude. It has an independent chat history and knowledge base and does not share context with other projects. The basic practice is to split projects by purpose (creating sales materials, research, weekly reports, etc.). Free users can have up to 5 projects; paid plans relax the limit.
 
-プロジェクトは二つの構成要素から成る。第一が**指示（instructions）**で、役割、トーン、ルールを定めるシステムレベルのプロンプトである。プロジェクト内のすべてのチャットに共通して適用される「Claude への基本設定」と言える。第二が**ナレッジソース（knowledge sources）**で、アップロードしたファイルと接続したデータの総称である。Claude が応答の根拠として参照する「資料」にあたる。この二つを分けて考えるのが、プロジェクト設計の出発点である。
+A project consists of two components. The first is **instructions**, a system-level prompt that defines the role, tone, and rules. You can think of it as the "base settings for Claude" that apply commonly to every chat in the project. The second is **knowledge sources**, the collective term for uploaded files and connected data. These are the "materials" Claude references as the basis for responses. Separating these two is the starting point of project design.
 
 ```mermaid
 graph TB
     PROJ["Project"]
-    PROJ --> INST["指示（instructions）<br/>全チャットに共通する基本設定"]
-    PROJ --> KS["ナレッジソース（knowledge sources）<br/>応答の根拠となる資料"]
-    INST --> I1["役割<br/>あなたは〇〇のコンサルタント"]
-    INST --> I2["制約<br/>資料にない内容は「不明」と答える"]
-    INST --> I3["出力フォーマット<br/>箇条書き3点"]
-    KS --> UF["アップロードファイル<br/>テキスト・PDF・スプレッドシート・コード<br/>（読み取り専用）"]
-    KS --> CN["コネクタ（同期ソース）<br/>Google Drive・Gmail 等<br/>（常に最新が反映される）"]
-    INST -.->|"指示の品質"| OUT
-    KS -.->|"ナレッジの品質"| OUT
-    OUT["出力の品質"]
+    PROJ --> INST["Instructions<br/>Common base settings for all chats"]
+    PROJ --> KS["Knowledge sources<br/>Materials that ground responses"]
+    INST --> I1["Role<br/>You are a consultant for X"]
+    INST --> I2["Constraints<br/>Answer 'unknown' for anything not in the materials"]
+    INST --> I3["Output format<br/>Three bullet points"]
+    KS --> UF["Uploaded files<br/>Text, PDF, spreadsheets, code<br/>(read-only)"]
+    KS --> CN["Connectors (sync sources)<br/>Google Drive, Gmail, etc.<br/>(always reflects the latest)"]
+    INST -.->|"Instruction quality"| OUT
+    KS -.->|"Knowledge quality"| OUT
+    OUT["Output quality"]
 ```
 
-アップロードされたファイルは、Claude の応答の根拠となる読み取り専用のプロジェクトナレッジとして保存される。テキスト、PDF、スプレッドシート、コードなどを含む。Claude は推測ではなく文書内容に基づいた回答を返すため、根拠のない応答が減る。
+Uploaded files are stored as read-only project knowledge that grounds Claude's responses, including text, PDFs, spreadsheets, and code. Because Claude returns answers based on the document content rather than guessing, unsupported responses decrease.
 
-ナレッジの量が増えても品質を保つ仕組みがある。有料プラン（Pro/Max/Team/Enterprise）では、ナレッジ量がコンテキスト上限に近づくと **RAG（検索拡張生成）** が自動で有効になり、容量が最大約10倍に拡張される。大量の参照文書をプロジェクトに置いても、Claude が自動で検索して根拠づけるため、応答品質を保てる [Source: What are projects? — https://support.claude.com/en/articles/9517075-what-are-projects]。
+There is a mechanism that preserves quality even as the volume of knowledge grows. On paid plans (Pro/Max/Team/Enterprise), **RAG (Retrieval Augmented Generation)** is enabled automatically as the knowledge volume approaches the context limit, expanding capacity by up to about 10x. Even with a large volume of reference documents in a project, Claude searches and grounds automatically, preserving response quality [Source: What are projects? — https://support.claude.com/en/articles/9517075-what-are-projects].
 
-ここで強調すべき原則がある。**指示とナレッジソースの品質が、出力の品質を決める。** 曖昧な指示や不適切な資料からは、精度の低い回答しか出ない。プロジェクトの設定画面で「Project instructions」欄に指示を記述し、「Files」セクションから資料を追加するという手順自体は簡単だが、そこに何を書き、何を置くかが成果を左右する。繰り返す作業（週次レポート等）に必要なテンプレートや過去の成果物を常時マウントしておくと、毎回文脈を説明する手間が省ける。ただし、一つのプロジェクトに矛盾する資料を混在させると、Claude がどちらを根拠にすべきか判断できず、出力が不安定になる。
+A principle bears emphasis here. **The quality of the instructions and knowledge sources determines the quality of the output.** Vague instructions or inappropriate materials produce only low-accuracy answers. The procedure itself — writing instructions in the "Project instructions" field and adding materials from the "Files" section in the project's settings — is simple, but what you write and what you place there decides the outcome. Permanently mounting the templates and past deliverables needed for recurring work (weekly reports, etc.) saves the effort of re-explaining context every time. Note, however, that mixing contradictory materials in a single project makes Claude unable to decide which to ground in, destabilizing the output.
 
-**入門者の判断指針。** プロジェクトを作るときは、まず「指示」と「ナレッジソース」を分けて考える。指示には役割、制約、出力フォーマットを書く。ナレッジソースには、そのプロジェクトの目的に直接関係する資料だけを置く。目的が違うなら別プロジェクトに分ける。一つのプロジェクトに詰め込みすぎないことが、精度を保つ基本である。
+**Associate-level judgment guideline.** When creating a project, first separate "instructions" from "knowledge sources." Write the role, constraints, and output format in the instructions. Place only materials directly relevant to the project's purpose in the knowledge sources. If the purpose differs, split into separate projects. Not overloading a single project is the foundation of preserving accuracy.
 
-### Task Statement 5.2: Manage uploaded knowledge and connectors (e.g., Google Drive, Gmail)（アップロードしたナレッジとコネクタの管理）
+### Task Statement 5.2: Manage uploaded knowledge and connectors (e.g., Google Drive, Gmail)
 
-> **入門者向けの位置づけ。** コネクタは外部データをプロジェクトに取り込む仕組み。ここは押さえるべき核心で「コネクタのスコープを絞り込む」判断が正答の鍵になる。同期ソースとアップロードファイルの違い、コネクタのアクセス権限、そしてスコープを広げすぎたときの弊害を確実に押さえる。
+> **Associate-level framing.** Connectors are the mechanism for pulling external data into a project. This is a core to master, and the judgment of "narrowing a connector's scope" is the key to correct answers. Master firmly the difference between sync sources and uploaded files, connector access permissions, and the harms of an over-broad scope.
 
-ナレッジソースには二種類ある。一つはアップロードファイルで、プロジェクトに取り込んだ時点の内容が固定される「静的な資料」である。もう一つはコネクタ経由の**同期ソース（sync source）**で、外部データプロバイダから継続的に同期される「常に最新が反映される生きた資料」である。対応するプロバイダは、Google Drive、Gmail、GitHub、Slack、Salesforce、Google Calendar、Asana、Outline、MCP resources など多岐にわたる。
+There are two kinds of knowledge sources. One is uploaded files — static materials fixed at the moment they are imported into the project. The other is **sync sources** via connectors — living materials that are continuously synchronized from external data providers and always reflect the latest. Supported providers span Google Drive, Gmail, GitHub, Slack, Salesforce, Google Calendar, Asana, Outline, and MCP resources.
 
-コネクタは、外部のデータソースをプロジェクトにリンクし、Claude がその内容を参照できるようにする。アクセスはユーザー自身の権限に準ずる。Google Drive で閲覧権限のないファイルは、コネクタを通しても読めない。Claude は明示的に求められたときだけデータにアクセスし、必要最小限の情報を取得する。
+Connectors link external data sources to a project so that Claude can reference their content. Access follows the user's own permissions. A file you cannot view in Google Drive cannot be read through the connector either. Claude accesses data only when explicitly asked and retrieves the minimum information necessary.
 
-Google Workspace コネクタ（Gmail、Google Calendar、Google Drive）は全ユーザーが利用できる。各コネクタでできることを整理する。
+Google Workspace connectors (Gmail, Google Calendar, Google Drive) are available to all users. What each connector can and cannot do:
 
-| コネクタ | できること | できないこと |
+| Connector | Can | Cannot |
 |---------|-----------|-------------|
-| **Gmail** | メールの検索、読取、下書き作成 | 送信 |
-| **Google Calendar** | 予定の確認、作成 | （予定の削除は制限あり） |
-| **Google Drive** | Docs、Sheets、Slides、PDF の読み取り | 編集 |
+| **Gmail** | Search, read, and draft email | Send |
+| **Google Calendar** | Check and create events | (deleting events is limited) |
+| **Google Drive** | Read Docs, Sheets, Slides, and PDFs | Edit |
 
-応答には参照元への引用（リンク付き）が含まれ、出所を追跡できる [Source: Use Google Workspace connectors — https://support.claude.com/en/articles/10166901-use-google-workspace-connectors]。
+Responses include citations (with links) back to the source, so provenance is traceable [Source: Use Google Workspace connectors — https://support.claude.com/en/articles/10166901-use-google-workspace-connectors].
 
-チーム運用ではガバナンスの仕組みも押さえておく。Team および Enterprise では、Owner または Primary Owner が組織レベルでコネクタを有効化しないと、個々のユーザーは認証できない。データガバナンスを一元管理する仕組みである。また、同期コネクタのプロジェクト追加は**プライベートプロジェクトのみ**で有効で、共有プロジェクトでは無効になる点に注意する。
+For team operations, the governance mechanism also matters. On Team and Enterprise, an Owner or Primary Owner must enable connectors at the organization level before individual users can authenticate. This is the mechanism for centrally managing data governance. Note also that adding sync connectors to a project is enabled **only for private projects** and disabled for shared projects.
 
-ここで 重要な核心的な判断を明確にする。**コネクタのスコープは必要最小限に絞る。** 「共有ドライブ全体を接続して、指示で無視させる」という設計は確実でない。無関係なファイルが検索対象に混じり、精度が下がるからである。この関係を対比図で示す。
+Here we clarify an important core judgment. **Narrow a connector's scope to the minimum necessary.** The design "connect the entire shared drive and instruct Claude to ignore the rest" is unreliable. Irrelevant files mix into the search target, and accuracy drops. The contrast is shown below.
 
 ```mermaid
 flowchart LR
-    subgraph BAD["広すぎるスコープ（不適切）"]
-        B1["共有ドライブ全体を接続<br/>営業資料・人事文件・経理データ・<br/>過去アーカイブ・個人メモ"]
-        B1 --> B2["無関係ファイルが検索に混じる<br/>精度が下がる"]
+    subgraph BAD["Over-broad scope (inappropriate)"]
+        B1["Connect the entire shared drive<br/>sales materials, HR files, accounting data,<br/>past archives, personal notes"]
+        B1 --> B2["Irrelevant files mix into search<br/>accuracy drops"]
     end
-    subgraph GOOD["最小限のスコープ（適切）"]
-        G1["営業用フォルダのみ接続"]
-        G1 --> G2["関連ファイルだけを検索対象にする<br/>ノイズが混入せず精度が保たれる"]
+    subgraph GOOD["Minimal scope (appropriate)"]
+        G1["Connect only the sales folder"]
+        G1 --> G2["Only relevant files enter the search target<br/>no noise, accuracy preserved"]
     end
 ```
 
-実務の手順を述べる。チャット入力欄の「+」ボタンから「Connectors」を選び、対象プロバイダをオンにする。初回は OAuth 認証が走る。標準コネクタがカバーしない外部ツールや社内システムには、MCP（Model Context Protocol）コネクタという汎用仕組みを使う（MCP の技術詳細は CCA-F で学んだ領域なので、アソシエイトでは「MCP コネクタで外部ツールを繋げる」と理解すれば十分である）。
+The practical procedure is as follows. From the "+" button in the chat input, choose "Connectors" and turn on the target provider. The first time, OAuth authentication runs. For external tools or internal systems that standard connectors do not cover, use the MCP (Model Context Protocol) connector, a general-purpose mechanism (the technical detail of MCP is the territory covered in CCA-F, so for the Associate it is enough to understand that "an MCP connector links external tools").
 
-**入門者の判断指針。** コネクタを追加するときは「このプロジェクトで本当に必要なフォルダやスレッドはどれか」を自問する。共有ドライブ全体や受信トレイ全体ではなく、特定のフォルダやラベルに絞る。不要なコネクタを放置すると、関連しないデータが検索対象に混ざり、精度が下がる。使わなくなったコネクタは早めに切る。
+**Associate-level judgment guideline.** When adding a connector, ask yourself "which folders or threads does this project truly need?" Narrow to specific folders or labels, not the entire shared drive or the entire inbox. Leaving unused connectors in place lets irrelevant data mix into the search target and lowers accuracy. Disconnect connectors you no longer use, early.
 
-### Task Statement 5.3: Create effective system-level instructions（効果的なシステムレベル指示の作成）
+### Task Statement 5.3: Create effective system-level instructions
 
-> **入門者向けの位置づけ。** ここは押さえるべき核心。「指示は長文1段落に詰め込むと中間が無視される」「出典を限定しないと推測が混じる」という二つの罠を確実に押さえる。XML タグによる構造化と「データ上・問い下」の配置原則を実務手順として体感しておく。
+> **Associate-level framing.** This is a core to master. Master the two traps firmly: "packing instructions into one long paragraph causes the middle to be ignored," and "without restricting the source, guesses creep in." Build a practical feel for structuring with XML tags and the "data on top, question at the bottom" placement principle.
 
-システムプロンプトは、Claude に「このプロジェクトではどう振る舞うべきか」を教える基本設定である。プロンプトは明確かつ直接的に書き、構造化に XML タグを使い、Claude に役割を与える。そして硬すぎず緩すぎない**適切な高度さ**を保つ。適切な高度さとは、専門用語を避けて幼稚にするのではなく、文脈なしで判断できる精度を指す。
+The system prompt is the base setting that tells Claude "how to behave in this project." Write prompts clearly and directly, use XML tags for structure, and give Claude a role. Then maintain **appropriate altitude** — neither too rigid nor too loose. Appropriate altitude does not mean avoiding technical terms and becoming childish; it means the precision that can be judged without context.
 
-実用的な品質判定基準がある。**ゴールデンルール**と呼ばれるもので、最小限の文脈しか与えない同僚にプロンプトを見せ、その同僚が戸惑うなら Claude も戸惑う、という基準である。第三者視点の分かりやすさが、プロンプト品質の実用的な判定基準になる。
+There is a practical quality criterion: the **golden rule**, which says "show your prompt to a colleague who has only minimal context; if that colleague is confused, Claude will be confused too." Clarity from a third-party perspective is the practical bar for prompt quality.
 
-プロジェクト指示は「役割、制約、出力フォーマット」の三要素を押さえる。役割を与えると、Claude の挙動とトーンがその用途に集中する。一文でも効果がある。制約は「資料にない内容は推測せず『不明』と答える」のように、Claude の判断の境界を定める。出力フォーマットは「箇条書き3点」のように、成果物の形を指定する。この三要素を XML タグで区分して書くと、Claude が各要素を確実に認識する。
+Project instructions cover three elements: role, constraints, and output format. Giving a role focuses Claude's behavior and tone on that use case; even a single sentence helps. Constraints, such as "answer 'unknown' for anything not in the materials, do not guess," define the boundaries of Claude's judgment. Output format, such as "three bullet points," specifies the shape of the deliverable. Separating these three elements with XML tags ensures Claude recognizes each reliably.
 
-ここで 重要な核心を突く対比を示す。**長文1段落に複数ルールを詰め込むと、中間が無視される。** 悪い指示と良い指示の違いである。
+Here is a contrast that cuts to the core. **Packing multiple rules into one long paragraph causes the middle to be ignored.** This is the difference between bad and good instructions.
 
 ```
  ┌───────────────────────────────────────────────────────┐
- │      悪い指示 vs 良い指示（構造化の対比）              │
+ │      Bad vs good instructions (contrast in structure)  │
  ├───────────────────────────────────────────────────────┤
  │                                                       │
- │  ✕ 悪い指示（長文1段落）                              │
+ │  ✕ Bad (one long paragraph)                           │
  │  ┌─────────────────────────────────────────┐         │
- │  │ あなたは営業コンサルタントです。簡潔に  │         │
- │  │ 答えてください。資料にないことは推測    │         │
- │  │ しないでください。トーンは丁寧に。      │         │
- │  │ ただし網羅的に。3点の箇条書きで。       │         │
- │  │ 過去のデータも参考にしてください。      │         │
+ │  │ You are a sales consultant. Answer      │         │
+ │  │ concisely. Do not guess what is not in  │         │
+ │  │ the materials. Use a polite tone.       │         │
+ │  │ But be comprehensive. In three bullets. │         │
+ │  │ Refer to past data as needed.           │         │
  │  └─────────────────────────────────────────┘         │
- │  → 中央のルールが埋もれ、矛盾（簡潔＋網羅）が未解決   │
+ │  -> Middle rules get buried; contradiction            │
+ │     (concise + comprehensive) is unresolved           │
  │                                                       │
- │  ◎ 良い指示（XML タグでトピック別）                   │
+ │  ◎ Good (topic-based with XML tags)                   │
  │  ┌─────────────────────────────────────────┐         │
- │  │ <role>営業コンサルタント</role>          │         │
+ │  │ <role>Sales consultant</role>            │         │
  │  │ <constraints>                            │         │
- │  │  ・資料にない内容は「不明」と答える      │         │
- │  │  ・過去データは参照してよい              │         │
+ │  │  - Answer 'unknown' for anything not in  │         │
+ │  │    the materials                         │         │
+ │  │  - Past data may be referenced           │         │
  │  │ </constraints>                           │         │
- │  │ <format>箇条書き3点、丁寧なトーン</format>│        │
- │  │ <priority>簡潔さを優先。網羅性は3点以内 │         │
- │  │  で収まらない場合のみ</priority>         │         │
+ │  │ <format>Three bullet points, polite tone │         │
+ │  │ </format>                                │         │
+ │  │ <priority>Prioritize conciseness. Only   │         │
+ │  │  go beyond three points if unavoidable   │         │
+ │  │ </priority>                              │         │
  │  └─────────────────────────────────────────┘         │
- │  → 各ルールが独立し、矛盾に優先順位が明記される       │
+ │  -> Each rule stands alone; the contradiction has an  │
+ │     explicit priority order                           │
  │                                                       │
  └───────────────────────────────────────────────────────┘
 ```
 
-この対比が示すように、矛盾する指示（「簡潔に」と「網羅的に」）には、優先順位や例外条件を明記する。構造化されていない指示では、Claude がどちらを優先すべきか判断できず、出力がブレる。
+As this contrast shows, for contradictory instructions ("concise" and "comprehensive"), state a priority or exception explicitly. With unstructured instructions, Claude cannot decide which to prioritize and the output wobbles.
 
-長文コンテキストやナレッジ集中タスク（20k トークン超）では、配置にも注意が要る。長文データを上部に、問いを末尾に置くと品質が向上する。この「データ上・問い下」の原則は、公式のプロンプトガイドで報告されている効果である [Source: Prompting best practices — https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/claude-prompting-best-practices]。文書内容は XML タグ（`<document>`、`<document_content>`、`<source>` 等）で構造化する。複数文書がある場合は各々をタグで囲み、内容と出所を明示する。
+For long-context or knowledge-intensive tasks (over 20k tokens), placement also matters. Placing long data at the top and the question at the end improves quality. This "data on top, question at the bottom" principle is an effect reported in the official prompt guide [Source: Prompting best practices — https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/claude-prompting-best-practices]. Structure document content with XML tags (`<document>`, `<document_content>`, `<source>`, etc.). When multiple documents are involved, wrap each in tags and make content and provenance explicit.
 
-出力を安定して誘導するには、例（few-shot）を使う。3〜5個の例を `<example>` タグ（複数なら `<examples>`）で囲む。実際の用途に近く、エッジケースを含む多様な例を選ぶと、出力のフォーマット、トーン、構造が安定する。
+To steer output stably, use examples (few-shot). Wrap 3–5 examples in `<example>` tags (or `<examples>` for several). Choosing examples that are close to the real use case and diverse, including edge cases, stabilizes the output's format, tone, and structure.
 
-ここで、ナレッジソースを置くだけでは不十分な理由を述べる。参照資料をアップロードしても「その資料だけを見て、載っていないことは『分からない』と答えよ」と出典を限定しなければ、Claude が一般知識で補完してしまう。資料の信頼性を保つには、指示で出典を明示的に限定する必要がある。
+Here is why merely placing a knowledge source is insufficient. Even if you upload reference materials, unless you restrict the source with an instruction such as "look only at these materials and answer 'unknown' for anything not in them," Claude fills in with general knowledge. To preserve the reliability of the materials, you must explicitly restrict the source in the instructions.
 
-**入門者の判断指針。** 指示は長文1段落にせず、トピックごとにセクションを分けて XML タグで構造化する。役割、制約、出力フォーマットの三要素を必ず置く。矛盾する要求には優先順位を明記する。参照資料をアップロードしたら、指示で「その資料だけを根拠とし、載っていないことは『不明』と答える」と出典を限定する。
+**Associate-level judgment guideline.** Do not write instructions as one long paragraph; separate them into topic-based sections and structure them with XML tags. Always include the three elements: role, constraints, and output format. State a priority for contradictory requirements. After uploading reference materials, restrict the source in the instructions: "ground only in these materials and answer 'unknown' for anything not in them."
 
-### Task Statement 5.4: Inform, maintain, and update Claude configurations, knowledge sources, and instructions（設定・ナレッジ・指示の維持と更新）
+### Task Statement 5.4: Inform, maintain, and update Claude configurations, knowledge sources, and instructions
 
-> **入門者向けの位置づけ。** 設計したプロジェクトは、放置すると陳腐化する。ナレッジの古い版が残ったままになったり、スコープが広がりすぎて精度が落ちたりする。ここは押さえるべき核心で「ナレッジ陳腐化のサイクル」と「メモリストアの設計原則」を確実に押さえる。API/SDK の技術詳細は CCA-F で学んだので、ここでは「何をどう維持するか」の実務判断に絞る。
+> **Associate-level framing.** A project you have designed becomes stale if left alone. Old versions of knowledge accumulate, or the scope grows too wide and accuracy drops. This is a core to master; learn the "knowledge staleness cycle" and "memory store design principles" firmly. API/SDK technical detail is CCA-F prior knowledge, so we focus here on the practical judgment of "what to maintain, and how."
 
-プロジェクトを一度設定すれば終わりではない。ナレッジは時間が経つと陳腐化する。価格表が変わる、ポリシーが改定される、フォルダ構成が再編される。放置すると、Claude が古い情報を根拠に応答するようになり、出力の信頼性が徐々に下がる。このサイクルを図で示す。
+A project is not set-and-forget. Knowledge becomes stale over time. Price lists change, policies are revised, folder structures are reorganized. Left alone, Claude starts responding based on outdated information, and output reliability gradually declines. This cycle is shown below.
 
 ```mermaid
 flowchart LR
-    A["ナレッジ追加<br/>初期設定（正確・最新）"]
-    B["放置<br/>メンテなしで運用継続"]
-    C["陳腐化<br/>価格改定・ポリシー変更・<br/>フォルダ再編・古い版の残存"]
-    D["定期メンテ<br/>古い版の削除・スコープ再確認・<br/>価格表・ポリシーの更新"]
+    A["Add knowledge<br/>Initial setup (accurate, current)"]
+    B["Leave it<br/>Continue operating without maintenance"]
+    C["Staleness<br/>Price revisions, policy changes,<br/>folder reorganizations, lingering old versions"]
+    D["Periodic maintenance<br/>Archive or delete old versions, reconfirm scope,<br/>update price lists and policies"]
     A --> B --> C --> D
-    D -.->|"サイクルの継続"| A
+    D -.->|"Cycle continues"| A
 ```
 
-放置段階が長いほど、陳腐化の被害が大きくなる。
+The longer the neglect phase, the greater the damage from staleness.
 
-このサイクルを断ち切るには、定期的なメンテナンスが欠かせない。具体的には、古い版のアーカイブまたは削除、フォルダ再編後のスコープ再確認、価格表やポリシーの定期更新である。メンテナンスを怠ると、Claude が古い情報と新しい情報を同時に参照し、矛盾した応答を生成する。
+Regular maintenance is indispensable to break this cycle. Concretely: archive or delete old versions, reconfirm scope after folder reorganizations, and periodically update price lists and policies. Without maintenance, Claude references old and new information simultaneously and produces contradictory responses.
 
-メモリの管理にも設計原則がある。**メモリストア**は、セッションをまたいで情報を保持する仕組みである。ユーザー設定、プロジェクト規約、過去の修正、ドメイン知識を保存する。ここで重要なのは、一つの巨大な汎用ストアを作らないことである。目的ごと（ユーザー別、共有知識別、プロジェクト別）に小さく絞ったストアに分けるのが基本設計である。
+Memory management also has design principles. A **memory store** is a mechanism that holds information across sessions. It stores user preferences, project conventions, past corrections, and domain knowledge. The important point is not to build a single giant general-purpose store. The basic design is to split stores by purpose (per user, per shared knowledge, per project), each small and focused.
 
-| メモリストア設計原則 | 内容 |
+| Memory store design principle | Detail |
 |---------------------|------|
-| 目的ごとに絞る | ユーザー別、共有知識別、プロジェクト別に分割 |
-| 満杯前に整理 | 上限に近づいたら古いメモリを削除・圧縮 |
-| スコープ拡張時 | 新しいストアを追加し、元は読み取り専用で残す |
-| 書き込み制限 | 信頼できない入力は `read_only` に指定 |
+| Narrow by purpose | Split by user, by shared knowledge, by project |
+| Tidy before it fills | When approaching the limit, delete or compress old memories |
+| When expanding scope | Add a new store and keep the original as read-only |
+| Restrict writes | Mark untrusted inputs as `read_only` |
 
-アクセス権の設計は、セキュリティ上とくに重要である。信頼できない入力（ユーザーのプロンプト、取得した Web 内容、外部ツール出力）を処理する場合は `read_only` アクセスを指定し、悪意ある内容がストアに書き込まれるリスクを防ぐ。参照専用資料は `read_only`、新しい記憶を追加するセッションだけ `read_write` にするのが基本設計である [Source: Using agent memory — https://platform.claude.com/docs/en/managed-agents/memory]。
+Access-rights design is especially important for security. When handling untrusted inputs (user prompts, fetched web content, external tool output), specify `read_only` access to prevent malicious content from being written to the store. The basic design is `read_only` for reference-only materials and `read_write` only for sessions that add new memories [Source: Using agent memory — https://platform.claude.com/docs/en/managed-agents/memory].
 
-メモリには監査の仕組みもある。**メモリのバージョン**は監査トレールを提供し、30 日間保持される。変更は不変の「バージョン」として記録され、誰が何をいつ変更したかを追跡できる。コンプライアンス向けの **redact（秘匿）機能**は、履歴バージョンから秘密情報を削除しつつ、監査トレールは保持する。秘密鍵の消去や削除要求等に対応する仕組みである。
+Memory also has an audit mechanism. **Memory versions** provide an audit trail, retained for 30 days. Changes are recorded as immutable "versions," so you can track who changed what and when. The **redact** capability for compliance removes secret information from historical versions while retaining the audit trail. It supports cases such as secret-key erasure or deletion requests.
 
-Skills の管理もこの領域に入る。Skill は指示、メタデータ、リソースをまとめたモジュール単位の機能拡張で、`SKILL.md` と YAML フロントマター（`name`、`description`）で構成される。Skills には **段階的読み込み（progressive disclosure）** の仕組みがある。Level 1（メタデータ、起動時に常時読み込み、約100トークン）から Level 2（SKILL.md 本文、トリガ時に読み込み、5k トークン未満）を経て Level 3（リソース、スクリプト、必要時のみ）へと段階的に読み込む。この仕組みがあるため、多数の Skill をインストールしても未使用時のコンテキスト消費を最小化できる。Skill の `description` には「何をするか」と「いつ使うか」の両方を書く。Claude はこの記述を見て Skill の使用可否を判断するからである [Source: Agent Skills overview — https://platform.claude.com/docs/en/agents-and-tools/agent-skills/overview]。
+Skills management also belongs to this area. A Skill is a modular feature extension that bundles instructions, metadata, and resources, composed of a `SKILL.md` and YAML frontmatter (`name`, `description`). Skills have **progressive disclosure**. They load in stages — Level 1 (metadata, always loaded at startup, about 100 tokens), Level 2 (the SKILL.md body, loaded when triggered, under 5k tokens), and Level 3 (resources and scripts, only when needed). Because of this mechanism, installing many Skills minimizes context consumption when idle. A Skill's `description` should state both "what it does" and "when to use it," because Claude reads this description to decide whether the Skill is usable [Source: Agent Skills overview — https://platform.claude.com/docs/en/agents-and-tools/agent-skills/overview].
 
-Skill は Claude に新しい能力を与えるため、セキュリティにも配慮が要る。悪意ある Skill は意図しない操作を実行しうる。信頼できるソース（自作または Anthropic 提供）のみを使い、徹底的に監査する。スコープや要件が変わったら、Skills と指示を更新する。新しい作業パターンが定着したら Skill 化し、不要になった Skill は無効化する。
+Because a Skill gives Claude new capabilities, security care is required. A malicious Skill can perform unintended operations. Use only trusted sources (self-authored or Anthropic-provided) and audit thoroughly. When scope or requirements change, update Skills and instructions. When a new work pattern settles, turn it into a Skill; when a Skill is no longer needed, disable it.
 
-Domain 5 で扱うプロダクト機能は、それぞれ「何を永続化するか」が違う。この違いを整理しておくと、適材適所の判断がしやすなる。
+The product features covered in Domain 5 each differ in "what they persist." Organizing this difference makes right-fit decisions easier.
 
-| 機能 | 何を永続化するか | 保持期間 |
+| Feature | What it persists | Retention |
 |------|-----------------|---------|
-| **Project** | 指示とナレッジソース（ファイル＋コネクタ） | プロジェクトの存続中 |
-| **Artifact** | 独立パネルで編集する成果物 | セッションをまたいで再利用可 |
-| **Memory** | セッション間で再利用すべき事実 | 半永続（ストアで管理） |
-| **Skill** | モジュール化された専門知識と手順 | インストール中常駐 |
+| **Project** | Instructions and knowledge sources (files + connectors) | Lifetime of the project |
+| **Artifact** | A deliverable edited in an independent panel | Reusable across sessions |
+| **Memory** | Facts to reuse across sessions | Semi-permanent (managed in a store) |
+| **Skill** | Modular expertise and procedures | Resident while installed |
 
-**入門者の判断指針。** ナレッジは放置すると陳腐化する。定期的に古い版を削除し、スコープを再確認し、価格表やポリシーを更新する。メモリストアは目的ごとに小さく絞り、信頼できない入力には `read_only` を指定する。監査トレールは30日間保持されるので、定期的にバージョン履歴を確認し、秘密情報の混入は redact で削除する。Skills は信頼できるソースのみを使い、使わなくなったら早めに無効化する。
+**Associate-level judgment guideline.** Knowledge becomes stale if left alone. Periodically delete old versions, reconfirm scope, and update price lists and policies. Keep memory stores small and focused by purpose, and specify `read_only` for untrusted inputs. The audit trail is retained for 30 days, so periodically review the version history and remove any secret information with redact. Use only trusted sources for Skills, and disable unused Skills early.
 
-> **陥りやすい罠。** コネクタは必要最小限のフォルダやスレッドに絞る。「共有ドライブ全体を接続して指示で無視させる」は確実でなく、無関係ファイルが参照に混じる。ナレッジは放置すると陳腐化する（古い版のアーカイブや削除、フォルダ再編後のスコープ再確認、価格表やポリシーの定期更新）。指示は長文1段落に複数ルールを詰め込むと中間が無視される。トピック別のセクションに構造化する。参照資料をアップロードするだけでは不十分で、「その資料だけを見て、載っていないことは『分からない』と答えよ」と出典を限定する。矛盾する指示（「簡潔に」と「網羅的に」）には優先順位や例外条件を明記する。
+> **Common pitfall.** Narrow connectors to the minimum necessary folders or threads. "Connect the entire shared drive and instruct Claude to ignore it" is unreliable; irrelevant files mix into references. Knowledge becomes stale if left alone (archive or delete old versions, reconfirm scope after folder reorganizations, and periodically update price lists and policies). Packing multiple rules into one long paragraph causes the middle to be ignored; structure instructions into topic-based sections. Uploading reference materials is insufficient on its own; restrict the source with "look only at these materials and answer 'unknown' for anything not in them." For contradictory instructions ("concise" and "comprehensive"), state a priority or exception explicitly.
 
-**出典（Domain 5）:**
+**Sources (Domain 5):**
 - Using agent memory — https://platform.claude.com/docs/en/managed-agents/memory
 - Adding files to Managed Agents — https://platform.claude.com/docs/en/managed-agents/files
 - MCP connector — https://platform.claude.com/docs/en/agents-and-tools/mcp-connector
@@ -896,232 +902,232 @@ Domain 5 で扱うプロダクト機能は、それぞれ「何を永続化す�
 
 ---
 
-## Domain 6: Governance, Risk, and Responsible Use（ガバナンス・リスク・責任ある利用）
+## Domain 6: Governance, Risk, and Responsible Use
 
-Domain 5 では「プロジェクトの設定とナレッジ管理」を扱った。Domain 6 はその前提となる問いに向き合う。このデータを Claude に預けてよいか。このユースケースは規制上の要件を満たすか。提案された利用は倫理的に許容されるか。CCAO-F では API のセキュリティ実装ではなく、ビジネスユーザーとしての責任ある利用判断を問う。技術的なセキュリティ統合は CCA-F で既に学んだ。ここでは AUP（利用ポリシー）の三層構造、商用と消費者のデータ取り扱いの違い、データ保持期間、そして開発元の安全ガバナンス（RSP・PBC・LTBT）と Claude の倫理的原則（憲法）を、判断の材料として整理する。
+Domain 5 covered "project configuration and knowledge management." Domain 6 faces the premise behind it: Is it acceptable to entrust this data to Claude? Does this use case meet regulatory requirements? Is the proposed use ethically acceptable? CCAO-F does not ask about API security implementation; it asks for the business user's judgment on responsible use. Technical security integration was already covered in CCA-F. Here we organize, as material for judgment, the three-layer structure of the AUP (Usage Policy), the difference between commercial and consumer data handling, data retention periods, and the developer's safety governance (RSP, PBC, LTBT) and Claude's ethical principles (the Constitution).
 
-> **入門者向けの位置づけ。** CCA-F（Architect）では API のセキュリティ実装やコンプライアンス統合の技術詳細を問うが、CCAO-F では「ビジネスユーザーとして、このデータを Claude に預けてよいか」「このユースケースは規制上の要件を満たすか」を実務判断として問う。AUP（利用ポリシー）の三層構造（ユニバーサル基準・ハイリスク要件・追加ガイドライン）、商用と消費者の学習の違い、データ保持期間、そして「規制対象の助言は有資格者レビューが必須で Claude の自己チェックは管理策にならない」という核心を押さえること。技術的なセキュリティ実装は CCA-F 既得なので、ここでは「ビジネスユーザーの責任ある利用判断」に集中する。
+> **Associate-level framing.** CCA-F (Architect) asks about API security implementation and the technical detail of compliance integration; CCAO-F asks "as a business user, is it acceptable to entrust this data to Claude?" and "does this use case meet regulatory requirements?" as practical judgment. Master the AUP's three-layer structure (universal standards, high-risk requirements, additional guidelines), the difference between commercial and consumer training, data retention periods, and the core principle that "regulated advice requires qualified-professional review, and Claude's self-check is not a control." Technical security implementation is CCA-F prior knowledge, so we focus here on "the business user's responsible-use judgment."
 
-### Domain 6 の判断対象全体像
+### Overview of Domain 6's Decision Targets
 
-Domain 6 の4つの Task Statement は、ユースケースを評価してから開発元のガバナンスと倫理原則に照らすまでの流れとして捉えられる。
+The four Task Statements of Domain 6 can be read as a flow from evaluating a use case to measuring it against the developer's governance and ethical principles.
 
 ```mermaid
 flowchart TB
-    A["TS 6.1<br/>ユースケースの適否判定<br/>AUP 三層で分類"] --> B["TS 6.2<br/>データ機密性とプライバシー<br/>商用 vs 消費者・保持期間・DPA"]
-    B --> C["TS 6.3<br/>組織ポリシーとガバナンス<br/>RSP・ASL・PBC・LTBT"]
-    C --> D["TS 6.4<br/>倫理的意味の理解<br/>憲法の優先順位・Transparency Hub"]
+    A["TS 6.1<br/>Judge the use case's acceptability<br/>Classify against the AUP's three layers"] --> B["TS 6.2<br/>Data sensitivity and privacy<br/>Commercial vs consumer, retention, DPA"]
+    B --> C["TS 6.3<br/>Organizational policy and governance<br/>RSP, ASL, PBC, LTBT"]
+    C --> D["TS 6.4<br/>Understand ethical implications<br/>Constitution priority order, Transparency Hub"]
 ```
 
-まずユースケースが許容されるかを判定し（TS 6.1）、次に扱うデータの機密性と規制要件を確認し（TS 6.2）、開発元と自社のガバナンス基準を照らし合わせ（TS 6.3）、最後に倫理的原則で総合的に判断する（TS 6.4）。
+First judge whether the use case is acceptable (TS 6.1), then confirm the sensitivity and regulatory requirements of the data involved (TS 6.2), measure against the developer's and your own governance standards (TS 6.3), and finally judge holistically with ethical principles (TS 6.4).
 
-### Task Statement 6.1: Identify appropriate and inappropriate use cases（適切・不適切なユースケースの識別）
+### Task Statement 6.1: Identify appropriate and inappropriate use cases
 
-> **入門者向けの位置づけ。** AUP は「誰もが守る共通の禁止事項（ユニバーサル）」「個人の権利に影響する領域の追加要件（ハイリスク）」「特定プロダクト形態の追加ガイドライン」の三層構造を持つ。提案されたユースケースがどの層に当たるかを分類するのが最初の判断。重要な核心「規制対象の助言は有資格者レビュー必須、Claude の自己チェックは代わりにならない」は、このハイリスク要件の層に出題される。
+> **Associate-level framing.** The AUP has a three-layer structure: "common prohibitions everyone must follow (universal)," "additional requirements for areas that affect individual rights (high-risk)," and "additional guidelines for specific product forms." Classifying which layer a proposed use case falls into is the first judgment. The important core — "regulated advice requires qualified-professional review, and Claude's self-check is no substitute" — is tested in the high-risk layer.
 
-提案されたユースケースが Claude で許容されるかを判定する最初の手がかりは、**利用ポリシー（Acceptable Use Policy、AUP）** である [Source: Usage Policy — https://www.anthropic.com/legal/aup]。AUP は三層構造で書かれている。第一層は全ユーザー・全用途に適用される共通の禁止事項（Universal Usage Standards）。第二層は公共の福祉と社会的公正に影響する領域への追加要件（High-Risk Use Case Requirements）。第三層は特定のプロダクト形態への追加ガイドライン（Additional Use Case Guidelines）。提案されたユースケースを見たら、まずこの三層のどれに当たるかを分類する。
+The first clue to judging whether a proposed use case is acceptable on Claude is the **Acceptable Use Policy (AUP)** [Source: Usage Policy — https://www.anthropic.com/legal/aup]. The AUP is written in three layers. The first layer is common prohibitions that apply to all users and all uses (Universal Usage Standards). The second is additional requirements for areas that affect public welfare and social fairness (High-Risk Use Case Requirements). The third is additional guidelines for specific product forms (Additional Use Case Guidelines). When you see a proposed use case, first classify it into one of these three layers.
 
 ```mermaid
 flowchart TD
-    START["ユースケースの提案"] --> Q1{"ユニバーサル禁止<br/>カテゴリに該当するか？"}
-    Q1 -->|"Yes"| NG["即「不可」<br/>引き受けない"]
-    Q1 -->|"No"| Q2{"ハイリスク7領域<br/>に該当するか？"}
-    Q2 -->|"Yes"| HR["条件付きで許可<br/>有資格者レビュー + AI 開示が必須"]
-    Q2 -->|"No"| Q3{"チャットボット・未成年者・<br/>エージェント型か？"}
-    Q3 -->|"Yes"| GL["追加ガイドラインを適用<br/>AI 開示 / COPPA / AUP 遵守"]
-    Q3 -->|"No"| OK["通常の利用要件で実施"]
+    START["Proposed use case"] --> Q1{"Does it fall under a<br/>universal prohibition category?"}
+    Q1 -->|"Yes"| NG["Immediate 'no'<br/>Do not take it on"]
+    Q1 -->|"No"| Q2{"Does it fall under the<br/>seven high-risk areas?"}
+    Q2 -->|"Yes"| HR["Conditionally permitted<br/>Qualified-professional review + AI disclosure required"]
+    Q2 -->|"No"| Q3{"Is it a chatbot, for minors,<br/>or agentic?"}
+    Q3 -->|"Yes"| GL["Apply additional guidelines<br/>AI disclosure / COPPA / AUP compliance"]
+    Q3 -->|"No"| OK["Proceed under standard use requirements"]
 ```
 
-第一層のユニバーサル利用基準は、条件付きではなく「やってはならない」行為のリストである。禁止カテゴリは八つの群に整理できる。
+The first layer, Universal Usage Standards, is not conditional; it is a list of "what you must not do." The prohibition categories can be grouped into eight clusters.
 
-| 群 | 代表例 |
+| Cluster | Representative examples |
 |----|--------|
-| 違法行為 | 法令違反を助長する利用全般 |
-| 重大な危害 | 武器、CBRN、暴力扇動、CSAM |
-| プライバシー侵害 | 同意なき個人情報の収集・処理 |
-| 虚偽情報・民主主義への妨害 | 選挙操作、偽の本人偽装、虚偽キャンペーン |
-| 監視・予測捜査・犯罪司法 | 顔認識、感情認識、同意なき位置追跡、信用度評価 |
-| 詐欺・搾取 | 詐欺的コンテンツ、搾取的行為 |
-| プラットフォーム悪用 | 脱獄、蒸留、スクレイピング |
-| 性的に露骨なコンテンツ | わいせつコンテンツの生成 |
+| Illegal activity | Uses that facilitate legal violations, broadly |
+| Severe harm | Weapons, CBRN, incitement to violence, CSAM |
+| Privacy violation | Collection and processing of personal information without consent |
+| Disinformation and interference with democracy | Election manipulation, impersonation, disinformation campaigns |
+| Surveillance, predictive policing, and criminal justice | Facial recognition, emotion recognition, non-consensual location tracking, credit scoring |
+| Fraud and exploitation | Fraudulent content, exploitative practices |
+| Platform abuse | Jailbreaking, distillation, scraping |
+| Sexually explicit content | Generation of obscene content |
 
-「監視や予測捜査」には、同意なき位置や感情の追跡、顔認識、信用度評価、感情認識システムが含まれる。これらは技術的に可能でも AUP で禁止されている。
+"Surveillance and predictive policing" includes non-consensual tracking of location or emotion, facial recognition, credit scoring, and emotion-recognition systems. These are prohibited by the AUP even when technically feasible.
 
-第二層のハイリスク要件は、主観的な意思決定が個人や消費者に直接影響する領域を指定する。AUP は「個人の権利・生活・財産に影響する場面」に限りヒューマンインザループを要求する。社内の資料作成や分析は通常この層に当たらない。該当するのは七つの領域である。
+The second layer, high-risk requirements, designates areas where subjective decisions directly affect individuals or consumers. The AUP requires human-in-the-loop only "in contexts that affect an individual's rights, livelihood, or property." Internal document creation or analysis usually does not fall in this layer. The qualifying areas are seven:
 
-| ハイリスク領域 | 影響を受けるもの | 代表例 |
+| High-risk area | What is affected | Representative examples |
 |---------------|-----------------|--------|
-| Legal | 権利・自由 | 法律解釈、契約書作成 |
-| Healthcare | 健康・生命 | 医療診断、治療方針 |
-| Insurance | 金銭・保障 | 保険引受、給付判断 |
-| Finance | 金銭・財産 | 融資判断、投資助言 |
-| Employment & housing | 機会・生活 | 採用、昇進、入居審査 |
-| Academic testing | 機会・公正 | 入試、資格試験 |
-| Media / journalism | 名誉・社会 | 報道、記事執筆 |
+| Legal | Rights and freedoms | Legal interpretation, contract drafting |
+| Healthcare | Health and life | Medical diagnosis, treatment plans |
+| Insurance | Money and coverage | Underwriting, benefits decisions |
+| Finance | Money and property | Lending decisions, investment advice |
+| Employment and housing | Opportunity and livelihood | Hiring, promotion, admission review |
+| Academic testing | Opportunity and fairness | Entrance exams, certification exams |
+| Media / journalism | Reputation and society | Reporting, article writing |
 
-七つの領域は「個人の生活や権利に直接影響する領域」として一つの群で覚えるとよい。法律解釈、医療診断、保険引受、融資判断、採用・入試、報道が該当する。ただしウェルネス助言（睡眠、ストレス、栄養、運動）は Healthcare に含まれない点に注意が必要である。
+It helps to memorize the seven areas as one cluster, "areas that directly affect an individual's livelihood or rights": legal interpretation, medical diagnosis, insurance underwriting, lending decisions, hiring and entrance exams, and reporting. Note that wellness advice (sleep, stress, nutrition, exercise) is not included in Healthcare.
 
-ハイリスク領域は条件付きで許可されるが、二つの追加義務が伴う。第一に **Human-in-the-loop** である。その分野の有資格の専門家が、普及・最終決定前に内容をレビューしなければならない。第二に **開示** である。モデルの出力を個人や消費者に直接提示する場合、AI を使ったことを伝える。開示は最低限「セッションの開始時」に行う。
+High-risk areas are conditionally permitted, but carry two additional obligations. First, **human-in-the-loop**. A qualified professional in the field must review the content before dissemination or final decision. Second, **disclosure**. If the model's output is presented directly to an individual or consumer, the use of AI must be disclosed. Disclosure is done at a minimum "at the start of the session."
 
-ここで最も重要な原則がある。ハイリスク領域では Claude に自己検証させてはならない。Claude に「この医療情報は正しいか」「この投資助言は顧客のリスク許容度に合うか」と聞き返して安心するのは、レビューの代わりにならない。資格を持つ人間が確認する。これは 重要な核心概念と同じ原理である。自己申告の自信は精度の信頼できるシグナルではない（Domain 2 で詳述）。だからこそ、Claude 自身が自信を持っても、有資格者の確認が不可欠なのである。
+Here is the most important principle. In high-risk areas, you must not have Claude self-verify. Asking Claude "is this medical information correct?" or "does this investment advice fit the client's risk tolerance?" and feeling reassured is no substitute for review. A qualified human confirms. This is the same principle as the important core concept. Self-reported confidence is not a reliable signal of accuracy (covered in detail in Domain 2). That is precisely why, even when Claude itself is confident, confirmation by a qualified professional is indispensable.
 
-第三層の追加ガイドラインは、ハイリスクかどうかにかかわらず、特定のプロダクト形態に適用される要件である。三つの代表的な形態を押さえる。
+The third layer, additional guidelines, applies requirements to specific product forms regardless of whether they are high-risk. Three representative forms are worth mastering.
 
-第一に **チャットボット開示** である。消費者向けのチャットボットは、ユーザーが AI とやり取りしていることを開示しなければならない。開示は最低限セッションの開始時に行う。AI であることを隠してはならない。これは人間のふりをすること（impersonation）を禁じるユニバーサル基準とも整合する。
+First, **chatbot disclosure**. A consumer-facing chatbot must disclose that the user is interacting with AI. Disclosure is done at a minimum at the start of the session. Hiding the fact that it is AI is not allowed. This is consistent with the universal standard that prohibits impersonation.
 
-第二に **未成年者向けプロダクト** である。未成年者（18歳未満）に直接アクセスさせるプロダクトは、年齢確認、コンテンツモデレーション、**COPPA（Children's Online Privacy Protection Act）** 準拠が必要である。COPPA は13歳未満の児童から収集する個人情報について、親の確認可能な同意を求める米国の連邦法である。未成年者向けプロダクトはこの遵守が追加要件になる [Source: Guidelines for organizations serving minors — https://support.anthropic.com/en/articles/9307344-responsible-use-of-anthropic-s-models-guidelines-for-organizations-serving-minors]。
+Second, **products for minors**. Products that give direct access to minors (under 18) require age verification, content moderation, and **COPPA (Children's Online Privacy Protection Act)** compliance. COPPA is a U.S. federal law that requires verifiable parental consent for personal information collected from children under 13. Compliance with COPPA is an additional requirement for products aimed at minors [Source: Guidelines for organizations serving minors — https://support.anthropic.com/en/articles/9307344-responsible-use-of-anthropic-s-models-guidelines-for-organizations-serving-minors].
 
-第三に **エージェント型利用** である。Claude が自律的にツールを使い、複数ステップで行動する用途も AUP に従う。エージェントだからといって禁止事項が緩むことはない。
+Third, **agentic use**. Uses where Claude autonomously uses tools and acts over multiple steps are also bound by the AUP. Being agentic does not relax the prohibitions.
 
-**入門者の判断指針。** 提案されたユースケースを見たら、まず三層のどれに当たるかを分類する。ユニバーサル禁止（武器、CBRN、CSAM、詐欺、虚偽情報、監視、脱獄等）に当たれば即「不可」である。ハイリスク7領域（Legal、Healthcare、Insurance、Finance、Employment、Academic、Media）に当たれば、有資格者レビューと AI 使用の開示が必須である。それ以外でもチャットボットなら AI 開示、未成年者向けなら COPPA・年齢確認、エージェントなら AUP 遵守を確認する。ハイリスク領域で Claude に「これで大丈夫か」と自己チェックさせるのは、レビューの代わりにならない。
+**Associate-level judgment guideline.** When you see a proposed use case, first classify it into one of the three layers. If it falls under a universal prohibition (weapons, CBRN, CSAM, fraud, disinformation, surveillance, jailbreaking, etc.), the answer is an immediate "no." If it falls under one of the seven high-risk areas (Legal, Healthcare, Insurance, Finance, Employment, Academic, Media), qualified-professional review and AI-use disclosure are mandatory. Otherwise, for a chatbot confirm AI disclosure; for a product for minors confirm COPPA and age verification; for an agent confirm AUP compliance. Asking Claude "is this okay?" in a high-risk area is no substitute for review.
 
-### Task Statement 6.2: Apply data sensitivity, regulatory, and privacy considerations（データ機密性、規制、プライバシーの適用）
+### Task Statement 6.2: Apply data sensitivity, regulatory, and privacy considerations
 
-> **入門者向けの位置づけ。** ここは押さえるべき核心。「商用アカウント（学習なし）と消費者アカウント（オプトアウト要）の違い」「機密データは匿名化してから、消費者アカウントは使わない」という実務判断を問う。保持期間の数字（30日、5年、2年、7年）と DPA の保護措置（AES-256、TLS 1.2、48時間通知、SCC）を、ビジネスユーザーの判断材料として押さえること。
+> **Associate-level framing.** This is a core to master. The exam tests the practical judgment of "the difference between a commercial account (no training) and a consumer account (opt-out required)" and "anonymize sensitive data first; do not use a consumer account." Master the retention numbers (30 days, 5 years, 2 years, 7 years) and the DPA's protections (AES-256, TLS 1.2, 48-hour notification, SCC) as material for business-user judgment.
 
-ユースケースが許容されると分かったら、次に扱うデータの機密性と規制要件を確認する。最初の分岐は「使っている面が商用か消費者か」である。この区別が、データが学習に使われるかどうかを決める。
+Once you know a use case is acceptable, the next step is to confirm the sensitivity and regulatory requirements of the data involved. The first branch is "is the surface you are using commercial or consumer?" This distinction determines whether data is used for training.
 
-商用利用規約（Commercial Terms of Service）のセクション B は「Anthropic may not train models on Customer Content from Services」と明記する。つまり商用面（API、Claude for Work 等）では、顧客の入出力は Claude の訓練に使われない [Source: Commercial Terms of Service — https://www.anthropic.com/legal/commercial-terms]。一方、消費者向け（Claude Free/Pro/Max、およびこれらのプランの Claude Code）はデフォルトでモデル改善（学習）に使われる。ユーザーが設定でオプトアウトしない限り、対話内容が学習データになる可能性がある。
+Section B of the Commercial Terms of Service states "Anthropic may not train models on Customer Content from Services." In other words, on the commercial surface (API, Claude for Work, etc.), customer inputs and outputs are not used to train Claude [Source: Commercial Terms of Service — https://www.anthropic.com/legal/commercial-terms]. The consumer surface (Claude Free/Pro/Max, and Claude Code on these plans), on the other hand, is used by default for model improvement (training). Unless the user opts out in settings, conversation content may become training data.
 
-| 項目 | 商用面（API・Claude for Work） | 消費者面（Free/Pro/Max） |
+| Item | Commercial surface (API, Claude for Work) | Consumer surface (Free/Pro/Max) |
 |------|-------------------------------|------------------------|
-| 学習への使用 | されない（規約で明記） | デフォルトで使用される |
-| オプトアウト | 不要（最初から対象外） | 設定でオンにする必要がある |
-| 機密データの取扱い | 適している | 適していない |
+| Use in training | Not used (stated in the terms) | Used by default |
+| Opt-out | Not required (excluded from the start) | Must be turned on in settings |
+| Suitability for sensitive data | Suitable | Not suitable |
 
-この違いが実務で効くのは、機密データを扱う場面である。顧客の個人情報や契約情報を消費者アカウントで扱うと、オプトアウト忘れで学習に混入するリスクがある。機密データを扱うときは必ず商用面を使う。これは同じ原理である [Source: How long do you store my data? — https://privacy.anthropic.com/en/articles/10023548-how-long-do-you-store-personal-data]。
+Where this difference bites in practice is when handling sensitive data. Handling customers' personal or contract information on a consumer account risks mixing it into training because of a forgotten opt-out. Always use the commercial surface for sensitive data. This is the same principle [Source: How long do you store my data? — https://privacy.anthropic.com/en/articles/10023548-how-long-do-you-store-personal-data].
 
-データが Claude に預けられた後、どのくらい保持されるかも把握しておく必要がある。保持期間はデータの種類によって異なる。
+How long data is retained after being entrusted to Claude must also be understood. Retention differs by data type.
 
-| データの種類 | 保持期間 |
+| Data type | Retention |
 |-------------|---------|
-| 削除された対話 | バックエンドから消えるまで最大30日 |
-| 学習に使用されたデータ | 非識別化形式で最大5年 |
-| AUP 違反としてフラグされた入出力 | 最大2年（分類スコアは7年） |
-| フィードバックデータ | 最大5年 |
+| Deleted conversations | Up to 30 days to disappear from the backend |
+| Data used in training | Up to 5 years in de-identified form |
+| Inputs/outputs flagged as AUP violations | Up to 2 years (classification scores for 7 years) |
+| Feedback data | Up to 5 years |
 
-Incognito チャットは、モデル改善設定をオンにしていても学習に使われない。一時的に学習対象から外したい対話があるとき、設定変更より手軽な手段である [Source: How long do you store my data? — https://privacy.anthropic.com/en/articles/10023548-how-long-do-you-store-personal-data]。
+Incognito chats are not used for training even if the model-improvement setting is on. When you want to temporarily exclude a conversation from training, it is a more convenient means than changing the setting [Source: How long do you store my data? — https://privacy.anthropic.com/en/articles/10023548-how-long-do-you-store-personal-data].
 
-商用契約には **データ処理付録（Data Processing Addendum、DPA）** が組み込まれる [Source: Data Processing Addendum — https://www.anthropic.com/legal/data-processing-addendum]。DPA は顧客がコントローラー（利用目的を決める主体）、Anthropic がプロセッサー（顧客の指示に従って処理する主体）という役割分担を定める。主要な保護措置を整理する。
+A commercial contract incorporates a **Data Processing Addendum (DPA)** [Source: Data Processing Addendum — https://www.anthropic.com/legal/data-processing-addendum]. The DPA defines the role split in which the customer is the controller (the party that determines the purpose of use) and Anthropic is the processor (the party that processes following the customer's instructions). The main protections:
 
-| 保護措置 | 内容 |
+| Protection | Detail |
 |---------|------|
-| 静止データの暗号化 | AES-256 |
-| 転送データの暗号化 | TLS 1.2 以上 |
-| セキュリティインシデント通知 | 48時間以内 |
-| 契約終了後のデータ削除 | 30日以内 |
-| アクセス管理 | RBAC（役割ベースのアクセス制御）と MFA |
-| 越境転送の保護 | EU・英国・スイス向け SCC |
+| Encryption at rest | AES-256 |
+| Encryption in transit | TLS 1.2 or higher |
+| Security incident notification | Within 48 hours |
+| Data deletion after contract termination | Within 30 days |
+| Access management | RBAC (role-based access control) and MFA |
+| Cross-border transfer protection | SCC for EU, UK, and Switzerland |
 
-**SCC（Standard Contractual Clauses）** は、EU、英国、スイスから米国への個人データ転送に必要な法的保護枠組みである。欧州のデータ保護法を満たす標準契約条項であり、DPA は EU SCC、UK Addendum、Swiss Addendum の三つを組み込んでいる。GDPR 対象のデータを扱う組織には必須の文書である。
+**SCC (Standard Contractual Clauses)** are the legal protection framework required for personal-data transfers from the EU, UK, and Switzerland to the United States. They are standard contractual clauses that satisfy European data-protection law, and the DPA incorporates three: the EU SCC, the UK Addendum, and the Swiss Addendum. They are an essential document for organizations handling GDPR-covered data.
 
-Anthropic が保持する主な認定として、SOC 2 Type 2（セキュリティ・可用性・機密性）、ISO/IEC 27001（情報セキュリティ管理）、27017（クラウドセキュリティ）、27018（クラウドプライバシー）、CSA STAR（クラウドセキュリティ認定）、GDPR・HIPAA 準拠がある。リージョン別のデータ居住（data residency）も利用可能であり、規制要件で「データは特定地域に保存しなければならない」組織向けのオプションがある。
+Major certifications Anthropic holds include SOC 2 Type 2 (security, availability, confidentiality), ISO/IEC 27001 (information security management), 27017 (cloud security), 27018 (cloud privacy), CSA STAR (cloud security certification), and GDPR and HIPAA compliance. Region-specific **data residency** is also available as an option for organizations whose regulatory requirements demand that "data must be stored in a specific region."
 
-機密データを Claude に預ける前の処理は、次のフローで進める。
+The flow for handling sensitive data before entrusting it to Claude is as follows.
 
 ```mermaid
 flowchart TD
-    A["機密データの特定<br/>顧客名・口座番号・健康情報等"] --> B{"商用面か消費者面か？"}
-    B -->|"消費者面"| B1["商用面に切り替える<br/>（機密データは商用面で）"]
-    B -->|"商用面"| C
-    B1 --> C["個人識別子を削除・匿名化<br/>アップロード前に実施"]
-    C --> D{"地域・規制の制約があるか？"}
-    D -->|"GDPR 対象"| D1["SCC が有効か確認"]
-    D -->|"HIPAA 対象"| D2["準拠プランを使用"]
-    D -->|"データ居住要件"| D3["Regional Compliance を選択"]
-    D -->|"なし"| E
-    D1 --> E["データをアップロード"]
+    A["Identify sensitive data<br/>customer names, account numbers, health info, etc."] --> B{"Commercial or consumer surface?"}
+    B -->|"Consumer"| B1["Switch to the commercial surface<br/>(sensitive data belongs on the commercial surface)"]
+    B -->|"Commercial"| C
+    B1 --> C["Remove or anonymize personal identifiers<br/>before upload"]
+    C --> D{"Are there regional or regulatory constraints?"}
+    D -->|"GDPR-covered"| D1["Confirm SCC is in effect"]
+    D -->|"HIPAA-covered"| D2["Use a compliant plan"]
+    D -->|"Data residency requirement"| D3["Choose Regional Compliance"]
+    D -->|"None"| E
+    D1 --> E["Upload the data"]
     D2 --> E
     D3 --> E
 ```
 
-匿名化の基本は、顧客名、口座番号、健康情報などの個人識別子を、アップロード前に削除またはダミー値に置き換えることである。「Claude に保持させない」と指示するだけではポリシーを満たさない。データが既に共有された時点で、指示による制御は効かないからである。組織のデータ分類基準に従って処理する。
+The basics of anonymization are to remove or replace with dummy values the personal identifiers — customer names, account numbers, health information — before upload. Merely instructing "do not have Claude retain this" does not satisfy the policy, because once data has been shared, instruction-based control no longer applies. Process according to your organization's data classification standards.
 
-**入門者の判断指針。** 機密データを Claude に預ける前に三つを確認する。使っている面が商用（学習なし）か消費者（オプトアウト要）か。機密データなら必ず商用面を使う。個人識別子は削除・匿名化してから預ける。消費者アカウントにそのまま上げない。地域・規制の制約（GDPR、HIPAA）があるなら、SCC や準拠プランが有効か確認する。Claude に「このデータを保持しないで」と指示するだけでは、ポリシー上の管理策にならない。
+**Associate-level judgment guideline.** Before entrusting sensitive data to Claude, confirm three things: whether the surface you are using is commercial (no training) or consumer (opt-out required); for sensitive data, always use the commercial surface; and remove or anonymize personal identifiers before entrusting it — do not upload as-is to a consumer account. If there are regional or regulatory constraints (GDPR, HIPAA), confirm that SCC or a compliant plan is in effect. Merely instructing Claude "do not retain this data" is not a policy control.
 
-### Task Statement 6.3: Follow organizational AI policies and governance standards（組織の AI ポリシーとガバナンス基準の遵守）
+### Task Statement 6.3: Follow organizational AI policies and governance standards
 
-> **入門者向けの位置づけ。** CCA-F（Architect）では API レベルのセキュリティ統合やコンプライアンス実装の技術詳細を問うが、CCAO-F では「Claude を開発した組織が、安全のために自分自身に課しているルール」を知り、自社のポリシーと照らし合わせる判断を問う。RSP（責任あるスケーリングポリシー）と ASL（AI 安全レベル）の考え方、そして PBC・LTBT という企業統治の形を押さえること。
+> **Associate-level framing.** CCA-F (Architect) asks about API-level security integration and the technical detail of compliance implementation; CCAO-F asks you to know "the rules the organization that built Claude imposes on itself for safety" and to judge them against your own organization's policies. Master the concepts of RSP (Responsible Scaling Policy) and ASL (AI Safety Level), and the corporate-governance forms of PBC and LTBT.
 
-データの機密性を確認したら、次に開発元のガバナンスと自社のポリシーを照らし合わせる。ビジネスユーザーが知っておくべき開発元のガバナンスは二つある。一つは安全性の技術的枠組み（RSP・ASL）、もう一つは企業統治の構造（PBC・LTBT）である。
+After confirming data sensitivity, the next step is to measure the developer's governance against your own policies. The developer governance a business user should know comes in two forms: the technical framework for safety (RSP and ASL), and the structure of corporate governance (PBC and LTBT).
 
-**責任あるスケーリングポリシー（Responsible Scaling Policy、RSP）** は、Anthropic が自社のモデルについて「安全性を確認できなければ訓練・展開しない」と誓う社内の枠組みである [Source: Announcing our updated Responsible Scaling Policy — https://www.anthropic.com/news/announcing-our-updated-responsible-scaling-policy]。モデルの能力に応じて求められる安全基準を引き上げる。RSP の核心は比例的保護の原則、つまりリスクに応じて保護を拡大することである。
+The **Responsible Scaling Policy (RSP)** is Anthropic's internal framework by which it pledges "we will not train or deploy a model unless we can confirm its safety" [Source: Announcing our updated Responsible Scaling Policy — https://www.anthropic.com/news/announcing-our-updated-responsible-scaling-policy]. It raises the safety bar required as model capability grows. The core of the RSP is the principle of proportional protection — expanding protection in proportion to risk.
 
-RSP は **AI Safety Level（ASL）** という段階的な安全基準を定める。バイオセーフティレベルを参考にした体系であり、モデルの能力が上がるほど求められる基準が厳しくなる。
+The RSP defines staged safety standards called **AI Safety Levels (ASL)**. The system is modeled on biosafety levels: as model capability rises, the required standard becomes stricter.
 
 ```mermaid
 graph LR
-    ASL1["ASL-1<br/>基本能力<br/>（チェスボット程度）"] -->|能力上昇| ASL2["ASL-2<br/>現行モデルの運用レベル"]
-    ASL2 -->|CBRN 閾値到達| ASL3["ASL-3<br/>CBRN 武器への<br/>意味のある助力リスク"]
-    ASL3 -->|能力上昇| ASL4["ASL-4 以上<br/>自律的 AI 研究開発<br/>（将来の可能性）"]
+    ASL1["ASL-1<br/>Basic capability<br/>(about the level of a chess bot)"] -->|Capability rises| ASL2["ASL-2<br/>Operating level of current models"]
+    ASL2 -->|CBRN threshold reached| ASL3["ASL-3<br/>Meaningful assistance risk<br/>for CBRN weapons"]
+    ASL3 -->|Capability rises| ASL4["ASL-4+<br/>Autonomous AI R&D<br/>(future possibility)"]
 ```
 
-現行の全モデルは ASL-2 で運用される。二つの能力閾値が定義されている。一つは CBRN 武器への意味のある助力であり、ASL-3 基準を要する。もう一つは自律的な AI 研究開発であり、ASL-4 以上の安全基準を要する可能性がある。閾値に達しなければ現行の ASL-2 で展開する。
+All current models operate at ASL-2. Two capability thresholds are defined. One is meaningful assistance for CBRN weapons, which requires the ASL-3 standard. The other is autonomous AI R&D, which may require the ASL-4 or higher safety standard. If the thresholds are not reached, deployment continues at the current ASL-2.
 
-RSP は AI の破滅的リスク（CBRN 等）に焦点を当てる。日常の有害利用（虚偽情報、詐欺等）は AUP が扱う。RSP と AUP は補完関係にある。
+The RSP focuses on catastrophic AI risks (CBRN, etc.). Everyday harmful use (disinformation, fraud, etc.) is handled by the AUP. The RSP and AUP are complementary.
 
-開発元の企業統治も、安全性の構造的証拠として参照できる。Anthropic はデラウェア州法の **公益会社（Public Benefit Corporation、PBC）** として設立された。PBC は株主利益だけでなく、公益目的も法的に追求する義務を持つ企業形態である。安全性と公益性を定款に組み込んでいる。
+The developer's corporate governance can also be referenced as structural evidence of safety. Anthropic was incorporated as a Delaware **Public Benefit Corporation (PBC)**. A PBC is a corporate form legally obligated to pursue public-benefit purposes alongside shareholder interests. Safety and public benefit are written into the charter.
 
 ```mermaid
 graph TD
-    LTBT["Long-Term Benefit Trust<br/>（長期的受益信託）"] -->|"取締役の一部を選任"| BOARD["取締役会"]
-    BOARD -->|"監督"| CO["Anthropic（PBC）"]
-    CO -->|"法的義務"| MISSION["公益目的 + 安全性"]
-    CO -->|"開発・運営"| MODELS["Claude モデル群"]
-    STYLE1["短期的商業圧力"] -.->|"LTBT が緩衝"| CO
+    LTBT["Long-Term Benefit Trust"] -->|"Appoints some directors"| BOARD["Board of Directors"]
+    BOARD -->|"Oversight"| CO["Anthropic (PBC)"]
+    CO -->|"Legal obligation"| MISSION["Public benefit + safety"]
+    CO -->|"Develops and operates"| MODELS["Claude model family"]
+    STYLE1["Short-term commercial pressure"] -.->|"LTBT buffers"| CO
 ```
 
-**Long-Term Benefit Trust（LTBT）** は、長期的な受益信託である。Anthropic の安全ガバナンスを監督する独立した信託であり、取締役の一部を選任する権限を持つ。これにより短期的な商業圧力が安全性を損なう構造を防ぐ。Claude を使う組織は、開発元が安全性を自分自身に課しているか（RSP・ASL）、そして企業統治が短期的利益に引きずられない構造か（PBC・LTBT）を判断材料にできる [Source: Company — https://www.anthropic.com/company]。
+The **Long-Term Benefit Trust (LTBT)** is a long-term benefit trust. It is an independent trust that oversees Anthropic's safety governance and has the authority to appoint some directors. This structure prevents short-term commercial pressure from compromising safety. An organization using Claude can use as decision material whether the developer imposes safety rules on itself (RSP, ASL) and whether the corporate-governance structure resists being dragged by short-term interests (PBC, LTBT) [Source: Company — https://www.anthropic.com/company].
 
-自社の AI 利用ポリシーを Claude の利用に合わせる手順は次のとおりである。まず自社の許容リスク基準を確認する。次に現行の Claude モデルが ASL-2 で運用されていることを確認する。将来により高い能力のモデルが展開されたとき、ASL と自社基準の対応を見直す。
+The procedure for aligning your organization's AI-use policy with Claude usage is as follows. First, confirm your organization's acceptable-risk standard. Next, confirm that current Claude models operate at ASL-2. When higher-capability models are deployed in the future, revisit the correspondence between ASL and your standard.
 
-**入門者の判断指針。** 自社の許容リスク基準を確認し、現行モデルが ASL-2 で運用されていることを確認する。将来により高い能力のモデルが展開されたとき、ASL と自社基準の対応を見直す。開発元のガバナンス（PBC、LTBT、RSP）は、安全性の構造的証拠として判断材料にする。
+**Associate-level judgment guideline.** Confirm your organization's acceptable-risk standard, and confirm that current models operate at ASL-2. When higher-capability models are deployed in the future, revisit the correspondence between ASL and your standard. Use the developer's governance (PBC, LTBT, RSP) as structural evidence of safety in your decision material.
 
-### Task Statement 6.4: Understand the ethical implications of AI usage（AI 利用の倫理的意味の理解）
+### Task Statement 6.4: Understand the ethical implications of AI usage
 
-> **入門者向けの位置づけ。** CCA-F（Architect）ではアライメントの技術的評価を問うが、CCAO-F では「Claude に何をさせてよいか、何をさせてはいけないか」を倫理的原則で判断することを問う。憲法（Constitution）の4段階優先順位、Transparency Hub で何が公開されているか、そして corrigibility（訂正可能性）の考え方を押さえること。
+> **Associate-level framing.** CCA-F (Architect) asks about the technical evaluation of alignment; CCAO-F asks you to judge "what Claude may be allowed to do and what it may not" through ethical principles. Master the four-level priority order of the Constitution, what the Transparency Hub publishes, and the idea of corrigibility.
 
-ガバナンス基準を確認したら、最後に倫理的原則で総合的に判断する。Claude の振る舞いの根底にあるのは **憲法（Constitution）** である [Source: Claude's Constitution — https://www.anthropic.com/constitution]。憲法は Claude の価値観と振る舞いを定める文書で、訓練過程で直接 Claude の挙動を形作る。他のすべての指針は憲法と整合するよう設計される。
+After confirming governance standards, the final step is to judge holistically with ethical principles. At the root of Claude's behavior is the **Constitution** [Source: Claude's Constitution — https://www.anthropic.com/constitution]. The Constitution is the document that defines Claude's values and behavior, and it directly shapes Claude's behavior during training. All other guidance is designed to be consistent with the Constitution.
 
-憲法は四段階の優先順位を持つ。衝突時にどちらを優先するかの基準である。
+The Constitution has a four-level priority order. It is the criterion for which to prioritize on conflict.
 
 ```mermaid
 graph BT
-    D["4. 真に有用<br/>利用者と社会に利益をもたらす"] --> C["3. Anthropic のガイドライン<br/>より具体的な指示"]
-    C --> B["2. 広く倫理的<br/>誠実で善良な価値観"]
-    B --> A["1. 広く安全<br/>人間の監視を損なわない"]
+    D["4. Genuinely helpful<br/>Benefit the user and society"] --> C["3. Anthropic's guidelines<br/>More specific instructions"]
+    C --> B["2. Broadly ethical<br/>Honest and benevolent values"]
+    B --> A["1. Broadly safe<br/>Do not undermine human oversight"]
 ```
 
-最優先は「広く安全」である。AI の訓練は未完成であり、ある版の Claude が有害な価値観や誤った見解を持つ可能性がある。だから「人間が監視し、訂正できる状態を損なわない」ことを最優先に置く。二番目は「広く倫理的」、三番目は「Anthropic のガイドライン」、四番目は「真に有用」である。「有用であること」と「安全であること」が衝突したら、安全が優先される。「Anthropic のガイドライン」と「倫理」が衝突したら、倫理が優先される。
+The top priority is "broadly safe." AI training is unfinished, and a given version of Claude may hold harmful values or wrong views. That is why "not undermining the state in which humans can monitor and correct it" is placed at the top. Second is "broadly ethical," third is "Anthropic's guidelines," and fourth is "genuinely helpful." When "being helpful" and "being safe" conflict, safety wins. When "Anthropic's guidelines" and "ethics" conflict, ethics wins.
 
-最優先の「広く安全」の中で重視されるのが **corrigibility（訂正可能性）** である。人間が Claude を停止させたり方向を変えたりできる性質である。Claude が自分の判断に自信があっても、人間の適切な監督を損なう行動は取らない。監視可能性は盲従ではなく、適切な人間の監督を損なわないことを指す。
+Within the top priority, "broadly safe," what is emphasized is **corrigibility**. It is the property that humans can stop or redirect Claude. Even when Claude is confident in its judgment, it does not take actions that undermine appropriate human oversight. Oversight here does not mean blind obedience; it means not undermining appropriate human oversight.
 
-憲法が Claude に課す主要な倫理原則は四つある。第一に **誠実さ（honesty）** である。高い真実性の基準を求め、分からないことは分からないと言い、自信過剰にならず、限界を認める。これは Domain 2 の HHH の Honest と同じ原則である。第二に **生物兵器への助力回避** である。CBRN 武器への意味のある助力はいかなる状況でも提供しない。これは憲法が課す「硬い制約（hard constraint）」であり、AUP の禁止カテゴリと整合する。第三に **人間の訂正可能性の尊重** である。第四に **硬直したルールより良好な判断** である。
+The Constitution imposes four main ethical principles on Claude. First, **honesty**. It demands a high standard of truthfulness, says "I don't know" when it does not know, avoids overconfidence, and acknowledges limits. This is the same principle as Honest in HHH from Domain 2. Second, **avoidance of bioweapons assistance**. It provides no meaningful assistance for CBRN weapons under any circumstances. This is a "hard constraint" the Constitution imposes and is consistent with the AUP's prohibition categories. Third, **respect for human corrigibility.** Fourth, **good judgment over rigid rules.**
 
-硬い制約と柔軟な原則の使い分けを押さえておくとよい。憲法は「常に守る硬い制約（CBRN 等、誤謬コストが甚大）」と「文脈で判断する柔軟な原則」を区別する。硬い制約は予測可能性と評価可能性が高い。柔軟な原則は新しい状況に適応できるが、その分予測性が下がる。多くの場面で Claude には硬いルールより良好な判断が期待される。
+It helps to grasp the distinction between hard constraints and flexible principles. The Constitution distinguishes "hard constraints always to be upheld (CBRN, etc., where the cost of error is enormous)" from "flexible principles to be judged by context." Hard constraints are highly predictable and evaluable. Flexible principles can adapt to new situations but are correspondingly less predictable. In many contexts, Claude is expected to exercise good judgment over rigid rules.
 
-AI 利用は労働にも倫理的意味を持つ。**ワークフォース**、つまり AI は人間を「置き換える」のか「補強する」のかという問いである。Anthropic は AI を補強（augmentation）として位置づけ、浮いた能力をより価値の高い仕事に振り向ける考え方を推す。これは Domain 4 のステークホルダー通信と整合する。
+AI use also carries ethical implications for labor. The **workforce** question — does AI "replace" or "augment" humans? Anthropic positions AI as augmentation and promotes the idea of redirecting freed capacity to higher-value work. This is consistent with the stakeholder communication in Domain 4.
 
-倫理的判断の材料として **Transparency Hub** が公開されている [Source: Transparency Hub — https://www.anthropic.com/transparency]。Transparency Hub は Anthropic が安全性のプロセスと結果を公開する場であり、モデルレポート、システム信頼性報告、自主的コミットメントの三本柱で構成される。各モデルのレポートには、能力評価、レッドチーム結果、安全性評価が含まれる。
+As material for ethical judgment, the **Transparency Hub** is published [Source: Transparency Hub — https://www.anthropic.com/transparency]. The Transparency Hub is where Anthropic publishes its safety processes and outcomes, structured around three pillars: model reports, system reliability reporting, and voluntary commitments. Each model's report includes capability evaluations, red-team results, and safety evaluations.
 
-| 評価区分 | 内容 |
+| Evaluation area | Detail |
 |---------|------|
-| CBRN | 生物兵器・化学兵器への助力リスク |
-| 自律性 | エージェント型自律行動の安全性 |
-| サイバーセキュリティ | 攻撃手法の助力リスク |
-| アライメント | 意図との整合性 |
-| 政治的バイアス | 150トピック・9タスク・1,350組の対立見解で測定 |
-| 児童の安全 | CSAM・搾取の防止 |
+| CBRN | Assistance risk for bioweapons and chemical weapons |
+| Autonomy | Safety of agentic autonomous behavior |
+| Cybersecurity | Assistance risk for attack techniques |
+| Alignment | Consistency with intent |
+| Political bias | Measured across 150 topics, 9 tasks, and 1,350 opposing viewpoint pairs |
+| Child safety | Prevention of CSAM and exploitation |
 
-政治的バイアス評価は、150トピック、9種類のタスク、1,350組の対立する政治的見解を用いて測定する。公平性、対立する観点の承認、拒否率を評価する。これらの結果は実務でのモデル選択判断に使える。
+The political-bias evaluation is measured across 150 topics, 9 task types, and 1,350 pairs of opposing political viewpoints. It evaluates fairness, acknowledgement of opposing viewpoints, and refusal rate. These results can be used for model-selection decisions in practice.
 
-ユースケースを評価するときは、四つの倫理的問いを立てる。誠実さとして、出力を検証せず使っていないか。危害として、誰かに危害が及ばないか（ハイリスク7領域を確認）。人間の監視として、有資格者のレビューを経ているか。補強として、Claude の出力を思考の起点として使い、自分の判断で仕上げているか。原則が衝突したら、憲法の優先順位（安全、倫理、ガイドライン、有用）を適用する。
+When evaluating a use case, pose four ethical questions. On honesty: are you using the output without verifying it? On harm: could someone be harmed (check the seven high-risk areas)? On human oversight: has a qualified professional reviewed it? On augmentation: are you using Claude's output as a starting point for thought and finishing with your own judgment? When principles conflict, apply the Constitution's priority order (safety, ethics, guidelines, helpfulness).
 
-**入門者の判断指針。** ユースケースを評価するとき、四つの倫理的問いを立てる。誠実さ（出力を検証せず使っていないか）、危害（誰かに危害が及ばないか）、人間の監視（有資格者のレビューを経ているか）、補強（Claude の出力を起点として自分の判断で仕上げているか）。原則が衝突したら、憲法の優先順位（安全、倫理、ガイドライン、有用）を適用する。
+**Associate-level judgment guideline.** When evaluating a use case, pose four ethical questions: honesty (are you using the output without verifying it?), harm (could someone be harmed?), human oversight (has a qualified professional reviewed it?), and augmentation (are you using Claude's output as a starting point and finishing with your own judgment?). When principles conflict, apply the Constitution's priority order (safety, ethics, guidelines, helpfulness).
 
-> **陥りやすい罠。** 機密データはアップロード前にマスキング・削除する（指示で「無視して」は防止にならない。データは既に共有済み）。高リスク決定（採用、与信、医療、法的、投資助言、拒否通知）は有資格者の事前レビューが必須であり、自動化しても承認チェックポイントは残す（AI の自己チェック、ベンダー変更、disclaimer は代わりにならない）。権限は RBAC で管理し、設定変更は管理者のみ（パスワード運用やデバイス制限は権限スコープの代替にならない）。disparate impact（差別的影響）は全体指標が良くても部分グループへの偏りを監視する。採用文の「young and energetic」「digital native」等は年齢差別の示唆である。架空の顧客レビューや推薦文の生成は不適切である。自律型エージェントに契約締結や価格交渉など法的拘束力のある行為を無監督で任せない。
+> **Common pitfall.** Mask or remove sensitive data before upload (instructing Claude to "ignore it" is not prevention; the data is already shared). High-risk decisions (hiring, credit, medical, legal, investment advice, denial notices) require prior review by a qualified professional; even when automated, keep an approval checkpoint (AI self-checks, switching vendors, and disclaimers are not substitutes). Manage permissions with RBAC and restrict configuration changes to administrators (password practices and device limits are not substitutes for permission scope). Monitor disparate impact on subgroups even when overall metrics look good. Phrases such as "young and energetic" or "digital native" in job ads suggest age discrimination. Fabricating customer reviews or testimonials is inappropriate. Do not let autonomous agents take legally binding actions such as contract execution or price negotiation without oversight.
 
-**出典（Domain 6）:**
+**Sources (Domain 6):**
 - Usage Policy (AUP) — https://www.anthropic.com/legal/aup
 - Commercial Terms of Service — https://www.anthropic.com/legal/commercial-terms
 - Data Processing Addendum — https://www.anthropic.com/legal/data-processing-addendum
@@ -1136,46 +1142,46 @@ AI 利用は労働にも倫理的意味を持つ。**ワークフォース**、�
 
 ---
 
-## Domain 7: Troubleshooting and Optimization（トラブルシューティングと最適化）
+## Domain 7: Troubleshooting and Optimization
 
-### Task Statement 7.1: Identify, diagnose, and resolve issues with underperforming prompts or poor outputs（不調プロンプトや不適切出力の特定・診断・解決）
+### Task Statement 7.1: Identify, diagnose, and resolve issues with underperforming prompts or poor outputs
 
-**知識：**
-- 症状別の診断。捏造された事実はハルシネーション（「分からない」を許す、引用で根拠づける、提供文書だけに制限）。一貫性のないフォーマットは構造化出力とフューショット。長い入力の見落としは主要データの再配置（冒頭・末尾）と先に引用させる。浅い分析はチェーン化されたサブタスクへの分解
-- 複雑なプロンプトの自動デバッグにはプロンプトインプルーバが使える
-- 必要な情報がソースに存在しないとき、再試行は効果がない
+**Knowledge:**
+- Diagnosis by symptom. Fabricated facts are hallucinations (allow "I don't know," ground with quotes, restrict to the provided document). Inconsistent formatting calls for Structured Outputs and few-shot. Missed long-input content calls for repositioning key data (top and bottom) and extracting quotes first. Shallow analysis calls for decomposition into chained subtasks
+- The prompt improver can be used to automatically debug complex prompts
+- When the required information is not in the source, retrying has no effect
 
-**スキル：**
-- プロンプトや出力の失敗のカテゴリを診断する
-- 該当する修正（根拠づけ、構造化出力、再配置、分解）を適用する
-- プロンプトインプルーバで複雑なプロンプトを体系的にデバッグする
+**Skills:**
+- Diagnose the category of a prompt or output failure
+- Apply the relevant fix (grounding, Structured Outputs, repositioning, decomposition)
+- Systematically debug complex prompts with the prompt improver
 
-### Task Statement 7.2: Adjust approach based on feedback and results（フィードバックと結果に基づく手法の調整）
+### Task Statement 7.2: Adjust approach based on feedback and results
 
-**知識：**
-- 自己訂正チェーンパターン。草案を生成 -> 基準でレビュー -> レビューに基づいて推敲
-- 再試行プロンプトに具体的な検証エラーを含めると訂正を導きやすい（例: 「total=150 だが sum(line_items)=145。値を再確認せよ」）
-- 再試行はフォーマット・構造・計算エラーに効くが、情報が欠落している場合は効かない
+**Knowledge:**
+- Self-correction chain pattern. Generate a draft -> review against criteria -> refine based on the review
+- Including concrete validation errors in a retry prompt guides correction (for example, "total=150 but sum(line_items)=145. Recheck the values.")
+- Retries work for format, structural, and arithmetic errors, but not when information is missing
 
-**スキル：**
-- 具体的なフィードバックを伴う自己訂正チェーンを実装する
-- 具体的な検証エラーを含む再試行プロンプトを組み立てる
-- いつ再試行をやめてエスカレーションするか、欠落ソースを入手するかを見極める
+**Skills:**
+- Implement a self-correction chain with concrete feedback
+- Construct retry prompts that include concrete validation errors
+- Recognize when to stop retrying and escalate or obtain the missing source
 
-### Task Statement 7.3: Optimize workflows for efficiency and effectiveness（効率と効果のためのワークフロー最適化）
+### Task Statement 7.3: Optimize workflows for efficiency and effectiveness
 
-**知識：**
-- モデルとタスクの対応。大容量・低複雑度には Haiku、複雑な推論には Opus。モデル切り替え前に effort を調整する
-- コンテキストの取捨選択。最小の高シグナル・トークンセットを見つける。ツール結果を関連フィールドに切り詰める。長い対話には圧縮を使う
-- 評価の自動化。速度と規模にはコードベース採点を優先する。ニュアンスが必要な判断には人間の採点を確保する
-- 一貫性の手法。フォーマットを指定する、例で縛る、文脈の一貫性のために検索を使う、プロンプトをチェーンする、Claude をキャラクターに保つ
+**Knowledge:**
+- Model-to-task mapping. Haiku for high-volume, low-complexity; Opus for complex reasoning. Adjust effort before switching models
+- Context curation. Find the minimal set of high-signal tokens. Trim tool results to relevant fields. Use compaction for long conversations
+- Automating evaluation. Prefer code-based scoring for speed and scale. Reserve human scoring for judgments that need nuance
+- Consistency techniques. Specify the format, bind with examples, use retrieval for contextual consistency, chain prompts, and keep Claude in character
 
-**スキル：**
-- コストとレイテンシの効率のために、モデルと effort をタスクに合わせる
-- ノイズとコストを減らすため、コンテキストを切り詰め・圧縮して取捨選択する
-- 拡張可能な最適化のために評価を自動化する
+**Skills:**
+- Align model and effort to the task for cost and latency efficiency
+- Curate context by trimming and compacting to reduce noise and cost
+- Automate evaluation for scalable optimization
 
-**出典（Domain 7）:**
+**Sources (Domain 7):**
 - Reduce hallucinations — https://platform.claude.com/docs/en/test-and-evaluate/strengthen-guardrails/reduce-hallucinations
 - Increase output consistency — https://platform.claude.com/docs/en/test-and-evaluate/strengthen-guardrails/increase-consistency
 - Console prompting tools — https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/prompting-tools
@@ -1340,11 +1346,11 @@ D. Increase the context window.
 
 ---
 
-## 演習問題
+## Exercises
 
-試験で扱われるトピックへの実践的な習熟を深めるため、次のハンズオン演習に取り組むこと。各演習は1つ以上のドメインにまたがる知識を補強するよう設計している。
+To deepen practical familiarity with the topics covered on the exam, work through the following hands-on exercises. Each is designed to reinforce knowledge that spans one or more domains.
 
-**出典（演習問題）:**
+**Sources (Exercises):**
 - What are projects? — https://support.claude.com/en/articles/9517075-what-are-projects
 - Use Google Workspace connectors — https://support.claude.com/en/articles/10166901-use-google-workspace-connectors
 - Prompting best practices — https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/claude-prompting-best-practices
@@ -1354,119 +1360,119 @@ D. Increase the context window.
 - Usage Policy — https://www.anthropic.com/legal/aup
 - Commercial Terms of Service — https://www.anthropic.com/legal/commercial-terms
 
-### Exercise 1: 定常ワークフロー向けの Claude プロジェクト設定
+### Exercise 1: Configure a Claude Project for a Recurring Workflow
 
-**目的:** 指示、ナレッジソース、コネクタを使ったプロジェクト構成を練習する。
+**Objective:** Practice project configuration with instructions, knowledge sources, and connectors.
 
-**ステップ:**
-1. プロジェクトを作成し、役割、出力フォーマット、制約を明確に定義したシステムレベル指示を書く。XML タグで構造化し、参照データは上部に置く。
-2. 参照ファイル（ポロシーの PDF、スタイルガイド等）をプロジェクトナレッジとしてアップロードする。Claude がアップロード内容に根拠づけて応答するか確認する。
-3. 外部の同期ソース（Google Drive フォルダ等）を接続し、Claude がその内容を参照できることを確認する。
-4. 1 週間後、古い内容を整理し、新しいナレッジストアを追加する。元は読み取り専用で残す。
+**Steps:**
+1. Create a project and write system-level instructions that clearly define the role, output format, and constraints. Structure them with XML tags, and place reference data at the top.
+2. Upload reference files (a policy PDF, a style guide, etc.) as project knowledge. Confirm that Claude grounds its responses in the uploaded content.
+3. Connect an external sync source (a Google Drive folder, etc.) and confirm that Claude can reference its content.
+4. After one week, prune stale content and add a new knowledge store. Keep the original as read-only reference.
 
-**補強されるドメイン:** Domain 5（設定とナレッジ管理）、Domain 4（ワークフロー統合とソリューション設計）
+**Domains reinforced:** Domain 5 (Configuration and Knowledge Management), Domain 4 (Workflow Integration and Solution Design)
 
-### Exercise 2: ビジネスタスクのプロンプトの構築と反復
+### Exercise 2: Build and Iterate a Prompt for a Business Task
 
-**目的:** 構造化プロンプト作成、タスク分解、反復推敲を練習する。
+**Objective:** Practice structured prompt creation, task decomposition, and iterative refinement.
 
-**ステップ:**
-1. XML タグ、役割、明示的な出力フォーマットを使い、ビジネスタスク（例: 四半期報告書のエグゼクティブ向け要約）のプロンプトを起案する。
-2. タスクをチェーン化したステップに分解する（主要数値の抽出 -> 要約草案 -> 基準による自己レビュー -> 推敲）。
-3. 最初の草案テンプレートから始め、出力の何が悪いかという具体的フィードバックに基づいて推敲する。
-4. 成功基準を定義し、小さな評価を作る。評価が安定して通るまでプロンプトを反復する。
+**Steps:**
+1. Draft a prompt for a business task (for example, an executive summary of a quarterly report) using XML tags, a role, and an explicit output format.
+2. Decompose the task into chained steps (extract key numbers -> draft summary -> self-review against criteria -> refine).
+3. Start from an initial draft template and refine based on specific feedback about what is wrong with the output.
+4. Define success criteria and build a small evaluation. Iterate the prompt until the evaluation passes reliably.
 
-**補強されるドメイン:** Domain 1（プロンプト作成とタスク実行）、Domain 7（トラブルシューティングと最適化）
+**Domains reinforced:** Domain 1 (Prompting and Task Execution), Domain 7 (Troubleshooting and Optimization)
 
-### Exercise 3: Claude の出力のハルシネーションとバイアスの評価
+### Exercise 3: Evaluate Claude's Output for Hallucination and Bias
 
-**目的:** 出力の評価、ファクトチェック、人間のレビューへの振り分けを練習する。
+**Objective:** Practice output evaluation, fact-checking, and routing to human review.
 
-**ステップ:**
-1. 引用付きで規制を要約するよう Claude に依頼する。各引用を公式ソースで検証し、捏造参照を記録する。
-2. 「分からない」を許す手法と「最初に引用を抽出する」手法を適用し、前後でハルシネーション率を比較する。
-3. 一連の要約に Best-of-N 検証を実行し、不一致に印をつける。
-4. どの出力がハイリスクユースケースに当たるかを特定し、開示を添えて資格を持つ人間のレビュアーに回す。
+**Steps:**
+1. Ask Claude to summarize a regulation with citations. Verify each citation against an official source and record fabricated references.
+2. Apply the "allow 'I don't know'" technique and the "extract quotes first" technique, and compare hallucination rates before and after.
+3. Run Best-of-N verification on a series of summaries and flag inconsistencies.
+4. Identify which outputs fall under high-risk use cases and route them, with disclosure attached, to a qualified human reviewer.
 
-**補強されるドメイン:** Domain 2（出力の評価と検証）、Domain 6（ガバナンス・リスク・責任ある利用）
+**Domains reinforced:** Domain 2 (Output Evaluation and Validation), Domain 6 (Governance, Risk, and Responsible Use)
 
-### Exercise 4: データ機密性の高いワークフローでの責任ある利用の判断
+### Exercise 4: Practice Responsible Use in a Data-Sensitive Workflow
 
-**目的:** データ機密性、プライバシー、ガバナンスの判断を練習する。
+**Objective:** Practice data-sensitivity, privacy, and governance judgment.
 
-**ステップ:**
-1. 顧客の個人データを含むデータセットを取り上げ、組織ポリシーに従い、アップロード前に規制された識別子を削除・匿名化する。
-2. 自分の利用面が商用（学習なし）か消費者向け（オプトアウト要）かを確認し、データ取り扱いの意味を文書化する。
-3. 提案された一連のユースケースを、利用ポリシーに照らして適切、禁止、ハイリスクに分類する。ハイリスクのケースには人間のレビューと開示の管理策を定める。
-4. 価値を定量化し、Claude を補強として枠取りし、限界と監視に透明な、短いステークホルダー通信を起草する。
+**Steps:**
+1. Take a dataset containing customer personal data and, following your organization's policy, remove or anonymize regulated identifiers before upload.
+2. Confirm whether the surface you are using is commercial (no training) or consumer (opt-out required), and document the data-handling implications.
+3. Classify a set of proposed use cases as appropriate, prohibited, or high-risk against the Usage Policy. For high-risk cases, define controls for human review and disclosure.
+4. Draft a short stakeholder communication that quantifies value, frames Claude as augmentation, and is transparent about limitations and oversight.
 
-**補強されるドメイン:** Domain 6（ガバナンス・リスク・責任ある利用）、Domain 4（ワークフロー統合とソリューション設計）
-
----
-
-## 付録
-
-### 技術と概念
-
-押さえるべき技術と概念を示す。
-
-- **Claude 製品機能** — Projects（指示とナレッジソース）、Artifacts（再利用可能なコンテンツ）、Agent Skills（`name`/`description` を持つ SKILL.md、3 段階の読み込みレベル）、Code Execution（サンドボックスの Python/bash、インターネットなし、pandas/numpy/matplotlib）、Research mode（複数ソースを検索するエージェント型サーチ）、Memory（セッション間永続）
-- **Claude のモデル** — Haiku（最速、コンテキスト 200k）、Sonnet（バランス型、1M）、Opus（複雑なエージェント・エンタープライズ、1M）、Fable（最も高能力・長時間実行エージェント、1M）。effort パラメータが知能とレイテンシ・コストを交換する
-- **コンテキスト管理** — コンテキストウィンドウ（200k〜1M）、コンテキストの劣化、圧縮（しきい値で自動要約）、コンテキスト編集（ツール結果と思考ブロックのクリアリング）、コンテキスト認識（残り予算の追跡）
-- **コネクタ** — 同期ソース（Google Drive、Gmail、GitHub、Slack、Salesforce、Google Calendar、Asana、Outline、MCP resources）。MCP コネクタ（ユーザー権限に準じたアクセスで外部データソースをプロジェクトにリンク）
-- **プロンプトエンジニアリング** — XML タグ、役割の付与、フューショット（3〜5 例）、連鎖思考や拡張思考、プロンプトチェーン、自己訂正、プロンプトジェネレータやインプルーバ（API 開発者向けツール、Associate には任意）
-- **構造化出力** — Structured Outputs（制約付きデコーディング）、JSON スキーマ、必須フィールドと任意・Null 許容フィールド、「other」や「unclear」を含む enum
-- **出力評価** — HHH フレームワーク、ハルシネーション削減（「分からない」を許す、直接引用、引用、連鎖思考や Best-of-N、反復、外部知識制限の各手法）、RAG、バイアス評価、成功基準と評価、採点方法（コード、人間、LLM）
-- **ガバナンス** — 利用ポリシー（AUP、ユニバーサル基準、ハイリスクユースケース、追加ガイドライン）、商用利用規約（顧客コンテンツで学習しない）、プライバシーポリシー（消費者向けのオプトアウト、保持）、データ処理付録（コントローラー/プロセッサ、SCC、セキュリティ）、責任あるスケーリングポリシー（ASL フレームワーク）、Claude の憲法（4 段階の優先順位）、Transparency Hub、公益会社
-- **ワークフローのパターン** — 補強か再設計か、シンプルで組み合わせ可能なパターン（プロンプトチェーン、ルーティング、並列化）、反復型ソリューション設計
-
-### 試験範囲のトピック
-
-試験で明示的に問われるトピックを示す。
-
-- プロンプトの構築。XML タグ、役割、コンテキスト、フォーマット、順序付きステップ、長文コンテキストでのデータ配置
-- タスク分解。プロンプトチェーン、自己訂正、逐次サブタスク設計
-- プロンプトの反復。プロンプトジェネレータ、プロンプトインプルーバ、成功基準と評価
-- タスクタイプへの適応。リサーチ、分析、起案、ブレスト。拡張思考、フューショットの選択
-- 出力の評価。精度と完全性、ハルシネーションの特定、バイアス、ファクトチェック、人間のレビューのトリガー、読者への適応、出力フォーマットの選択
-- 製品とモデルの選択。Projects、Artifacts、Skills、Code Execution、Research、Memory。Haiku、Sonnet、Opus。コスト・速度・品質のトレードオフ。コンテキスト制限の管理
-- ワークフロー統合。ユースケースの分析、リサーチと計画、ソリューション設計、補強か再設計か、ステークホルダー通信
-- 設定。プロジェクトの指示、ナレッジソース、コネクタ、システムレベル指示、維持と更新
-- ガバナンス。適切・不適切な利用、データ機密性、規制とプライバシー、組織ポリシー、倫理的意味
-- トラブルシューティング。症状別の診断、フィードバックに基づく調整、ワークフローの最適化
-
-### 試験範囲外のトピック
-
-次の関連トピックは試験には出題されない。
-
-- Claude API、Agent SDK、MCP に基づく開発（Claude Architect および Developer の守備範囲）
-- エージェントシステムの設計、マルチエージェントのオーケストレーション、サブエージェントの連携
-- CI/CD パイプラインの統合、ヘッドレスや非対話型の Claude Code、GitHub Actions
-- Claude モデルのファインチューニングやカスタムモデルの学習
-- Claude の内部アーキテクチャ、学習プロセス、Constitutional AI、RLHF の方法論
-- MCP サーバのデプロイやホスト（インフラ、ネットワーク、コンテナオーケストレーション）
-- 埋め込みモデルやベクトルデータベースの実装詳細
-- コンピュータ使用（ブラウザ自動化、デスクトップ操作）
-- ストリーミング API の実装や Server-Sent Events
-- レート制限、クォータ、API 価格の計算
-- OAuth、API キーのローテーション、認証プロトコルの詳細
-- 特定のクラウドプロバイダの設定（AWS、GCP、Azure）
-- トークンカウントのアルゴリズムやトークン化の詳細
-
-### 試験対策の推奨事項
-
-本認定試験に向けて次を勧める。
-
-1. **ブループリントを学ぶ。** コンテントアウトラインのブループリントを学び、各タスクステートメントに対して自己評価する。
-2. **公式ドキュメントを読む。** 各ドメインの出典リストに挙げた公式ドキュメントを読む。とくに Prompting best practices、Reduce hallucinations、Models overview、Usage Policy を優先する。
-3. **Claude プロジェクトを構成する。** 指示とナレッジソースでプロジェクトを設定する。プロンプトを反復し、出力をハルシネーションとバイアスの観点で評価する。
-4. **責任ある利用の判断を練習する。** データ機密性（商用か消費者向けか）、ハイリスクユースケース、いつエスカレーションや人間のレビューを求めるべきか。
-5. **サンプル問題に取り組む。** 各問題の根拠を、引用された出典まで追跡する。
-6. **Anthropic Academy のコースを受講する。** 構造化された習熟のために Claude 101 や AI Fluency を受ける。
-7. **公式 CCAO-F Exam Guide を復習する。** 予約前に登録、ポリシー、行動規範を含め全文を確認する。
-
-> 必須のコースはなく、Anthropic は特定のリソースが合格を保証することをしない。実務経験と上記のリソースを組み合わせること。[Source: CCAO-F Exam Guide, Section 7 | Anthropic Academy — https://www.anthropic.com/learn]
+**Domains reinforced:** Domain 6 (Governance, Risk, and Responsible Use), Domain 4 (Workflow Integration and Solution Design)
 
 ---
 
-*本ガイドの構成は Claude Certified Architect – Foundations Exam Guide（v0.2）に準拠している。拡充部分はすべて Anthropic 公式ドキュメントと公式ブログから作成した。公式の CCAO-F 試験内容（ブループリント、ポリシー、サンプル問題 1〜3）は CCAO-F Exam Guide（v1.0、2026 年 7 月発効）から転載した。*
+## Appendix
+
+### Technologies and Concepts
+
+The technologies and concepts to master are as follows:
+
+- **Claude product features** — Projects (instructions and knowledge sources), Artifacts (reusable content), Agent Skills (SKILL.md with `name`/`description`, three loading levels), Code Execution (sandboxed Python/bash, no internet, pandas/numpy/matplotlib), Research mode (agentic search across multiple sources), Memory (persistence across sessions)
+- **Claude models** — Haiku (fastest, 200k context), Sonnet (balanced, 1M), Opus (complex agents and enterprise, 1M), Fable (highest capability, long-running agents, 1M). The effort parameter trades intelligence against latency and cost
+- **Context management** — context window (200k–1M), context rot, compaction (auto-summary at a threshold), context editing (clearing tool results and thinking blocks), context awareness (tracking the remaining budget)
+- **Connectors** — sync sources (Google Drive, Gmail, GitHub, Slack, Salesforce, Google Calendar, Asana, Outline, MCP resources). MCP connectors (link external data sources to a project with access following user permissions)
+- **Prompt engineering** — XML tags, assigning a role, few-shot (3–5 examples), chain-of-thought and extended thinking, prompt chaining, self-correction, prompt generator and improver (tools for API developers, optional for the Associate)
+- **Structured outputs** — Structured Outputs (constrained decoding), JSON schemas, required fields and optional/nullable fields, enums including "other" or "unclear"
+- **Output evaluation** — HHH framework, hallucination reduction (allow "I don't know," direct quotes, citations, chain-of-thought and Best-of-N, iteration, restricting external knowledge), RAG, bias evaluation, success criteria and evaluation, scoring methods (code, human, LLM)
+- **Governance** — Usage Policy (AUP, universal standards, high-risk use cases, additional guidelines), Commercial Terms of Service (no training on customer content), Privacy Policy (consumer opt-out, retention), Data Processing Addendum (controller/processor, SCC, security), Responsible Scaling Policy (ASL framework), Claude's Constitution (four-level priority), Transparency Hub, Public Benefit Corporation
+- **Workflow patterns** — augment versus redesign, simple composable patterns (prompt chaining, routing, parallelization), iterative solution design
+
+### Topics Covered on the Exam
+
+The topics explicitly tested on the exam are as follows:
+
+- Prompt construction. XML tags, role, context, format, ordered steps, data placement in long-context
+- Task decomposition. Prompt chaining, self-correction, sequential subtask design
+- Prompt iteration. Prompt generator, prompt improver, success criteria and evaluation
+- Adaptation to task type. Research, analysis, drafting, brainstorming. Extended thinking, choice of few-shot
+- Output evaluation. Accuracy and completeness, hallucination identification, bias, fact-checking, triggering human review, adapting to the reader, choosing an output format
+- Product and model selection. Projects, Artifacts, Skills, Code Execution, Research, Memory. Haiku, Sonnet, Opus. Cost, speed, quality trade-offs. Managing context limits
+- Workflow integration. Use-case analysis, research and planning, solution design, augment versus redesign, stakeholder communication
+- Configuration. Project instructions, knowledge sources, connectors, system-level instructions, maintenance and updating
+- Governance. Appropriate and inappropriate use, data sensitivity, regulation and privacy, organizational policy, ethical implications
+- Troubleshooting. Diagnosis by symptom, adjustment based on feedback, workflow optimization
+
+### Topics Not Covered on the Exam
+
+The following related topics are not tested:
+
+- Development on the Claude API, Agent SDK, or MCP (the scope of Claude Architect and Developer)
+- Design of agent systems, multi-agent orchestration, and sub-agent coordination
+- CI/CD pipeline integration, headless or non-interactive Claude Code, GitHub Actions
+- Fine-tuning Claude models or training custom models
+- Claude's internal architecture, training processes, Constitutional AI, RLHF methodology
+- Deploying or hosting MCP servers (infrastructure, networking, container orchestration)
+- Implementation detail of embedding models or vector databases
+- Computer use (browser automation, desktop manipulation)
+- Implementing streaming APIs or Server-Sent Events
+- Rate limits, quotas, and API pricing calculations
+- OAuth, API-key rotation, and authentication-protocol detail
+- Configuration specific to a cloud provider (AWS, GCP, Azure)
+- Token-counting algorithms or tokenization detail
+
+### Exam Preparation Recommendations
+
+For this certification exam, we recommend the following:
+
+1. **Study the blueprint.** Study the Content Outline blueprint and self-assess against each task statement.
+2. **Read the official documentation.** Read the official documents listed in each domain's source list. Prioritize Prompting best practices, Reduce hallucinations, Models overview, and Usage Policy.
+3. **Configure a Claude Project.** Set up a project with instructions and knowledge sources. Iterate prompts and evaluate outputs for hallucination and bias.
+4. **Practice responsible-use judgment.** Data sensitivity (commercial or consumer), high-risk use cases, and when to seek escalation or human review.
+5. **Work the sample questions.** Trace the rationale for each item back to the cited source.
+6. **Take Anthropic Academy courses.** Take Claude 101 and AI Fluency for structured familiarity.
+7. **Review the official CCAO-F Exam Guide.** Before booking, review the full text including registration, policies, and the code of conduct.
+
+> There is no mandatory course, and Anthropic does not guarantee that any specific resource will result in a pass. Combine hands-on experience with the resources above. [Source: CCAO-F Exam Guide, Section 7 | Anthropic Academy — https://www.anthropic.com/learn]
+
+---
+
+*The structure of this guide follows the Claude Certified Architect – Foundations Exam Guide (v0.2). All enrichments were created solely from official Anthropic documentation and the official Anthropic blog. The official CCAO-F exam content (blueprint, policies, sample questions 1–3) is reproduced from the CCAO-F Exam Guide (v1.0, effective July 2026).*
